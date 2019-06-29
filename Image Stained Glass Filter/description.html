@@ -1,0 +1,1429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/4f0db316-e33e-4e5c-b975-0f6de635f8e4Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Stained Glass Image Filter</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Stained Glass Image Filter</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, Class Library, Windows Forms, .NET Framework 4, .NET Framework, .NET Framework 4.0, Image manipulation, Library, C# Language, WinForms, .NET Framework 4.5, .NET Framwork, Graphics Functions, Visual C Sharp .NET, Image process, Filter expression, Manipulation, .NET 4.5, .NET Development, Edge Detection, Image Processing, Digital Signal Processing, Image Transformation, Image Software
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Graphics, C#, Class Library, User Interface, Windows Forms, Graphics and 3D, Images, GeometryDrawing<wbr />, Media, ImageViewer, Windows Form Controls, 2d graphics, Extensibility, Image manipulation, Image Gallery, Image, .NET 4, Imaging, Drawing, How to, Colors and Gradient Brushes, Generic C# resuable code, Extension, Image Optimization, general, Graphics Functions, .Net Programming, Transformations<wbr />, Transformation, BitmapImage, Load Image, Dynamically Image, Extension methods, Transforms, image rendering, Edge Detection, Image Filters, Image Smoothing, Cartoon Effect, Image Transformation, Non-photorealis<wbr />tic Rendering
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Cloud, Phone, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">7/6/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Stained-Glass-Image-Filter-48e345f2">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p style="text-align:justify">This article serves to provides a detailed discussion and implementation of a
+<strong><em>Stained Glass Image Filter</em></strong>. Primary topics explored include: Creating
+<a title="Voronoi Diagrams" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >
+Voronoi Diagrams</a>, Pixel Coordinate distance calculations implementing <a title="Euclidean Distance" rel="tag" href="http://en.wikipedia.org/wiki/Euclidean_distance" >
+Euclidean</a>, <a title="Manhattan Distance" rel="tag" href="http://en.wikipedia.org/wiki/Manhattan_distance" >
+Manhattan</a> and <a title="Chebyshev Distance" rel="tag" href="http://en.wikipedia.org/wiki/Chebyshev_distance" >
+Chebyshev</a> methods. In addition, this article explores Gradient Based <a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+Edge Detection</a> implementing thresholds.</p>
+<p style="text-align:center"><strong><em>Zurich: Block Size 15, Factor 4, Euclidean</em></strong></p>
+<p><span><img id="91911" src="description/Zurich2_BlockSize15_Factor4_Euclidean.jpg" alt="" width="500" height="375" style="margin-right:auto; margin-left:auto; display:block"></span></p>
+<h1><span>Building the Sample</span></h1>
+<p>There are&nbsp;no special requirements or instructions for building the sample source code.</p>
+<h1>Using the Sample Application</h1>
+<p style="text-align:justify">This article&rsquo;s accompanying sample source code includes a
+<a title="Windows Forms" rel="tag" href="http://msdn.microsoft.com/en-us/library/dd30h2yb.aspx" >
+Windows Forms</a> based sample application. The sample application provides an implementation of the concepts explored by this article. Concepts discussed can be easily replicated and tested by using the sample application.</p>
+<p style="text-align:justify">Source/input <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> files can be specified from the local <a title="System.IO.File" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.io.file.aspx" >
+file</a> system when clicking the <strong><em>Load Image</em></strong> button. Additionally users also have the option to save resulting filtered
+<a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> by clicking the <strong><em>Save Image</em></strong> button.</p>
+<p style="text-align:justify">The sample application through its user interface allows a user to specify several filter configuration options. Two main categories of configuration options have been defined as
+<strong><em>Block Properties</em></strong> and <strong><em>Edge Properties</em></strong>.</p>
+<p style="text-align:justify"><strong><em>Block Properties</em></strong> relate to&nbsp; the process of rendering&nbsp;
+<a title="Voronoi Diagrams" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >
+Voronoi Diagrams</a>. The following configuration options have been implemented:</p>
+<ul>
+<li><strong><em>Block Size &ndash; </em></strong>During the process of rendering a
+<a title="Voronoi Diagrams" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >
+Voronoi Diagram</a> regions or blocks of equal shape and size have to be defined. These uniform regions/blocks form the basis of rendering uniquely shaped regions later on. The
+<strong><em>Block Size</em></strong> option determines the width and height of an individual region/block. Larger values result in larger non-uniform regions being rendered. Smaller values in return result in smaller non-uniform regions being rendered.
+</li><li><strong><em>Distance Factor &ndash; </em></strong>The <strong><em>Distance Factor</em></strong> option determines the extent to which a pixel&rsquo;s containing region will be calculated. Possible values range from 1 to 4 inclusive. A
+<strong><em>Distance Factor</em></strong> value of 4 equates to precise calculation of a pixel&rsquo;s containing region, whereas a value of 1 results in containing regions often registering pixels that should be part of a neighbouring region. Values closer
+ to 4 result in more varied region shapes. Values closer to 1 result in regions being rendered having more of a uniform shape/pattern.
+</li><li><strong><em>Distance Formula &ndash; </em></strong>The distance between a pixel&rsquo;s coordinates and a region&rsquo;s outline determines whether that pixel should be considered part of a region. The sample application implements three different methods
+ of calculating pixel distance: <a title="Euclidean Distance" rel="tag" href="http://en.wikipedia.org/wiki/Euclidean_distance" >
+Euclidean</a>, <a title="Manhattan Distance" rel="tag" href="http://en.wikipedia.org/wiki/Manhattan_distance" >
+Manhattan</a> and <a title="Chebyshev Distance" rel="tag" href="http://en.wikipedia.org/wiki/Chebyshev_distance" >
+Chebyshev</a> methods. Each result in region shapes being rendered differently. </li></ul>
+<p style="text-align:center"><strong><em>Salzburg: Block Size 20, Factor 1, Chebyshev, Edge Threshold 2</em></strong></p>
+<p><img id="91912" src="description/Saltzburg_BlockSize20_Factor1_Chebyshev_EdgeThreshold2.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify"><strong><em>Edge Properties</em></strong> relate to the implementation of
+<strong><em>Image Gradient Based Edge Detection</em></strong>. <a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+Edge detection</a> is an optional filter and can be enabled/disabled through the user interface, The implementation of
+<a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+edge detection</a> serves to highlight/outline regions rendered as part of a <a title="Voronoi Diagrams" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >
+Voronoi Diagram</a>. The configuration options implemented are:</p>
+<ul>
+<li><strong><em>Highlight Edges &ndash; </em></strong>Boolean value indicating whether or not
+<a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+edge detection</a> should be applied </li><li><strong><em>Threshold &ndash;</em></strong> In calculating <a title="Image Edges" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+image edges</a> a threshold value determines if a pixel forms part of an edge. Higher threshold values result in less
+<a title="Image Edges" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+image edges</a> being expressed. Lower threshold values result in more <a title="Image Edges" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+image edges</a> being expressed. </li><li><strong><em>Colour &ndash; </em></strong>If a pixel has been determined as forming part of an
+<a title="Image Edge" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+image edge</a>, the resulting pixel colour will be determined by the colour value specified by the user.
+</li></ul>
+<p>The following image is a screenshot of the <strong><em>Stained Glass Image Filter</em></strong> sample application in action:</p>
+<p><img id="91927" src="description/StainedGlassImageFilter_SampleApplication.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><strong><em>Locarno: Block Size 10, Factor 4, Euclidean</em></strong></p>
+<p><img id="91913" src="description/Locarno_BlockSize10_Factor4_Euclidean.jpg" alt="" width="500" height="375" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Stained Glass Image Filter</h1>
+<p style="text-align:justify">The <strong><em>Stained Glass Image Filter</em></strong> detailed in this article operates on the basis of implementing modifications upon a specified sample/input
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a>, producing resulting <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> which resemble the appearance of stained glass artwork.</p>
+<p style="text-align:justify">A common variant of stained glass artwork comes in the form of several individual pieces of coloured glass being combined in order to create an
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a>. The sample source code employs a similar&nbsp; method of combining what appears to be non-uniform puzzle pieces. The following list provides a broad overview of the steps involved in applying a
+<strong><em>Stained Glass Image Filter</em></strong>:</p>
+<ol>
+<li><strong><em>Render a Voronoi Diagram &ndash;</em></strong> Through rendering a
+<a title="Voronoi Diagrams" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >
+Voronoi Diagram</a> the resulting <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> will be divided into a number of regions. Each region being intended to represent an individual glass puzzle piece. The following section of this article provides a detailed discussion on rendering
+<a title="Voronoi Diagrams" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >
+Voronoi Diagrams</a>. </li><li><strong><em>Assign each Pixel to a Voronoi Diagram Region &ndash;</em></strong> Each pixel forming part of the source/input
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> should be iterated. Whilst iterating pixels determine the region to which a pixel should be associated. A pixel should be associated to the region whose border has been determined the nearest to the pixel. In a following section of this article a
+ detailed discussion regarding <strong><em>Pixel Coordinate Distance Calculations</em></strong> can be found.
+</li><li><strong><em>Determine each Region&rsquo;s Colour Mean &ndash;</em></strong> Each region will only express a single colour value. A region&rsquo;s colour equates to the average colour as expressed by all the pixels forming part of a region. Once the average
+ colour value of a region has been determined every pixel forming part of that region should be set to the average colour.
+</li><li><strong><em>Implement Edge Detection &ndash;</em></strong> If the user configuration option indicates that
+<a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+edge detection</a> should be implemented, apply <strong><em>Gradient Based Edge Detection</em></strong>. This method of
+<a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+edge detection</a> has been discussed in detailed in a following section of this article.
+</li></ol>
+<p style="text-align:center"><strong><em>Bad Ragaz: Block Size 10, Factor 1, Manhattan</em></strong>&nbsp;</p>
+<p><img id="91914" src="description/BadRagaz_BlockSize10_Factor1_Manhattan.jpg" alt="" width="500" height="375" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Voronoi Diagrams</h1>
+<p style="text-align:justify"><a title="Voronoi Diagrams" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >Voronoi Diagrams</a> represent a fairly uncomplicated concept. In contrast, the implementation of
+<a title="Voronoi Diagrams" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >
+Voronoi Diagrams</a> prove somewhat more of a challenge. From <a title="Voronoi Diagrams" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >
+Wikipedia</a> we gain the following <a title="Voronoi Diagram" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >
+definition</a>:</p>
+<blockquote>
+<p>In <a title="mathematics" href="http://en.wikipedia.org/wiki/Mathematics" >
+mathematics</a>, a <strong>Voronoi diagram</strong> is a way of dividing space into a number of regions. A set of points (called seeds, sites, or generators) is specified beforehand and for each seed there will be a corresponding region consisting of all points
+ closer to that seed than to any other. The regions are called Voronoi cells. It is
+<a title="dual" href="http://en.wikipedia.org/wiki/Duality_(mathematics)" >
+dual</a> to the <a title="Delaunay triangulation" href="http://en.wikipedia.org/wiki/Delaunay_triangulation" >
+Delaunay triangulation</a>.</p>
+</blockquote>
+<p style="text-align:justify">In this article <a title="Voronoi Diagrams" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >
+Voronoi Diagrams</a> are generated resulting in regions expressing random shapes. Although region shapes are randomly generated, the parameters or ranges within which random values are selected are fixed/constant. The steps required in generating a
+<a title="Voronoi Diagrams" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >
+Voronoi Diagram</a> can be detailed as follows:</p>
+<ol>
+<li><strong><em>Define fixed size square regions &ndash;</em></strong> By making use of the user specified Block/Region Size value, group pixels together into square regions.
+</li><li><strong><em>Determine a Seed Value for Random number generation &ndash;</em></strong> Determine the sum total of pixel colour components of all the pixels forming part of a square region. The colour sum total value should be used as a seed value when generating
+ random numbers in the next step. </li><li><strong>Determine a Random XY coordinate within each square region &ndash;</strong> Generate two random numbers, specifying each region&rsquo;s coordinate boundaries as minimum and maximum boundaries in generating random numbers. Keep record of every new
+ randomly generated XY-Coordinate value. </li><li><strong><em>Associate Pixels and Regions &ndash;</em></strong> A pixel should be associated to the Random Coordinate point nearest to that pixel. Determine the Random Coordinate nearest to each pixel in the source/input image. The method implemented in
+ calculating coordinate distance depends on the configuration value specified by the user.
+</li><li><strong><em>Set Region Colours &ndash;</em></strong> Each pixel forming part of the same region should be set to the same colour. The colour assigned to a region&rsquo;s pixels will be determined by the average colour value of the region&rsquo;s pixels.
+</li></ol>
+<p>The following image illustrates an example <a title="Voronoi Diagrams" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >
+Voronoi Diagram</a> consisting of 10 regions:</p>
+<p><img id="91915" src="description/2Ddim-L2norm-10site.png" alt="" width="380" height="360" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><strong><em>Port Edward: Block Size 10, Factor 1, Chebyshev, Edge Threshold 2</em></strong></p>
+<p><img id="91917" src="description/PortElizabeth_BlockSize10_Factor1_Chebyshev_EdgeThreshold2.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Calculating Pixel Coordinate Distances</h1>
+<p style="text-align:justify">The sample source code provides three different coordinate distance calculation methods. The supported methods are:
+<a title="Euclidean Distance" rel="tag" href="http://en.wikipedia.org/wiki/Euclidean_distance" >
+Euclidean</a>, <a title="Manhattan Distance" rel="tag" href="http://en.wikipedia.org/wiki/Manhattan_distance" >
+Manhattan</a> and <a title="Chebyshev Distance" rel="tag" href="http://en.wikipedia.org/wiki/Chebyshev_distance" >
+Chebyshev</a>. A pixel&rsquo;s nearest randomly generated coordinate depends on the distance between that pixel and the random coordinate. Each method of calculating distance in most instances would be likely to produce different output values, which in turn
+ influences the region to which a pixel will be associated.</p>
+<p style="text-align:justify">The most common method of distance calculation, <a title="Euclidean distance" rel="tag" href="http://en.wikipedia.org/wiki/Euclidean_distance" >
+Euclidean distance</a>, has been described by <a title="Wikipedia" rel="tag" href="http://en.wikipedia.org/wiki/Euclidean_distance" >
+Wikipedia</a> as follows:</p>
+<blockquote>
+<p>In <a title="mathematics" href="http://en.wikipedia.org/wiki/Mathematics" >
+mathematics</a>, the <strong>Euclidean distance</strong> or <strong>Euclidean metric</strong> is the &quot;ordinary&quot;
+<a title="distance" href="http://en.wikipedia.org/wiki/Distance" >
+distance</a> between two points that one would measure with a ruler, and is given by the
+<a title="Pythagorean formula" href="http://en.wikipedia.org/wiki/Pythagorean_theorem" >
+Pythagorean formula</a>. By using this formula as distance, Euclidean space (or even any
+<a title="inner product space" href="http://en.wikipedia.org/wiki/Inner_product_space" >
+inner product space</a>) becomes a <a title="metric space" href="http://en.wikipedia.org/wiki/Metric_space" >
+metric space</a>. The associated <a title="norm" href="http://en.wikipedia.org/wiki/Norm_(mathematics)" >
+norm</a> is called the <strong><a title="Euclidean norm" href="http://en.wikipedia.org/wiki/Norm_(mathematics)#Euclidean_norm" >Euclidean norm</a>.</strong> Older literature refers to the metric as
+<strong>Pythagorean metric</strong>.</p>
+</blockquote>
+<p style="text-align:justify">When calculating <a title="Euclidean distance" rel="tag" href="http://en.wikipedia.org/wiki/Euclidean_distance" >
+Euclidean distance</a> the algorithm implemented can be expressed as follows:</p>
+<p><img id="91928" src="description/Euclidean_distance_Algoritm.png" alt="" width="497" height="66" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><strong><em>Zurich: Block Size 10, Factor 1, Euclidean</em></strong></p>
+<p><img id="91918" src="description/Zurich_BlockSize10_Factor1_Euclidean.jpg" alt="" width="500" height="375" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">As an alternative to calculating <a title="Euclidean distance" rel="tag" href="http://en.wikipedia.org/wiki/Euclidean_distance" >
+Euclidean distance</a>, the sample source code also implements <a title="Manhattan Distance" rel="tag" href="http://en.wikipedia.org/wiki/Manhattan_distance" >
+Manhattan Distance</a> calculation. Often <a title="Manhattan Distance" rel="tag" href="http://en.wikipedia.org/wiki/Manhattan_distance" >
+Manhattan Distance</a> calculation will be referred to as <a title="City Block" rel="tag" href="http://en.wikipedia.org/wiki/Manhattan_distance" >
+City Block</a>, <a title="Taxicab Geometry" rel="tag" href="http://en.wikipedia.org/wiki/Manhattan_distance" >
+Taxicab Geometry</a> or <a title="Rectilinear Distance" rel="tag" href="http://en.wikipedia.org/wiki/Manhattan_distance" >
+rectilinear distance</a>. From <a title="Wikipedia" rel="tag" href="http://en.wikipedia.org/wiki/Manhattan_distance" >
+Wikipedia</a> we gain the following <a title="Manhattan Distance" rel="tag" href="http://en.wikipedia.org/wiki/Manhattan_distance" >
+description</a>:</p>
+<blockquote>
+<p><strong>Taxicab geometry</strong>, considered by <a title="Hermann Minkowski" href="http://en.wikipedia.org/wiki/Hermann_Minkowski" >
+Hermann Minkowski</a> in the 19th century, is a form of <a title="geometry" href="http://en.wikipedia.org/wiki/Geometry" >
+geometry</a> in which the usual distance function or <a title="metric" href="http://en.wikipedia.org/wiki/Metric_space" >
+metric</a> of <a title="Euclidean geometry" href="http://en.wikipedia.org/wiki/Euclidean_geometry" >
+Euclidean geometry</a> is replaced by a new metric in which the <a title="distance" href="http://en.wikipedia.org/wiki/Distance" >
+distance</a> between two points is the sum of the <a title="absolute differences" href="http://en.wikipedia.org/wiki/Absolute_difference" >
+absolute differences</a> of their coordinates. The taxicab metric is also known as
+<strong>rectilinear distance</strong>, <strong><em>L</em><sub>1</sub> distance</strong> or
+<strong><img src="description/6c72c4de2714433908be059a006a95d9.png" alt="\ell_1"> norm</strong> (see
+<a href="http://en.wikipedia.org/wiki/Lp_space"><em>L</em><sup><em>p</em></sup> space</a>),
+<strong>city block distance</strong>, <strong>Manhattan distance</strong>, or <strong>
+Manhattan length</strong>, with corresponding variations in the name of the geometry.<sup><a href="http://en.wikipedia.org/wiki/Manhattan_distance#cite_note-1">[1]</a></sup> The latter names allude to the
+<a href="http://en.wikipedia.org/wiki/Commissioners%27_Plan_of_1811">grid layout of most streets</a> on the island of
+<a href="http://en.wikipedia.org/wiki/Manhattan">Manhattan</a>, which causes the shortest path a car could take between two intersections in the
+<a href="http://en.wikipedia.org/wiki/Borough">borough</a> to have length equal to the intersections&rsquo; distance in taxicab geometry</p>
+</blockquote>
+<p style="text-align:justify">When calculating <a title="Manhattan Distance" rel="tag" href="http://en.wikipedia.org/wiki/Manhattan_distance" >
+Manhattan Distance</a> the algorithm implemented can be expressed as follows:</p>
+<p><img id="91929" src="description/Manhattan_distance_Algoritm.png" alt="" width="433" height="57" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><strong><em>Port Edward: Block Size 10, Factor 4, Euclidean</em></strong></p>
+<p><img id="91919" src="description/PortElizabeth_BlockSize10_Factor4_Euclidean.jpg" alt="" width="500" height="375" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p><a title="Chebyshev Distance" rel="tag" href="http://en.wikipedia.org/wiki/Chebyshev_distance" >Chebyshev Distance</a>, a distance algorithm resembling the way in which a King Chess piece may move on a chess board. The following
+<a title="Chebyshev Distance" rel="tag" href="http://en.wikipedia.org/wiki/Chebyshev_distance" >
+description</a> we gain from <a title="Wikipedia" rel="tag" href="http://en.wikipedia.org/wiki/Chebyshev_distance" >
+Wikipedia</a>:</p>
+<blockquote>
+<p>In <a title="mathematics" href="http://en.wikipedia.org/wiki/Mathematics" >
+mathematics</a>, <strong>Chebyshev distance</strong> (or <strong>Tchebychev distance</strong>),
+<strong>Maximum metric</strong>, or <a title="L∞ metric" href="http://en.wikipedia.org/wiki/Lp_space" >
+L&infin; metric</a><sup><a href="http://en.wikipedia.org/wiki/Chebyshev_distance#cite_note-1">[1]</a></sup> is a
+<a title="metric" href="http://en.wikipedia.org/wiki/Metric_(mathematics)" >
+metric</a> defined on a <a title="vector space" href="http://en.wikipedia.org/wiki/Vector_space" >
+vector space</a> where the <a title="distance" href="http://en.wikipedia.org/wiki/Distance" >
+distance</a> between two <a title="vectors" href="http://en.wikipedia.org/wiki/Coordinate_vector" >
+vectors</a> is the greatest of their differences along any coordinate dimension.<sup><a href="http://en.wikipedia.org/wiki/Chebyshev_distance#cite_note-2">[2]</a></sup> It is named after
+<a title="Pafnuty Chebyshev" href="http://en.wikipedia.org/wiki/Pafnuty_Chebyshev" >
+Pafnuty Chebyshev</a>.</p>
+<p>It is also known as <strong>chessboard distance</strong>, since in the game of
+<a title="chess" href="http://en.wikipedia.org/wiki/Chess" >chess</a> the minimum number of moves needed by a
+<a title="king" href="http://en.wikipedia.org/wiki/King_(chess)" >
+king</a> to go from one square on a <a href="http://en.wikipedia.org/wiki/Chessboard">
+chessboard</a> to another equals the Chebyshev distance between the centers of the squares, if the squares have side length one, as represented in 2-D spatial coordinates with axes aligned to the edges of the board.<sup><a href="http://en.wikipedia.org/wiki/Chebyshev_distance#cite_note-3">[3]</a></sup>
+ For example, the Chebyshev distance between f6 and e2 equals 4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</blockquote>
+<p>When calculating <a title="Chebyshev Distance" rel="tag" href="http://en.wikipedia.org/wiki/Chebyshev_distance" >
+Chebyshev Distance</a> the algorithm implemented can be expressed as follows:</p>
+<p><img id="91930" src="description/Chebyshev_distance_Algoritm.png" alt="" width="491" height="57" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><strong><em>Salzburg: Block Size 20, Factor 1, Chebyshev</em></strong></p>
+<p><img id="91920" src="description/Saltzburg_BlockSize20_Factor1_Chebyshev.jpg" alt="" width="500" height="375" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Gradient Based Edge Detection</h1>
+<p style="text-align:justify">Various methods of <a title="Wikipedia: Edge Detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+image edge detection</a> can easily be implemented in C#. Each method of <a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+edge detection</a> provides a set of benefits, usually weighed against a set of trade-offs. In this article and the accompanying sample source code the
+<strong><em>Gradient Based Edge Detection</em></strong> method has been implement.</p>
+<p style="text-align:justify">Take into regard that every region within the rendered
+<a title="Voronoi Diagrams" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >
+Voronoi Diagram</a> will only express a single colour, although most regions differ in the single colour they express. Once all pixels have been associated to a region and all pixel colour values have been updated the resulting
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> defines mostly clearly distinguishable&nbsp; colour gradients. A <a title="Gradient Based" rel="tag" href="http://en.wikipedia.org/wiki/Image_gradient" >
+Gradient Based</a> method of <a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+edge detection</a> performs efficiently at detecting <a title="Image Edges" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+image edges</a>. The edges detected are defined between different regions.</p>
+<p style="text-align:justify">An <a title="Image Gradient" rel="tag" href="http://en.wikipedia.org/wiki/Image_gradient" >
+image gradient</a> can be considered as a difference in colour intensity relating to a specific direction. Only once all tasks related to applying the
+<strong><em>Stained Glass Filter</em></strong> have been completed should the <strong>
+<em>Gradient Based Edge Detection</em></strong> be applied. The steps involved in applying
+<strong><em>Gradient Based Edge Detection</em></strong> can be described as follows:</p>
+<ol>
+<li style="text-align:justify"><strong><em>Iterate each pixel &ndash;</em></strong> Each pixel forming part of a source/input
+<a href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx">image</a> should be iterated.
+</li><li style="text-align:justify"><strong><em>Determine Horizontal and Vertical Gradients &ndash;</em></strong> Calculate the colour value difference between the currently iterated pixel&rsquo;s
+<strong><em>left</em></strong> and <strong><em>right</em></strong> neighbour pixel as well as the
+<strong><em>top</em></strong> and <strong><em>bottom</em></strong> neighbour pixel. If the gradient exceeds the specified threshold continue to step 8.
+</li><li style="text-align:justify"><strong><em>Determine Horizontal Gradient &ndash;</em></strong> Calculate the colour value difference between the currently iterated pixel&rsquo;s
+<strong><em>left</em></strong> and <strong><em>right</em></strong> neighbour pixel. If the gradient exceeds the specified threshold continue to step 8.
+</li><li style="text-align:justify"><strong><em>Determine Vertical Gradient &ndash;</em></strong> Calculate the colour value difference between the currently iterated pixel&rsquo;s
+<strong><em>top</em></strong> and <strong><em>bottom</em></strong> neighbour pixel. If the gradient exceeds the specified threshold continue to step 8.
+</li><li style="text-align:justify"><strong><em>Determine Diagonal Gradients &ndash;</em></strong> Calculate the colour value difference between the currently iterated pixel&rsquo;s
+<strong><em>North-Western</em></strong> and <em><strong>South-Eastern</strong></em> neighbour pixel as well as the
+<strong><em>North-Eastern</em></strong> and <strong><em>South-Western</em></strong> neighbour pixel. If the gradient exceeds the specified threshold continue to step 8.
+</li><li style="text-align:justify"><strong><em>Determine NW-SE Gradient &ndash;</em></strong> Calculate the colour value difference between the currently iterated pixel&rsquo;s
+<strong><em>North-Western</em></strong> and <strong><em>South-Eastern</em></strong> neighbour pixel. If the gradient exceeds the specified threshold continue to step 8.
+</li><li style="text-align:justify"><strong><em>Determine NE-SW Gradient&nbsp; &ndash;</em></strong> Calculate the colour value difference between the currently iterated pixel&rsquo;s
+<strong><em>North-Eastern</em></strong> and <strong><em>South-Western</em></strong> neighbour pixel.
+</li><li style="text-align:justify"><strong><em>Determine and set result pixel value &ndash;</em></strong> If any of the six gradients calculated exceeded the specified threshold value set the related pixel in the resulting image to the
+<strong><em>Edge Colour</em></strong> specified by the user, if not, set the related pixel equal to the source pixel colour value.
+</li></ol>
+<p style="text-align:center"><strong><em>Zurich: Block Size 10, Factor 4, Chebyshev</em></strong></p>
+<p><img id="91921" src="description/Zurich3_BlockSize10_Factor4_Chebyshev.jpg" alt="" width="500" height="375" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Implementing a Stained Glass Image Filter</h1>
+<p>The sample source code defines two helper classes, both implemented when applying the
+<strong><em>Stained Glass Image Filter</em></strong>. The <strong><em>Pixel</em></strong> class represents a single pixel in terms of an
+<strong><em>XY-Coordinate</em></strong> and <strong><em>Red</em></strong>, <strong>
+<em>Green</em></strong> and <strong><em>Blue</em></strong> values. The definition as follows:</p>
+<div>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public class Pixel  
+{
+    private int xOffset = 0; 
+    public int XOffset 
+    {
+        get { return xOffset; } set { xOffset = value; } 
+    }
+
+    private int yOffset = 0; 
+    public int YOffset 
+    { 
+        get { return yOffset; } set { yOffset = value; }
+    } 
+
+    private byte blue = 0; 
+    public byte Blue 
+    { 
+        get { return blue; } set { blue = value; } 
+    }
+
+    private byte green = 0; 
+    public byte Green 
+    {
+        get { return green; } set { green = value; } 
+    } 
+
+    private byte red = 0; 
+    public byte Red 
+    { 
+        get { return red; } set { red = value; }
+    }
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">class</span>&nbsp;Pixel&nbsp;&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;xOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;XOffset&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;{&nbsp;<span class="cs__keyword">return</span>&nbsp;xOffset;&nbsp;}&nbsp;<span class="cs__keyword">set</span>&nbsp;{&nbsp;xOffset&nbsp;=&nbsp;<span class="cs__keyword">value</span>;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;yOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;YOffset&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;{&nbsp;<span class="cs__keyword">return</span>&nbsp;yOffset;&nbsp;}&nbsp;<span class="cs__keyword">set</span>&nbsp;{&nbsp;yOffset&nbsp;=&nbsp;<span class="cs__keyword">value</span>;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">byte</span>&nbsp;blue&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">byte</span>&nbsp;Blue&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;{&nbsp;<span class="cs__keyword">return</span>&nbsp;blue;&nbsp;}&nbsp;<span class="cs__keyword">set</span>&nbsp;{&nbsp;blue&nbsp;=&nbsp;<span class="cs__keyword">value</span>;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">byte</span>&nbsp;green&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">byte</span>&nbsp;Green&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;{&nbsp;<span class="cs__keyword">return</span>&nbsp;green;&nbsp;}&nbsp;<span class="cs__keyword">set</span>&nbsp;{&nbsp;green&nbsp;=&nbsp;<span class="cs__keyword">value</span>;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">byte</span>&nbsp;red&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">byte</span>&nbsp;Red&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;{&nbsp;<span class="cs__keyword">return</span>&nbsp;red;&nbsp;}&nbsp;<span class="cs__keyword">set</span>&nbsp;{&nbsp;red&nbsp;=&nbsp;<span class="cs__keyword">value</span>;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+&nbsp;</div>
+<p style="text-align:center"><strong><em>Zurich: Block Size 10, Factor 1, Chebyshev, Edge Threshold 1</em></strong>&nbsp;</p>
+<p><img id="91922" src="description/Zurich4_BlockSize10_Factor1_Chebyshev_EdgeThreshold1.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">The <strong><em>VoronoiPoint</em></strong> class serves as method of recording randomly generated coordinates and referencing a region&rsquo;s associated pixels. The definition as follows:</p>
+<div>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public class VoronoiPoint 
+{
+    private int xOffset = 0; 
+    public int XOffset 
+    {
+        get  { return xOffset; } set { xOffset = value; }
+    }
+
+    private int yOffset = 0; 
+    public int YOffset 
+    { 
+        get  { return yOffset; } set { yOffset = value; } 
+    }
+
+    private int blueTotal = 0; 
+    public int BlueTotal 
+    { 
+        get  { return blueTotal; } set { blueTotal = value; }
+    } 
+
+    private int greenTotal = 0; 
+    public int GreenTotal 
+    {
+        get  {return greenTotal; } set { greenTotal = value; }
+    } 
+
+    private int redTotal = 0; 
+    public int RedTotal 
+    { 
+        get  { return redTotal; } set { redTotal = value; }
+    } 
+
+    public void CalculateAverages() 
+    {
+        if (pixelCollection.Count &gt; 0) 
+        {
+            blueAverage = blueTotal / pixelCollection.Count; 
+            greenAverage = greenTotal / pixelCollection.Count; 
+            redAverage = redTotal / pixelCollection.Count; 
+        }
+    }
+
+    private int blueAverage = 0; 
+    public int BlueAverage 
+    {
+        get { return blueAverage; } 
+    } 
+
+    private int greenAverage = 0; 
+    public int GreenAverage 
+    {
+        get { return greenAverage; }
+    }
+
+    private int redAverage = 0; 
+    public int RedAverage 
+    { 
+        get { return redAverage; } 
+    }
+
+    private List&lt;Pixel&gt; pixelCollection = new List&lt;Pixel&gt;(); 
+    public List&lt;Pixel&gt; PixelCollection 
+    {
+        get { return pixelCollection; }
+    }
+
+    public void AddPixel(Pixel pixel) 
+    { 
+        blueTotal &#43;= pixel.Blue; 
+        greenTotal &#43;= pixel.Green; 
+        redTotal &#43;= pixel.Red; 
+
+        pixelCollection.Add(pixel); 
+    } 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">class</span>&nbsp;VoronoiPoint&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;xOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;XOffset&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;&nbsp;{&nbsp;<span class="cs__keyword">return</span>&nbsp;xOffset;&nbsp;}&nbsp;<span class="cs__keyword">set</span>&nbsp;{&nbsp;xOffset&nbsp;=&nbsp;<span class="cs__keyword">value</span>;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;yOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;YOffset&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;&nbsp;{&nbsp;<span class="cs__keyword">return</span>&nbsp;yOffset;&nbsp;}&nbsp;<span class="cs__keyword">set</span>&nbsp;{&nbsp;yOffset&nbsp;=&nbsp;<span class="cs__keyword">value</span>;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;blueTotal&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;BlueTotal&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;&nbsp;{&nbsp;<span class="cs__keyword">return</span>&nbsp;blueTotal;&nbsp;}&nbsp;<span class="cs__keyword">set</span>&nbsp;{&nbsp;blueTotal&nbsp;=&nbsp;<span class="cs__keyword">value</span>;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;greenTotal&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;GreenTotal&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;&nbsp;{<span class="cs__keyword">return</span>&nbsp;greenTotal;&nbsp;}&nbsp;<span class="cs__keyword">set</span>&nbsp;{&nbsp;greenTotal&nbsp;=&nbsp;<span class="cs__keyword">value</span>;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;redTotal&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;RedTotal&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;&nbsp;{&nbsp;<span class="cs__keyword">return</span>&nbsp;redTotal;&nbsp;}&nbsp;<span class="cs__keyword">set</span>&nbsp;{&nbsp;redTotal&nbsp;=&nbsp;<span class="cs__keyword">value</span>;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">void</span>&nbsp;CalculateAverages()&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(pixelCollection.Count&nbsp;&gt;&nbsp;<span class="cs__number">0</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blueAverage&nbsp;=&nbsp;blueTotal&nbsp;/&nbsp;pixelCollection.Count;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;greenAverage&nbsp;=&nbsp;greenTotal&nbsp;/&nbsp;pixelCollection.Count;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;redAverage&nbsp;=&nbsp;redTotal&nbsp;/&nbsp;pixelCollection.Count;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;blueAverage&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;BlueAverage&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;{&nbsp;<span class="cs__keyword">return</span>&nbsp;blueAverage;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;greenAverage&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;GreenAverage&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;{&nbsp;<span class="cs__keyword">return</span>&nbsp;greenAverage;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;redAverage&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;RedAverage&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;{&nbsp;<span class="cs__keyword">return</span>&nbsp;redAverage;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">private</span>&nbsp;List&lt;Pixel&gt;&nbsp;pixelCollection&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;List&lt;Pixel&gt;();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;List&lt;Pixel&gt;&nbsp;PixelCollection&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;{&nbsp;<span class="cs__keyword">return</span>&nbsp;pixelCollection;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">void</span>&nbsp;AddPixel(Pixel&nbsp;pixel)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blueTotal&nbsp;&#43;=&nbsp;pixel.Blue;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;greenTotal&nbsp;&#43;=&nbsp;pixel.Green;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;redTotal&nbsp;&#43;=&nbsp;pixel.Red;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelCollection.Add(pixel);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+</div>
+<p style="text-align:center"><strong><em>Zurich: Block Size 20, Factor 1, Euclidean, Edge Threshold 1</em></strong></p>
+<p><img id="91923" src="description/Zurich_BlockSize20_Factor1_Euclidean_EdgeThreshold1.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">From the perspective of a filter implementation code base the only requirement comes in the form of having to invoke the
+<strong><em>StainedGlassColorFilter</em></strong> <a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a>, no additional work is required from external code consumers. The
+<strong><em>StainedGlassColorFilter</em></strong> method has been defined as an <a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> targeting the <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class. The <strong><em>StainedGlassColorFilter</em></strong> method definition as follows:</p>
+<div>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Bitmap StainedGlassColorFilter(this Bitmap sourceBitmap,  
+                                             int blockSize, double blockFactor, 
+                                             DistanceFormulaType distanceType, 
+                                             bool highlightEdges,  
+                                             byte edgeThreshold, Color edgeColor) 
+{
+    BitmapData sourceData = 
+               sourceBitmap.LockBits(new Rectangle(0, 0, 
+               sourceBitmap.Width, sourceBitmap.Height), 
+               ImageLockMode.ReadOnly, 
+               PixelFormat.Format32bppArgb); 
+
+    byte[] pixelBuffer = new byte[sourceData.Stride * 
+                                  sourceData.Height]; 
+
+    byte[] resultBuffer = new byte[sourceData.Stride * 
+                                   sourceData.Height]; 
+
+    Marshal.Copy(sourceData.Scan0, pixelBuffer, 0, 
+                               pixelBuffer.Length); 
+
+    sourceBitmap.UnlockBits(sourceData); 
+
+    int neighbourHoodTotal = 0; 
+    int sourceOffset = 0; 
+    int resultOffset = 0; 
+    int currentPixelDistance = 0; 
+    int nearestPixelDistance = 0; 
+    int nearesttPointIndex = 0; 
+
+    Random randomizer = new Random(); 
+
+    List&lt;VoronoiPoint&gt; randomPointList = new List&lt;VoronoiPoint&gt;(); 
+
+    for (int row = 0; row &lt; sourceBitmap.Height - blockSize; row &#43;= blockSize) 
+    {
+        for (int col = 0; col &lt; sourceBitmap.Width - blockSize; col &#43;= blockSize) 
+        {
+            sourceOffset = row * sourceData.Stride &#43; col * 4; 
+
+            neighbourHoodTotal = 0; 
+
+            for (int y = 0; y &lt; blockSize; y&#43;&#43;) 
+            { 
+                for (int x = 0; x &lt; blockSize; x&#43;&#43;) 
+                { 
+                    resultOffset = sourceOffset &#43; y * sourceData.Stride &#43; x * 4; 
+                    neighbourHoodTotal &#43;= pixelBuffer[resultOffset]; 
+                    neighbourHoodTotal &#43;= pixelBuffer[resultOffset &#43; 1]; 
+                    neighbourHoodTotal &#43;= pixelBuffer[resultOffset &#43; 2]; 
+                }
+            }
+
+            randomizer = new Random(neighbourHoodTotal); 
+
+            VoronoiPoint randomPoint = new VoronoiPoint(); 
+            randomPoint.XOffset = randomizer.Next(0, blockSize) &#43; col; 
+            randomPoint.YOffset = randomizer.Next(0, blockSize) &#43; row; 
+
+            randomPointList.Add(randomPoint); 
+        }
+    }
+
+    int rowOffset = 0; 
+    int colOffset = 0; 
+
+    for (int bufferOffset = 0; bufferOffset &lt; pixelBuffer.Length - 4; bufferOffset &#43;= 4) 
+    {
+        rowOffset = bufferOffset / sourceData.Stride; 
+        colOffset = (bufferOffset % sourceData.Stride) / 4; 
+
+        currentPixelDistance = 0; 
+        nearestPixelDistance = blockSize * 4; 
+        nearesttPointIndex = 0; 
+
+        List&lt;VoronoiPoint&gt; pointSubset = new List&lt;VoronoiPoint&gt;(); 
+
+        pointSubset.AddRange(from t in randomPointList  
+                             where 
+                             rowOffset &gt;= t.YOffset - blockSize * 2 &amp;&amp; 
+                             rowOffset &lt;= t.YOffset &#43; blockSize * 2  
+                             select t); 
+
+        for (int k = 0; k &lt; pointSubset.Count; k&#43;&#43;) 
+        { 
+            if (distanceType == DistanceFormulaType.Euclidean) 
+            {
+                currentPixelDistance =  
+                CalculateDistanceEuclidean(pointSubset[k].XOffset,  
+                     colOffset, pointSubset[k].YOffset, rowOffset); 
+            }
+            else if (distanceType == DistanceFormulaType.Manhattan) 
+            {
+                currentPixelDistance =  
+                CalculateDistanceManhattan(pointSubset[k].XOffset,  
+                     colOffset, pointSubset[k].YOffset, rowOffset); 
+            } 
+            else if (distanceType == DistanceFormulaType.Chebyshev) 
+            {
+                currentPixelDistance =  
+                CalculateDistanceChebyshev(pointSubset[k].XOffset,  
+                     colOffset, pointSubset[k].YOffset, rowOffset); 
+            }
+ 
+            if (currentPixelDistance &lt;= nearestPixelDistance) 
+            {
+                nearestPixelDistance = currentPixelDistance; 
+                nearesttPointIndex = k; 
+ 
+                if (nearestPixelDistance &lt;= blockSize / blockFactor) 
+                { 
+                    break; 
+                }
+            }
+        }
+
+        Pixel tmpPixel = new Pixel (); 
+        tmpPixel.XOffset = colOffset; 
+        tmpPixel.YOffset = rowOffset; 
+        tmpPixel.Blue = pixelBuffer[bufferOffset]; 
+        tmpPixel.Green = pixelBuffer[bufferOffset &#43; 1]; 
+        tmpPixel.Red = pixelBuffer[bufferOffset &#43; 2]; 
+
+        pointSubset[nearesttPointIndex].AddPixel(tmpPixel); 
+    }
+
+    for (int k = 0; k &lt; randomPointList.Count; k&#43;&#43;) 
+    {
+        randomPointList[k].CalculateAverages(); 
+
+        for (int i = 0; i &lt; randomPointList[k].PixelCollection.Count; i&#43;&#43;) 
+        {
+            resultOffset = randomPointList[k].PixelCollection[i].YOffset *  
+                           sourceData.Stride &#43;  
+                           randomPointList[k].PixelCollection[i].XOffset * 4; 
+
+            resultBuffer[resultOffset] = (byte)randomPointList[k].BlueAverage; 
+            resultBuffer[resultOffset &#43; 1] = (byte)randomPointList[k].GreenAverage; 
+            resultBuffer[resultOffset &#43; 2] = (byte)randomPointList[k].RedAverage; 
+
+            resultBuffer[resultOffset &#43; 3] = 255; 
+        }
+    }
+
+    Bitmap resultBitmap = new Bitmap(sourceBitmap.Width, 
+                                     sourceBitmap.Height); 
+
+    BitmapData resultData = 
+               resultBitmap.LockBits(new Rectangle (0, 0, 
+               resultBitmap.Width, resultBitmap.Height), 
+               ImageLockMode.WriteOnly, 
+               PixelFormat.Format32bppArgb); 
+
+    Marshal.Copy(resultBuffer, 0, resultData.Scan0, 
+                               resultBuffer.Length); 
+
+    resultBitmap.UnlockBits(resultData); 
+
+    if (highlightEdges == true ) 
+    {
+        resultBitmap =  
+        resultBitmap.GradientBasedEdgeDetectionFilter(edgeColor, edgeThreshold); 
+    } 
+
+    return resultBitmap; 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;StainedGlassColorFilter(<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;blockSize,&nbsp;<span class="cs__keyword">double</span>&nbsp;blockFactor,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DistanceFormulaType&nbsp;distanceType,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">bool</span>&nbsp;highlightEdges,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>&nbsp;edgeThreshold,&nbsp;Color&nbsp;edgeColor)&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;sourceData&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Width,&nbsp;sourceBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.ReadOnly,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;pixelBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;resultBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(sourceData.Scan0,&nbsp;pixelBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer.Length);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.UnlockBits(sourceData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;neighbourHoodTotal&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;sourceOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;resultOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;currentPixelDistance&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;nearestPixelDistance&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;nearesttPointIndex&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Random&nbsp;randomizer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Random();&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;List&lt;VoronoiPoint&gt;&nbsp;randomPointList&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;List&lt;VoronoiPoint&gt;();&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;row&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;row&nbsp;&lt;&nbsp;sourceBitmap.Height&nbsp;-&nbsp;blockSize;&nbsp;row&nbsp;&#43;=&nbsp;blockSize)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;col&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;col&nbsp;&lt;&nbsp;sourceBitmap.Width&nbsp;-&nbsp;blockSize;&nbsp;col&nbsp;&#43;=&nbsp;blockSize)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;=&nbsp;row&nbsp;*&nbsp;sourceData.Stride&nbsp;&#43;&nbsp;col&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;neighbourHoodTotal&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;y&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;y&nbsp;&lt;&nbsp;blockSize;&nbsp;y&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;x&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;x&nbsp;&lt;&nbsp;blockSize;&nbsp;x&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultOffset&nbsp;=&nbsp;sourceOffset&nbsp;&#43;&nbsp;y&nbsp;*&nbsp;sourceData.Stride&nbsp;&#43;&nbsp;x&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;neighbourHoodTotal&nbsp;&#43;=&nbsp;pixelBuffer[resultOffset];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;neighbourHoodTotal&nbsp;&#43;=&nbsp;pixelBuffer[resultOffset&nbsp;&#43;&nbsp;<span class="cs__number">1</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;neighbourHoodTotal&nbsp;&#43;=&nbsp;pixelBuffer[resultOffset&nbsp;&#43;&nbsp;<span class="cs__number">2</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;randomizer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Random(neighbourHoodTotal);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VoronoiPoint&nbsp;randomPoint&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;VoronoiPoint();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;randomPoint.XOffset&nbsp;=&nbsp;randomizer.Next(<span class="cs__number">0</span>,&nbsp;blockSize)&nbsp;&#43;&nbsp;col;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;randomPoint.YOffset&nbsp;=&nbsp;randomizer.Next(<span class="cs__number">0</span>,&nbsp;blockSize)&nbsp;&#43;&nbsp;row;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;randomPointList.Add(randomPoint);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;rowOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;colOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;bufferOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;bufferOffset&nbsp;&lt;&nbsp;pixelBuffer.Length&nbsp;-&nbsp;<span class="cs__number">4</span>;&nbsp;bufferOffset&nbsp;&#43;=&nbsp;<span class="cs__number">4</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rowOffset&nbsp;=&nbsp;bufferOffset&nbsp;/&nbsp;sourceData.Stride;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colOffset&nbsp;=&nbsp;(bufferOffset&nbsp;%&nbsp;sourceData.Stride)&nbsp;/&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currentPixelDistance&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nearestPixelDistance&nbsp;=&nbsp;blockSize&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nearesttPointIndex&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;List&lt;VoronoiPoint&gt;&nbsp;pointSubset&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;List&lt;VoronoiPoint&gt;();&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pointSubset.AddRange(from&nbsp;t&nbsp;<span class="cs__keyword">in</span>&nbsp;randomPointList&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rowOffset&nbsp;&gt;=&nbsp;t.YOffset&nbsp;-&nbsp;blockSize&nbsp;*&nbsp;<span class="cs__number">2</span>&nbsp;&amp;&amp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rowOffset&nbsp;&lt;=&nbsp;t.YOffset&nbsp;&#43;&nbsp;blockSize&nbsp;*&nbsp;<span class="cs__number">2</span>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select&nbsp;t);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;k&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;k&nbsp;&lt;&nbsp;pointSubset.Count;&nbsp;k&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(distanceType&nbsp;==&nbsp;DistanceFormulaType.Euclidean)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currentPixelDistance&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CalculateDistanceEuclidean(pointSubset[k].XOffset,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colOffset,&nbsp;pointSubset[k].YOffset,&nbsp;rowOffset);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;<span class="cs__keyword">if</span>&nbsp;(distanceType&nbsp;==&nbsp;DistanceFormulaType.Manhattan)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currentPixelDistance&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CalculateDistanceManhattan(pointSubset[k].XOffset,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colOffset,&nbsp;pointSubset[k].YOffset,&nbsp;rowOffset);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;<span class="cs__keyword">if</span>&nbsp;(distanceType&nbsp;==&nbsp;DistanceFormulaType.Chebyshev)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currentPixelDistance&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CalculateDistanceChebyshev(pointSubset[k].XOffset,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colOffset,&nbsp;pointSubset[k].YOffset,&nbsp;rowOffset);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(currentPixelDistance&nbsp;&lt;=&nbsp;nearestPixelDistance)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nearestPixelDistance&nbsp;=&nbsp;currentPixelDistance;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nearesttPointIndex&nbsp;=&nbsp;k;&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(nearestPixelDistance&nbsp;&lt;=&nbsp;blockSize&nbsp;/&nbsp;blockFactor)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">break</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pixel&nbsp;tmpPixel&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Pixel&nbsp;();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmpPixel.XOffset&nbsp;=&nbsp;colOffset;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmpPixel.YOffset&nbsp;=&nbsp;rowOffset;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmpPixel.Blue&nbsp;=&nbsp;pixelBuffer[bufferOffset];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmpPixel.Green&nbsp;=&nbsp;pixelBuffer[bufferOffset&nbsp;&#43;&nbsp;<span class="cs__number">1</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmpPixel.Red&nbsp;=&nbsp;pixelBuffer[bufferOffset&nbsp;&#43;&nbsp;<span class="cs__number">2</span>];&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pointSubset[nearesttPointIndex].AddPixel(tmpPixel);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;k&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;k&nbsp;&lt;&nbsp;randomPointList.Count;&nbsp;k&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;randomPointList[k].CalculateAverages();&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;i&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;i&nbsp;&lt;&nbsp;randomPointList[k].PixelCollection.Count;&nbsp;i&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultOffset&nbsp;=&nbsp;randomPointList[k].PixelCollection[i].YOffset&nbsp;*&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceData.Stride&nbsp;&#43;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;randomPointList[k].PixelCollection[i].XOffset&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultOffset]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)randomPointList[k].BlueAverage;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultOffset&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)randomPointList[k].GreenAverage;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultOffset&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)randomPointList[k].RedAverage;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultOffset&nbsp;&#43;&nbsp;<span class="cs__number">3</span>]&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Bitmap&nbsp;resultBitmap&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Bitmap(sourceBitmap.Width,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Height);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;resultData&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle&nbsp;(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.Width,&nbsp;resultBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.WriteOnly,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(resultBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;resultData.Scan0,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer.Length);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.UnlockBits(resultData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(highlightEdges&nbsp;==&nbsp;<span class="cs__keyword">true</span>&nbsp;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.GradientBasedEdgeDetectionFilter(edgeColor,&nbsp;edgeThreshold);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;resultBitmap;&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+</div>
+<p style="text-align:center"><strong><em>Locarno: Block Size 10, Factor 4, Euclidean, Edge Threshold 1</em></strong></p>
+<p><img id="91924" src="description/Locarno_BlockSize10_Factor4_Euclidean_EdgeThreshold1.jpg" alt="" width="500" height="375" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Implementing Pixel Coordinate Distance Calculations</h1>
+<p style="text-align:justify">As mentioned earlier, this article and the accompanying sample source code support coordinate distance calculations through three different calculation methods, namely
+<a title="Euclidean Distance" rel="tag" href="http://en.wikipedia.org/wiki/Euclidean_distance" >
+Euclidean</a>, <a title="Manhattan Distance" rel="tag" href="http://en.wikipedia.org/wiki/Manhattan_distance" >
+Manhattan</a> and <a title="Chebyshev Distance" rel="tag" href="http://en.wikipedia.org/wiki/Chebyshev_distance" >
+Chebyshev</a>. The method of distance calculation implemented depends on the configuration option specified by the user.</p>
+<p style="text-align:justify">The <strong><em>CalculateDistanceEuclidean</em></strong> method calculates distance implementing the
+<a title="Euclidean distance" rel="tag" href="http://en.wikipedia.org/wiki/Euclidean_distance" >
+Euclidean Distance</a> Calculation method. In order to aid faster execution this method will calculate the square root of a specific value only once. Once a square root has been calculated the result is kept in memory. The following code snippet lists the definition
+ of the <strong><em>CalculateDistanceEuclidean</em></strong> method:</p>
+<div>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">private static Dictionary &lt;int,int&gt; squareRoots = new Dictionary&lt;int,int&gt;(); 
+
+private static int CalculateDistanceEuclidean(int x1, int x2, int y1, int y2) 
+{
+    int square = (x1 - x2) * (x1 - x2) &#43; (y1 - y2) * (y1 - y2); 
+ 
+    if(squareRoots.ContainsKey(square) == false) 
+    { 
+        squareRoots.Add(square, (int)Math.Sqrt(square)); 
+    }
+
+    return squareRoots[square]; 
+} </pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Dictionary&nbsp;&lt;<span class="cs__keyword">int</span>,<span class="cs__keyword">int</span>&gt;&nbsp;squareRoots&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Dictionary&lt;<span class="cs__keyword">int</span>,<span class="cs__keyword">int</span>&gt;();&nbsp;&nbsp;
+&nbsp;
+<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;CalculateDistanceEuclidean(<span class="cs__keyword">int</span>&nbsp;x1,&nbsp;<span class="cs__keyword">int</span>&nbsp;x2,&nbsp;<span class="cs__keyword">int</span>&nbsp;y1,&nbsp;<span class="cs__keyword">int</span>&nbsp;y2)&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;square&nbsp;=&nbsp;(x1&nbsp;-&nbsp;x2)&nbsp;*&nbsp;(x1&nbsp;-&nbsp;x2)&nbsp;&#43;&nbsp;(y1&nbsp;-&nbsp;y2)&nbsp;*&nbsp;(y1&nbsp;-&nbsp;y2);&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>(squareRoots.ContainsKey(square)&nbsp;==&nbsp;<span class="cs__keyword">false</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;squareRoots.Add(square,&nbsp;(<span class="cs__keyword">int</span>)Math.Sqrt(square));&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;squareRoots[square];&nbsp;&nbsp;
+}&nbsp;</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+</div>
+<p style="text-align:justify">The two other methods of calculating distance are implemented through the
+<strong><em>CalculateDistanceManhattan</em></strong> and <strong><em>CalculateDistanceChebyshev</em></strong> methods. The definition as follows:</p>
+<div>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">private static int CalculateDistanceManhattan(int x1, int x2, int y1, int y2) 
+{
+    return Math.Abs(x1 - x2) &#43; Math.Abs(y1 - y2); 
+}
+
+private static int CalculateDistanceChebyshev(int x1, int x2, int y1, int y2) 
+{ 
+    return Math.Max(Math.Abs(x1 - x2), Math.Abs(y1 - y2)); 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;CalculateDistanceManhattan(<span class="cs__keyword">int</span>&nbsp;x1,&nbsp;<span class="cs__keyword">int</span>&nbsp;x2,&nbsp;<span class="cs__keyword">int</span>&nbsp;y1,&nbsp;<span class="cs__keyword">int</span>&nbsp;y2)&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;Math.Abs(x1&nbsp;-&nbsp;x2)&nbsp;&#43;&nbsp;Math.Abs(y1&nbsp;-&nbsp;y2);&nbsp;&nbsp;
+}&nbsp;
+&nbsp;
+<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">int</span>&nbsp;CalculateDistanceChebyshev(<span class="cs__keyword">int</span>&nbsp;x1,&nbsp;<span class="cs__keyword">int</span>&nbsp;x2,&nbsp;<span class="cs__keyword">int</span>&nbsp;y1,&nbsp;<span class="cs__keyword">int</span>&nbsp;y2)&nbsp;&nbsp;
+{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;Math.Max(Math.Abs(x1&nbsp;-&nbsp;x2),&nbsp;Math.Abs(y1&nbsp;-&nbsp;y2));&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+</div>
+<p style="text-align:center"><strong><em>Bad Ragaz: Block Size 12, Factor 1, Chebyshev</em></strong></p>
+<p><img id="91925" src="description/BadRagaz_BlockSize12_Factor1_Chebyshev.jpg" alt="" width="500" height="375" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Implementing Gradient Based Edge Detection</h1>
+<p style="text-align:justify">Did you notice the very last step performed by the <strong>
+<em>StainedGlassColorFilter</em></strong> method involves implementing <strong><em>Gradient Based Edge Detection</em></strong>, depending on whether
+<a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+edge detection</a> had been specified by the user.</p>
+<p style="text-align:justify">The following code snippet provides the implementation of the
+<strong><em>GradientBasedEdgeDetectionFilter</em></strong> <a title="MSDN: Extension Methods" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a>:</p>
+<div>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Bitmap GradientBasedEdgeDetectionFilter( 
+                this Bitmap sourceBitmap, 
+                Color edgeColour, 
+                byte threshold = 0) 
+{
+    BitmapData sourceData = 
+               sourceBitmap.LockBits(new Rectangle (0, 0, 
+               sourceBitmap.Width, sourceBitmap.Height), 
+               ImageLockMode.ReadOnly, 
+               PixelFormat.Format32bppArgb); 
+
+    byte[] pixelBuffer = new byte[sourceData.Stride * sourceData.Height]; 
+    byte[] resultBuffer = new byte[sourceData.Stride * sourceData.Height]; 
+
+    Marshal.Copy(sourceData.Scan0, pixelBuffer, 0, pixelBuffer.Length); 
+    Marshal.Copy(sourceData.Scan0, resultBuffer, 0, resultBuffer.Length); 
+
+    sourceBitmap.UnlockBits(sourceData); 
+
+    int sourceOffset = 0, gradientValue = 0; 
+    bool exceedsThreshold = false; 
+
+    for(int offsetY = 1; offsetY &lt; sourceBitmap.Height - 1; offsetY&#43;&#43;) 
+    { 
+        for(int offsetX = 1; offsetX &lt; sourceBitmap.Width - 1; offsetX&#43;&#43;) 
+        {
+            sourceOffset = offsetY * sourceData.Stride &#43; offsetX * 4; 
+            gradientValue = 0; 
+            exceedsThreshold = true; 
+
+            // Horizontal Gradient 
+            CheckThreshold(pixelBuffer, 
+                           sourceOffset - 4, 
+                           sourceOffset &#43; 4, 
+                           ref gradientValue, threshold, 2); 
+            // Vertical Gradient 
+            exceedsThreshold = 
+            CheckThreshold(pixelBuffer, 
+                           sourceOffset - sourceData.Stride, 
+                           sourceOffset &#43; sourceData.Stride, 
+                           ref gradientValue, threshold, 2); 
+
+            if (exceedsThreshold == false) 
+            {
+                gradientValue = 0; 
+
+                // Horizontal Gradient 
+                exceedsThreshold = 
+                CheckThreshold(pixelBuffer, 
+                               sourceOffset - 4, 
+                               sourceOffset &#43; 4, 
+                               ref gradientValue, threshold); 
+
+                if (exceedsThreshold == false) 
+                {
+                    gradientValue = 0; 
+
+                    // Vertical Gradient 
+                    exceedsThreshold = 
+                    CheckThreshold(pixelBuffer, 
+                                   sourceOffset - sourceData.Stride, 
+                                   sourceOffset &#43; sourceData.Stride, 
+                                   ref gradientValue, threshold); 
+
+                    if (exceedsThreshold == false) 
+                    {
+                        gradientValue = 0; 
+
+                        // Diagonal Gradient : NW-SE 
+                        CheckThreshold(pixelBuffer, 
+                                       sourceOffset - 4 - sourceData.Stride, 
+                                       sourceOffset &#43; 4 &#43; sourceData.Stride, 
+                                       ref gradientValue, threshold, 2); 
+                        // Diagonal Gradient : NE-SW 
+                        exceedsThreshold = 
+                        CheckThreshold(pixelBuffer, 
+                                       sourceOffset - sourceData.Stride &#43; 4, 
+                                       sourceOffset - 4 &#43; sourceData.Stride, 
+                                       ref gradientValue, threshold, 2); 
+
+                        if (exceedsThreshold == false) 
+                         {
+                            gradientValue = 0; 
+
+                            // Diagonal Gradient : NW-SE 
+                            exceedsThreshold = 
+                            CheckThreshold(pixelBuffer, 
+                                           sourceOffset - 4 - sourceData.Stride, 
+                                           sourceOffset &#43; 4 &#43; sourceData.Stride, 
+                                           ref gradientValue, threshold); 
+
+                            if (exceedsThreshold == false) 
+                             {
+                                gradientValue = 0; 
+ 
+                                // Diagonal Gradient : NE-SW 
+                                exceedsThreshold = 
+                                CheckThreshold(pixelBuffer, 
+                                               sourceOffset - sourceData.Stride &#43; 4, 
+                                               sourceOffset &#43; sourceData.Stride - 4, 
+                                               ref gradientValue, threshold); 
+                             }
+                         } 
+                     }
+                 } 
+             }
+
+            if (exceedsThreshold == true) 
+             { 
+                resultBuffer[sourceOffset] = edgeColour.B; 
+                resultBuffer[sourceOffset &#43; 1] = edgeColour.G; 
+                resultBuffer[sourceOffset &#43; 2] = edgeColour.R; 
+             } 
+
+            resultBuffer[sourceOffset &#43; 3] = 255; 
+         }
+     }
+
+    Bitmap resultBitmap = new Bitmap (sourceBitmap.Width, sourceBitmap.Height); 
+ 
+    BitmapData resultData = resultBitmap.LockBits(new Rectangle (0, 0, 
+                            resultBitmap.Width, resultBitmap.Height), 
+                            ImageLockMode .WriteOnly, PixelFormat.Format32bppArgb); 
+
+    Marshal.Copy(resultBuffer, 0, resultData.Scan0, resultBuffer.Length); 
+    resultBitmap.UnlockBits(resultData); 
+
+    return resultBitmap; 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;GradientBasedEdgeDetectionFilter(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Color&nbsp;edgeColour,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>&nbsp;threshold&nbsp;=&nbsp;<span class="cs__number">0</span>)&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;sourceData&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle&nbsp;(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Width,&nbsp;sourceBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.ReadOnly,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;pixelBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;resultBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(sourceData.Scan0,&nbsp;pixelBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;pixelBuffer.Length);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(sourceData.Scan0,&nbsp;resultBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;resultBuffer.Length);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.UnlockBits(sourceData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;sourceOffset&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;gradientValue&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">bool</span>&nbsp;exceedsThreshold&nbsp;=&nbsp;<span class="cs__keyword">false</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>(<span class="cs__keyword">int</span>&nbsp;offsetY&nbsp;=&nbsp;<span class="cs__number">1</span>;&nbsp;offsetY&nbsp;&lt;&nbsp;sourceBitmap.Height&nbsp;-&nbsp;<span class="cs__number">1</span>;&nbsp;offsetY&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>(<span class="cs__keyword">int</span>&nbsp;offsetX&nbsp;=&nbsp;<span class="cs__number">1</span>;&nbsp;offsetX&nbsp;&lt;&nbsp;sourceBitmap.Width&nbsp;-&nbsp;<span class="cs__number">1</span>;&nbsp;offsetX&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;=&nbsp;offsetY&nbsp;*&nbsp;sourceData.Stride&nbsp;&#43;&nbsp;offsetX&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gradientValue&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exceedsThreshold&nbsp;=&nbsp;<span class="cs__keyword">true</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//&nbsp;Horizontal&nbsp;Gradient&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CheckThreshold(pixelBuffer,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;-&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">ref</span>&nbsp;gradientValue,&nbsp;threshold,&nbsp;<span class="cs__number">2</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//&nbsp;Vertical&nbsp;Gradient&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exceedsThreshold&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CheckThreshold(pixelBuffer,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;-&nbsp;sourceData.Stride,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;&#43;&nbsp;sourceData.Stride,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">ref</span>&nbsp;gradientValue,&nbsp;threshold,&nbsp;<span class="cs__number">2</span>);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(exceedsThreshold&nbsp;==&nbsp;<span class="cs__keyword">false</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gradientValue&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//&nbsp;Horizontal&nbsp;Gradient&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exceedsThreshold&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CheckThreshold(pixelBuffer,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;-&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">ref</span>&nbsp;gradientValue,&nbsp;threshold);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(exceedsThreshold&nbsp;==&nbsp;<span class="cs__keyword">false</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gradientValue&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//&nbsp;Vertical&nbsp;Gradient&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exceedsThreshold&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CheckThreshold(pixelBuffer,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;-&nbsp;sourceData.Stride,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;&#43;&nbsp;sourceData.Stride,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">ref</span>&nbsp;gradientValue,&nbsp;threshold);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(exceedsThreshold&nbsp;==&nbsp;<span class="cs__keyword">false</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gradientValue&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//&nbsp;Diagonal&nbsp;Gradient&nbsp;:&nbsp;NW-SE&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CheckThreshold(pixelBuffer,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;-&nbsp;<span class="cs__number">4</span>&nbsp;-&nbsp;sourceData.Stride,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>&nbsp;&#43;&nbsp;sourceData.Stride,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">ref</span>&nbsp;gradientValue,&nbsp;threshold,&nbsp;<span class="cs__number">2</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//&nbsp;Diagonal&nbsp;Gradient&nbsp;:&nbsp;NE-SW&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exceedsThreshold&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CheckThreshold(pixelBuffer,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;-&nbsp;sourceData.Stride&nbsp;&#43;&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;-&nbsp;<span class="cs__number">4</span>&nbsp;&#43;&nbsp;sourceData.Stride,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">ref</span>&nbsp;gradientValue,&nbsp;threshold,&nbsp;<span class="cs__number">2</span>);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(exceedsThreshold&nbsp;==&nbsp;<span class="cs__keyword">false</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gradientValue&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//&nbsp;Diagonal&nbsp;Gradient&nbsp;:&nbsp;NW-SE&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exceedsThreshold&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CheckThreshold(pixelBuffer,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;-&nbsp;<span class="cs__number">4</span>&nbsp;-&nbsp;sourceData.Stride,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>&nbsp;&#43;&nbsp;sourceData.Stride,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">ref</span>&nbsp;gradientValue,&nbsp;threshold);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(exceedsThreshold&nbsp;==&nbsp;<span class="cs__keyword">false</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gradientValue&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//&nbsp;Diagonal&nbsp;Gradient&nbsp;:&nbsp;NE-SW&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exceedsThreshold&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CheckThreshold(pixelBuffer,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;-&nbsp;sourceData.Stride&nbsp;&#43;&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceOffset&nbsp;&#43;&nbsp;sourceData.Stride&nbsp;-&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">ref</span>&nbsp;gradientValue,&nbsp;threshold);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(exceedsThreshold&nbsp;==&nbsp;<span class="cs__keyword">true</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[sourceOffset]&nbsp;=&nbsp;edgeColour.B;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[sourceOffset&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]&nbsp;=&nbsp;edgeColour.G;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[sourceOffset&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]&nbsp;=&nbsp;edgeColour.R;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[sourceOffset&nbsp;&#43;&nbsp;<span class="cs__number">3</span>]&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Bitmap&nbsp;resultBitmap&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Bitmap&nbsp;(sourceBitmap.Width,&nbsp;sourceBitmap.Height);&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;resultData&nbsp;=&nbsp;resultBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle&nbsp;(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.Width,&nbsp;resultBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode&nbsp;.WriteOnly,&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(resultBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;resultData.Scan0,&nbsp;resultBuffer.Length);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.UnlockBits(resultData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;resultBitmap;&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+</div>
+<p style="text-align:center"><strong><em>Zurich: Block Size 15, Factor 1, Manhattan, Edge Threshold 1</em></strong>&nbsp;</p>
+<p><img id="91926" src="description/Zurich2_BlockSize15_Factor1_Manhattan_EdgeThreshold1.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Sample Images</h1>
+<p style="text-align:justify">This article features a rendered graphic illustrating an example
+<a title="Voronoi Diagrams" rel="tag" href="http://en.wikipedia.org/wiki/Voronoi_diagram" >
+Voronoi Diagram</a> which has been released into the <strong><a title="Public Domain" href="http://en.wikipedia.org/wiki/en:public_domain" >public domain</a></strong> by its author,
+<strong><a title="Augochy" href="http://en.wikipedia.org/wiki/User:Augochy" >Augochy</a> at the
+<a title="Wikipedia" href="http://en.wikipedia.org/wiki/" >wikipedia</a> project</strong>. This applies worldwide. The original can be downloaded from
+<a title="Wikipedia" rel="tag" href="http://en.wikipedia.org/wiki/File:2Ddim-L2norm-10site.png" >
+Wikipedia</a>.</p>
+<p style="text-align:justify">All of the photos that appear in this article were taken by myself. Photos listed under
+<strong><em>Zurich</em></strong>, <strong><em>Locarno</em></strong> and <strong><em>Bad Ragaz</em></strong> were shot in
+<strong><em>Switzerland</em></strong>. The photo listed as <strong><em>Salzburg</em></strong> had been shot in
+<strong><em>Austria</em></strong> and the photo listed under <strong><em>Port Edward</em></strong> had been shot in
+<strong><em>South Africa</em></strong>. In order to fully realize the extent to which
+<a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> had been modified the following section details the original photos.</p>
+<p style="text-align:center"><strong><em>Zurich, Switzerland</em></strong></p>
+<p><span><strong><em><img id="91902" src="description/DSC00379.JPG" alt="" style="margin-right:auto; margin-left:auto; display:block"></em></strong></span></p>
+<p style="text-align:center"><span><strong><em>Salzburg, Austria</em></strong></span></p>
+<p style="text-align:center"><span><strong><em><img id="91903" src="description/DSC00727.JPG" alt=""></em></strong></span></p>
+<p style="text-align:center"><span><strong><em>Locarno, Switzerland</em></strong></span></p>
+<p style="text-align:center"><span><strong><em><img id="91904" src="description/DSC00807.JPG" alt=""></em></strong></span></p>
+<p style="text-align:center"><span><strong><em>Bad Ragaz, Switzerland</em></strong></span></p>
+<p style="text-align:center"><span><strong><em><img id="91905" src="description/DSC00601.JPG" alt=""></em></strong></span></p>
+<p style="text-align:center"><span><strong><em>Port Edward, South Africa</em></strong></span></p>
+<p style="text-align:center"><span><strong><em><img id="91906" src="description/DSC01424.JPG" alt="" width="500" height="375"></em></strong></span></p>
+<p style="text-align:center"><span><strong><em>Zurich, Switzerland</em></strong></span></p>
+<p style="text-align:center"><span><strong><em><img id="91907" src="description/DSC01205.JPG" alt=""></em></strong></span></p>
+<p style="text-align:center"><span><strong><em>Zurich, Switzerland</em></strong></span></p>
+<p style="text-align:center"><span><strong><em><img id="91908" src="description/DSC00525.JPG" alt=""></em></strong></span></p>
+<p style="text-align:center"><span><strong><em>Zurich, Switzerland</em></strong></span></p>
+<p style="text-align:center"><span><strong><em><img id="91909" src="description/DSC01131.JPG" alt=""></em></strong></span></p>
+<p style="text-align:center"><span><strong><em>Bad Ragaz, Switzerland</em></strong></span></p>
+<p><span><img id="91910" src="description/DSC00602.JPG" alt="" style="margin-right:auto; margin-left:auto; display:block"></span></p>
+<h1><span>Source Code Files</span></h1>
+<ul>
+<li><em>ExtBitmap.cs - Contains the Class definition of the Pixel class and VoronoiPoint class. In addition also contains the following method definitions: CalculateDistanceEuclidean, CalculateDistanceManhattan, CalculateDistanceChebyshev, GradientBasedEdgeDetectionFilter,
+ StainedGlassColorFilter.</em> </li><li><em><em>MainForm.cs - Windows Forms based sample application definition.</em></em>
+</li></ul>
+<h1>More Information</h1>
+<div>
+<p style="text-align:justify">This article is based on an article originally posted on my
+<a href="http://softwarebydefault.com/" >blog</a>:&nbsp;<a href="http://softwarebydefault.com/2013/06/30/stained-glass-image-filter/">http://softwarebydefault.com/2013/06/30/stained-glass-image-filter/</a> If you have any questions/comments please
+ feel free to make use of the Q&amp;A section on this page, also please remember to rate this article.</p>
+<p><strong><em><a title="About Dewald Esterhuizen" rel="tag" href="http://softwarebydefault.com/about/" >Dewald Esterhuizen</a></em></strong></p>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

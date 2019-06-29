@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/67b74b86-a273-4ad7-9ed5-0f97276412eaCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Bitwise Bitmap Blending</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Bitwise Bitmap Blending</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, GDI+, Windows Forms, .NET Framework 4, .NET Framework 3.5 SP1, .NET Framework, .NET Framework 4.0, C# Language, WinForms, System.Media Namespace, .NET Framework 4.5, C# 3.0, Graphics Functions, Microsoft .NET Framework 3.5 SP1, Visual C Sharp .NET, System.Drawing.<wbr />Drawing2D, Image process, Filter expression
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Graphics, C#, User Interface, Windows Forms, Graphics and 3D, Images, 2d graphics, Image manipulation, Image Gallery, Image, Imaging, Drawing, Generic C# resuable code, Image Optimization, Windows Forms Controls, C# Language Features, Graphics Functions, System.Drawing.<wbr />Drawing2D, BitmapImage, Load Image, Dynamically Image
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Phone, Data, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">4/25/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Bitwise-Bitmap-Blending-5bf968e8">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p style="text-align:justify">In this article you&rsquo;ll find a discussion on the topic of blending&nbsp;
+<a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> images into a single <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+Image</a>. Various possible methods can be employed in blending images. In this scenario image blending is achieved through means of bitwise operations, implemented on individual colour components
+<strong>Red</strong>, <strong>Green</strong> and <strong>Blue</strong>.</p>
+<h1><span>Building the Sample</span></h1>
+<p>There are&nbsp;no special requirements or instructions for building the sample source code.</p>
+<h1><span style="font-size:20px">Bitwise Operations</span></h1>
+<p style="text-align:justify">In this article we will be implementing the following bitwise operators:</p>
+<ul style="text-align:justify">
+<li>
+<p><strong>&amp;</strong> <em>Binary And</em></p>
+</li><li>
+<p><strong>|</strong> <em>Binary Or</em></p>
+</li><li>
+<p><strong>^</strong> <em>Exclusive Binary Or (XOR)</em></p>
+</li></ul>
+<p style="text-align:justify">A good description of how these operators work can be found on
+<a title="MSDN" href="http://msdn.microsoft.com/en-us/library/17zwb64t.aspx" >
+MSDN</a>:</p>
+<blockquote>
+<p style="text-align:justify">The bitwise-AND operator compares each bit of its first operand to the corresponding bit of its second operand. If both bits are 1, the corresponding result bit is set to 1. Otherwise, the corresponding result bit is set to 0.</p>
+<p style="text-align:justify">The bitwise-exclusive-OR operator compares each bit of its first operand to the corresponding bit of its second operand. If one bit is 0 and the other bit is 1, the corresponding result bit is set to 1. Otherwise, the corresponding
+ result bit is set to 0.</p>
+<p style="text-align:justify">The bitwise-inclusive-OR operator compares each bit of its first operand to the corresponding bit of its second operand. If either bit is 1, the corresponding result bit is set to 1. Otherwise, the corresponding result bit is set
+ to 0.&nbsp;</p>
+</blockquote>
+<h1><span>Using the Sample Application</span></h1>
+<p style="text-align:justify">Included with this article is a Visual Studio solution containing sample source code and a
+<a title="Windows Forms" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.form.aspx" >
+Windows Forms</a> sample application. The <strong><em>Bitwise Bitmap Blending</em></strong> Sample application allows the user to select two input/source images from the local file system. Selected source images, once specified are displayed as previews with
+ the majority of the application front end being occupied by an output <a title="PictureBox" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.picturebox.aspx" >
+PictureBox</a>.</p>
+<p style="text-align:justify">The following image is a screenshot of the <strong>
+<em>Bitwise Bitmap Blending</em></strong> application in action:</p>
+<p>&nbsp;</p>
+<div><span><img id="81161" src="description/BitwiseBitmapBlending_scaled.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></span></div>
+<div><span>&nbsp;</span></div>
+<p style="text-align:justify"><span>If the user decides to, blended images can be saved to the local file system by clicking the Save button.</span></p>
+<h1><span>The BitwiseBlend Extension method</span></h1>
+<p style="text-align:justify">The Sample Source provides the definition for the <strong>
+<em>BitwiseBlend</em></strong> extension method. This method&rsquo;s declaration indicates being an extension method targeting the
+<a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class.</p>
+<p style="text-align:justify">The <strong><em>BitwiseBlend</em></strong> method requires 4 parameters: the
+<a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> being blended with and three parameters all of <a title="MSDN: enum" rel="tag" href="http://msdn.microsoft.com/en-us/library/sbbt4032(v=vs.110).aspx" >
+enum</a> type <strong><em>BitwiseBlendType</em></strong>. The enumeration defines the available blending types in regards to bitwise operations. The following code snippet provides the definition of the
+<strong><em>BitwiseBlendType</em></strong> enum:</p>
+<div class="endscriptcode">&nbsp;
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public enum BitwiseBlendType  
+{
+   None,
+   Or,
+   And,
+   Xor
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">enum</span>&nbsp;BitwiseBlendType&nbsp;&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;None,&nbsp;
+&nbsp;&nbsp;&nbsp;Or,&nbsp;
+&nbsp;&nbsp;&nbsp;And,&nbsp;
+&nbsp;&nbsp;&nbsp;Xor&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode" style="text-align:justify">The three <strong><em>BitwiseBlendType
+</em></strong>parameters relate to a pixel&rsquo;s colour components: <strong><em>Red</em></strong>,
+<strong><em>Green</em></strong> and <strong><em>Blue</em></strong>.&nbsp;</div>
+</div>
+<p style="text-align:justify">The code snippet below details the implementation of the
+<strong><em>BitwiseBlend</em></strong> Extension method:</p>
+<div class="endscriptcode">&nbsp;
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Bitmap BitwiseBlend(this Bitmap sourceBitmap, Bitmap blendBitmap,  
+                                     BitwiseBlendType blendTypeBlue, BitwiseBlendType  
+                                     blendTypeGreen, BitwiseBlendType blendTypeRed) 
+ { 
+     BitmapData sourceData = sourceBitmap.LockBits(new Rectangle(0, 0, 
+                             sourceBitmap.Width, sourceBitmap.Height), 
+                             ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb); 
+
+ 
+     byte[] pixelBuffer = new byte[sourceData.Stride * sourceData.Height]; 
+     Marshal.Copy(sourceData.Scan0, pixelBuffer, 0, pixelBuffer.Length); 
+     sourceBitmap.UnlockBits(sourceData); 
+
+ 
+     BitmapData blendData = blendBitmap.LockBits(new Rectangle(0, 0, 
+                             blendBitmap.Width, blendBitmap.Height), 
+                             ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb); 
+
+ 
+     byte[] blendBuffer = new byte[blendData.Stride * blendData.Height]; 
+     Marshal.Copy(blendData.Scan0, blendBuffer, 0, blendBuffer.Length); 
+     blendBitmap.UnlockBits(blendData); 
+
+ 
+     int blue = 0, green = 0, red = 0; 
+
+ 
+     for (int k = 0; (k &#43; 4 &lt; pixelBuffer.Length) &amp;&amp;  
+                     (k &#43; 4 &lt; blendBuffer.Length); k &#43;= 4) 
+     { 
+         if (blendTypeBlue == BitwiseBlendType.And) 
+         { 
+             blue = pixelBuffer[k] &amp; blendBuffer[k]; 
+         } 
+         else if (blendTypeBlue == BitwiseBlendType.Or) 
+         { 
+             blue = pixelBuffer[k] | blendBuffer[k]; 
+         } 
+         else if (blendTypeBlue == BitwiseBlendType.Xor) 
+         { 
+             blue = pixelBuffer[k] ^ blendBuffer[k]; 
+         } 
+
+ 
+         if (blendTypeGreen == BitwiseBlendType.And) 
+         { 
+             green = pixelBuffer[k&#43;1] &amp; blendBuffer[k&#43;1]; 
+         }
+         else if (blendTypeGreen == BitwiseBlendType.Or) 
+         { 
+             green = pixelBuffer[k&#43;1] | blendBuffer[k&#43;1]; 
+         }
+         else if (blendTypeGreen == BitwiseBlendType.Xor) 
+         { 
+             green = pixelBuffer[k&#43;1] ^ blendBuffer[k&#43;1]; 
+         } 
+
+ 
+         if (blendTypeRed == BitwiseBlendType.And) 
+         { 
+             red = pixelBuffer[k&#43;2] &amp; blendBuffer[k&#43;2]; 
+         } 
+         else if (blendTypeRed == BitwiseBlendType.Or) 
+         { 
+             red = pixelBuffer[k&#43;2] | blendBuffer[k&#43;2]; 
+         }
+         else if (blendTypeRed == BitwiseBlendType.Xor) 
+         { 
+             red = pixelBuffer[k&#43;2] ^ blendBuffer[k&#43;2]; 
+         } 
+
+ 
+         if (blue &lt; 0) 
+         { blue = 0; } 
+         else if (blue &gt; 255) 
+         { blue = 255; } 
+
+ 
+         if (green &lt; 0) 
+         { green = 0; } 
+         else if (green &gt; 255) 
+         { green = 255; } 
+
+ 
+         if (red &lt; 0) 
+         { red = 0; } 
+         else if (red &gt; 255) 
+         { red = 255; } 
+
+ 
+         pixelBuffer[k] = (byte)blue; 
+         pixelBuffer[k &#43; 1] = (byte)green; 
+         pixelBuffer[k &#43; 2] = (byte)red; 
+     }
+
+
+      Bitmap resultBitmap = new Bitmap(sourceBitmap.Width, sourceBitmap.Height); 
+
+ 
+      BitmapData resultData = resultBitmap.LockBits(new Rectangle  (0, 0, 
+                              resultBitmap.Width, resultBitmap.Height), 
+                              ImageLockMode.WriteOnly, PixelFormat.Format32bppArgb); 
+
+ 
+      Marshal.Copy(pixelBuffer, 0, resultData.Scan0, pixelBuffer.Length); 
+      resultBitmap.UnlockBits(resultData); 
+
+ 
+      return resultBitmap; 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;BitwiseBlend(<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;Bitmap&nbsp;blendBitmap,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BitwiseBlendType&nbsp;blendTypeBlue,&nbsp;BitwiseBlendType&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blendTypeGreen,&nbsp;BitwiseBlendType&nbsp;blendTypeRed)&nbsp;&nbsp;
+&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;sourceData&nbsp;=&nbsp;sourceBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Width,&nbsp;sourceBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.ReadOnly,&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;pixelBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(sourceData.Scan0,&nbsp;pixelBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;pixelBuffer.Length);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.UnlockBits(sourceData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;blendData&nbsp;=&nbsp;blendBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blendBitmap.Width,&nbsp;blendBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.ReadOnly,&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;blendBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[blendData.Stride&nbsp;*&nbsp;blendData.Height];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(blendData.Scan0,&nbsp;blendBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;blendBuffer.Length);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blendBitmap.UnlockBits(blendData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;blue&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;green&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;red&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;k&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;(k&nbsp;&#43;&nbsp;<span class="cs__number">4</span>&nbsp;&lt;&nbsp;pixelBuffer.Length)&nbsp;&amp;&amp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(k&nbsp;&#43;&nbsp;<span class="cs__number">4</span>&nbsp;&lt;&nbsp;blendBuffer.Length);&nbsp;k&nbsp;&#43;=&nbsp;<span class="cs__number">4</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(blendTypeBlue&nbsp;==&nbsp;BitwiseBlendType.And)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blue&nbsp;=&nbsp;pixelBuffer[k]&nbsp;&amp;&nbsp;blendBuffer[k];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;<span class="cs__keyword">if</span>&nbsp;(blendTypeBlue&nbsp;==&nbsp;BitwiseBlendType.Or)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blue&nbsp;=&nbsp;pixelBuffer[k]&nbsp;|&nbsp;blendBuffer[k];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;<span class="cs__keyword">if</span>&nbsp;(blendTypeBlue&nbsp;==&nbsp;BitwiseBlendType.Xor)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blue&nbsp;=&nbsp;pixelBuffer[k]&nbsp;^&nbsp;blendBuffer[k];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(blendTypeGreen&nbsp;==&nbsp;BitwiseBlendType.And)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;green&nbsp;=&nbsp;pixelBuffer[k<span class="cs__number">&#43;1</span>]&nbsp;&amp;&nbsp;blendBuffer[k<span class="cs__number">&#43;1</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;<span class="cs__keyword">if</span>&nbsp;(blendTypeGreen&nbsp;==&nbsp;BitwiseBlendType.Or)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;green&nbsp;=&nbsp;pixelBuffer[k<span class="cs__number">&#43;1</span>]&nbsp;|&nbsp;blendBuffer[k<span class="cs__number">&#43;1</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;<span class="cs__keyword">if</span>&nbsp;(blendTypeGreen&nbsp;==&nbsp;BitwiseBlendType.Xor)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;green&nbsp;=&nbsp;pixelBuffer[k<span class="cs__number">&#43;1</span>]&nbsp;^&nbsp;blendBuffer[k<span class="cs__number">&#43;1</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(blendTypeRed&nbsp;==&nbsp;BitwiseBlendType.And)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;red&nbsp;=&nbsp;pixelBuffer[k<span class="cs__number">&#43;2</span>]&nbsp;&amp;&nbsp;blendBuffer[k<span class="cs__number">&#43;2</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;<span class="cs__keyword">if</span>&nbsp;(blendTypeRed&nbsp;==&nbsp;BitwiseBlendType.Or)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;red&nbsp;=&nbsp;pixelBuffer[k<span class="cs__number">&#43;2</span>]&nbsp;|&nbsp;blendBuffer[k<span class="cs__number">&#43;2</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;<span class="cs__keyword">if</span>&nbsp;(blendTypeRed&nbsp;==&nbsp;BitwiseBlendType.Xor)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;red&nbsp;=&nbsp;pixelBuffer[k<span class="cs__number">&#43;2</span>]&nbsp;^&nbsp;blendBuffer[k<span class="cs__number">&#43;2</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(blue&nbsp;&lt;&nbsp;<span class="cs__number">0</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;blue&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;<span class="cs__keyword">if</span>&nbsp;(blue&nbsp;&gt;&nbsp;<span class="cs__number">255</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;blue&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(green&nbsp;&lt;&nbsp;<span class="cs__number">0</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;green&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;<span class="cs__keyword">if</span>&nbsp;(green&nbsp;&gt;&nbsp;<span class="cs__number">255</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;green&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(red&nbsp;&lt;&nbsp;<span class="cs__number">0</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;red&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;<span class="cs__keyword">if</span>&nbsp;(red&nbsp;&gt;&nbsp;<span class="cs__number">255</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;red&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[k]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)blue;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)green;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)red;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bitmap&nbsp;resultBitmap&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Bitmap(sourceBitmap.Width,&nbsp;sourceBitmap.Height);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;resultData&nbsp;=&nbsp;resultBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle&nbsp;&nbsp;(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.Width,&nbsp;resultBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.WriteOnly,&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(pixelBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;resultData.Scan0,&nbsp;pixelBuffer.Length);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.UnlockBits(resultData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;resultBitmap;&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+</div>
+<p style="text-align:justify">All image manipulation tasks performed by the <strong>
+<em>BitwiseBlend</em></strong> Extension method are implemented by directly accessing a
+<a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a>&rsquo;s underlying raw pixel data. &nbsp;</p>
+<p style="text-align:justify">A <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> first needs to be locked in memory by invoking the <a title="Bitmap.LockBits" rel="tag" href="http://msdn.microsoft.com/en-us/library/5ey6h79d.aspx" >
+Bitmap.LockBits</a> method. Once the <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> object has been locked in memory the method instantiates a <a title="byte" rel="tag" href="http://msdn.microsoft.com/en-us/library/5bdb6693.aspx" >
+byte</a> array, representing a pixel data buffer. Each element present in the data buffer reflects an individual colour component:
+<strong><em>Alpha</em></strong>, <strong><em>Red</em></strong>, <strong><em>Green</em></strong> or
+<strong><em>Blue</em></strong>.</p>
+<p style="text-align:justify"><strong><em>Take note</em></strong>: Colour component ordering is opposite to the expected ordering. Colour components are ordered:
+<em><strong>Blue</strong></em>, <strong><em>Green</em></strong>, <strong><em>Red</em></strong>,
+<strong><em>Alpha</em></strong>. The short explanation for reverse ordering can be attributed to Little Endian CPU architecture and
+<strong><em>Blue</em></strong> being represented by the least significant bits of a pixel.</p>
+<p style="text-align:justify">In order to perform bitwise operations on each pixel representing the specified
+<a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmaps</a> the sample source code employs a <strong><em>for</em></strong> loop, iterating both
+<a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> data buffers. The possibility exists that the two <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a>s specified might not have the same size dimensions. Notice how the for loop defines two conditional statements, preventing the loop from iterating past the maximum bounds of the smallest
+<a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a>.</p>
+<p style="text-align:justify">Did you notice how the <strong><em>for</em></strong> loop increments the defined counter by four at each loop operation? The reasoning being that every four elements of the data buffer represents a pixel, being composed of:
+<strong><em>Blue</em></strong>, <strong><em>Green</em></strong>, <strong><em>Red</em></strong> and
+<strong><em>Alpha</em></strong>. Iterating four elements per iteration thus allows us to manipulate all the colour components of a pixel.</p>
+<p style="text-align:justify">The operations performed within the <strong><em>for</em></strong> loop are fairly straight forward. The source code checks to determine which type of bitwise operation to implement per colour component. Colour components can only
+ range from 0 to 255 inclusive, we therefore perform range checking before assigning calculated values back to the data buffer.</p>
+<p style="text-align:justify">The final step performed involves creating a new resulting
+<a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> object and populating the new <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> with the updated pixel data buffer.</p>
+<h1><span>Sample Images</span></h1>
+<p style="text-align:justify"><span>In generating the sample images two source images were specified, a sunflower and bouquet of roses. The sunflower image has been released into the
+<a href="http://en.wikipedia.org/wiki/Public_domain">public domain</a> and can be downloaded from
+<a href="http://en.wikipedia.org/wiki/File:Sunflower_USFWS.jpg">Wikipedia</a>. The bouquet of roses image has been licensed under the
+<a href="http://en.wikipedia.org/wiki/en:Creative_Commons">Creative Commons</a> Attribution-Share Alike
+<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">3.0 Unported</a>,
+<a href="http://creativecommons.org/licenses/by-sa/2.5/deed.en">2.5 Generic</a>, <a href="http://creativecommons.org/licenses/by-sa/2.0/deed.en">
+2.0 Generic</a> and <a href="http://creativecommons.org/licenses/by-sa/1.0/deed.en">
+1.0 Generic</a> license and can be downloaded from&nbsp; <a title="Wikipedia" href="http://en.wikipedia.org/wiki/File:Bouquet_de_roses_roses.jpg" >
+Wikipedia</a>.</span></p>
+<h1 style="text-align:center"><span>The Original Images</span></h1>
+<div><br>
+<span><img id="81162" src="description/Sunflower_USFWS.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></span>
+<br>
+<span><img id="81163" src="description/Bouquet_de_roses_roses.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></span>
+<br>
+<h1 style="text-align:center"><span>The Blended Images</span></h1>
+<div><br>
+<div><span><img id="81164" src="description/SunflowerRoses.png" alt="" style="margin-right:auto; margin-left:auto; display:block"></span></div>
+<div><span>&nbsp;</span></div>
+<div><span><img id="81165" src="description/SunflowerRoses7.png" alt="" style="margin-right:auto; margin-left:auto; display:block"></span></div>
+<div><span>&nbsp;</span></div>
+<div><span><img id="81166" src="description/SunflowerRoses3.png" alt="" style="margin-right:auto; margin-left:auto; display:block"></span></div>
+<div><span>&nbsp;</span></div>
+<div><span><img id="81167" src="description/SunflowerRoses8.png" alt="" style="margin-right:auto; margin-left:auto; display:block"></span></div>
+<h1><span>&nbsp;</span></h1>
+<h1><span>Source Code Files</span></h1>
+<ul>
+<li><em><em>ExtBitmap.cs - Contains the definition of&nbsp;BitwiseBlend extension method.</em></em>
+</li><li><em><em><em><em>MainForm.cs - Windows forms application implementing and testing&nbsp;Image Blending</em></em>.</em></em>
+</li></ul>
+<h1>More Information</h1>
+<div class="paragraphStyle" style="text-align:justify">This article is based on an article originally posted on my
+<a rel="tag" rev="alternate" href="http://softwarebydefault.com/">blog</a>:&nbsp;<a title="SoftwareByDefault - Bitwise Bitmap Blending" href="http://softwarebydefault.com/2013/04/22/bitwise-bitmap-blending/" >http://softwarebydefault.com/2013/04/22/bitwise-bitmap-blending/</a>
+ If you have any questions/comments please feel free to make use of the Q&amp;A section on this page, also please remember to rate this article.</div>
+<div class="paragraphStyle" style="text-align:justify"></div>
+<div class="paragraphStyle"><strong><em><a title="Dewald Esterhuizen" href="http://softwarebydefault.com/about/" >Dewald Esterhuizen</a></em></strong></div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

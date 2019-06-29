@@ -1,0 +1,719 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/0aac1760-b513-488a-ba57-e31d9413a075Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Image Transform Rotate</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Image Transform Rotate</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, .NET, User Interface, Windows Forms, .NET Framework 4, .NET Framework 3.5 SP1, .NET Framework, .NET Framework 4.0, Image manipulation, Windows General, C# Language, WinForms, .NET Framework 4.5, .NET Framwork, Graphics Functions, Image process, Filter expression, Manipulation, .NET 4.5, Computer Vision, .NET Development, Image Processing, Digital Signal Processing, Image Transformation
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Controls, Graphics, C#, Class Library, User Interface, Windows Forms, Graphics and 3D, Images, GeometryDrawing<wbr />, ImageViewer, 2d graphics, Image manipulation, Windows UI, Image, .NET 4, Imaging, Drawing, How to, UI Design, Generic C# resuable code, Image Optimization, Form controls, Windows Forms Controls, C# Language Features, Graphics Functions, .Net Programming, Transformation, code snippets, BitmapImage, Load Image, Dynamically Image, Extension methods, Transforms, Image Transformation
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Phone, Data, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">6/16/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Image-Transform-Rotate-1d49d84b">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p style="text-align:justify">This article provides a discussion exploring the concept of
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> rotation as a <a title="Geometric Transformation" rel="tag" href="http://en.wikipedia.org/wiki/Transformation_geometry" >
+geometric transformation</a>. In addition to conventional <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> rotation this article illustrates the concept of individual colour channel rotation.</p>
+<p style="text-align:center"><strong><em>Daisy: Rotate Red 0<sup>o</sup>, Green 10<sup>o</sup>, Blue 20<sup>o</sup></em></strong></p>
+<p><img id="85006" src="description/Daisy_Rotate_Red0_Green10_Blue20.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1><span>Building the Sample</span></h1>
+<p>There are no special requirements or instructions for building the sample source code.</p>
+<h1><span style="font-size:20px">Using the Sample Application</span></h1>
+<p style="text-align:justify">A Sample Application has been included in the sample source code that accompanies this article. The sample application serves as an implementation of the concepts discussed throughout this article. Concepts can be easily tested
+ and replicated using the sample application.</p>
+<p style="text-align:center"><strong><em>Daisy: Rotate Red 15<sup>o</sup>, Green 5<sup>o</sup>, Blue 10<sup>o</sup></em></strong></p>
+<p><img id="85007" src="description/Daisy_Rotate_Red15_Green5_Blue10.jpg" alt="" width="350" height="319" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">When using the sample application users are able to load source/input
+<a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> from the local <a title="System.IO.File" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.io.file.aspx" >
+file</a> system by clicking the <strong><em>Load Image</em></strong> button. Required user input via the user interface can be found in the form of three numeric up/down controls labelled
+<strong><em>Blue</em></strong>, <strong><em>Green</em></strong> and <strong><em>Red</em></strong> respectively. Each control represents the degree to which the related colour component should be rotated. Possible input values range from
+<strong><em>&ndash;360</em></strong> to <strong><em>360</em></strong>. Positive values result in clockwise rotation, whereas negative values result in counter clockwise rotation. The sample application enables users to save result
+<a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> to the local file system by clicking the <strong><em>Save Image</em></strong> button.</p>
+<p style="text-align:justify">The following image is a screenshot of the <strong>
+<em>Image Transform Rotate</em></strong> sample application in action:</p>
+<p><img id="85008" src="description/Image_Transform_Rotate_Sample_Application.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Image Rotation Transformation&nbsp;&nbsp;</h1>
+<p style="text-align:justify">A <a title="Rotational Transformation" rel="tag" href="http://en.wikipedia.org/wiki/Rotation_(mathematics)" >
+rotational transformation</a> applied to an <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> from a theoretical point of view is based in <a title="Transformation Geometry" rel="tag" href="http://en.wikipedia.org/wiki/Transformation_geometry" >
+Transformation Geometry</a>. From <a title="Wikipedia: Transformation Geometry" rel="tag" href="http://en.wikipedia.org/wiki/Transformation_geometry" >
+Wikipedia</a> we learn the following <a title="Wikipedia: Transformation Geometry" rel="tag" href="http://en.wikipedia.org/wiki/Transformation_geometry" >
+definition</a>:</p>
+<blockquote>
+<p style="text-align:justify">In <a title="mathematics" href="http://en.wikipedia.org/wiki/Mathematics" >
+mathematics</a>, <strong>transformation geometry</strong> (or <strong>transformational geometry</strong>) is the name of a mathematical and
+<a title="pedagogic" rel="tag" href="http://en.wikipedia.org/wiki/Pedagogic" >
+pedagogic</a> approach to the study of <a title="geometry" rel="tag" href="http://en.wikipedia.org/wiki/Geometry" >
+geometry</a> by focusing on <a title="groups" href="http://en.wikipedia.org/wiki/Group_(mathematics)" >
+groups</a> of <a title="geometric transformations" rel="tag" href="http://en.wikipedia.org/w/index.php?title=Geometric_transformation&amp;action=edit&amp;redlink=1" >
+geometric transformations</a>, and the properties of figures that are <a title="invariant" rel="tag" href="http://en.wikipedia.org/w/index.php?title=Geometric_invariant&amp;action=edit&amp;redlink=1" >
+invariant</a> under them. It is opposed to the classical <a title="synthetic geometry" href="http://en.wikipedia.org/wiki/Synthetic_geometry" >
+synthetic geometry</a> approach of <a title="Euclidean geometry" href="http://en.wikipedia.org/wiki/Euclidean_geometry" >
+Euclidean geometry</a>, that focus on <a title="geometric constructions" href="http://en.wikipedia.org/wiki/Geometric_construction" >
+geometric constructions</a>.</p>
+<p style="text-align:center"><strong><em>Rose: Rotate Red &ndash;20<sup>o</sup>, Green 0<sup>o</sup>, Blue 20<sup>o</sup></em></strong></p>
+</blockquote>
+<p><span><img id="85009" src="description/Rose_Rotate_Red20neg_Green0_Blue20.jpg" alt="" width="350" height="233" style="margin-right:auto; margin-left:auto; display:block"></span></p>
+<p style="text-align:justify">In this article <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> rotation is implemented through applying a set <a title="Rotation Transform" rel="tag" href="http://en.wikipedia.org/wiki/Rotation_(mathematics)" >
+rotation transform</a> algorithm to the coordinates of each pixel forming part of a source/input
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a>. In the corresponding result <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> the calculated rotated pixel coordinates in terms of colour channel values will be assigned to the colour channel values of the original pixel.</p>
+<p style="text-align:justify">The algorithms implemented when calculating&nbsp; a pixel&rsquo;s rotated coordinates can be expressed as follows:</p>
+<p><span><img id="85010" src="description/RotateX_Algorithm.jpg" alt="" width="500" height="68" style="margin-right:auto; margin-left:auto; display:block"></span></p>
+<p><img id="85011" src="description/RotateY_Algorithm.jpg" alt="" width="500" height="69" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">Symbols/variables contained in the algorithms:</p>
+<ul>
+<li style="text-align:justify"><strong><em>R (x) :</em></strong> The result of rotating a pixel&rsquo;s x-coordinate.
+</li><li style="text-align:justify"><strong><em>R (y) :</em></strong> The result of rotating a pixel&rsquo;s y-coordinate.
+</li><li style="text-align:justify"><strong><em>x :</em></strong> The source pixel&rsquo;s x-coordinate.
+</li><li style="text-align:justify"><strong><em>y :</em></strong> The source pixel&rsquo;s y-coordinate.
+</li><li style="text-align:justify"><strong><em>W :</em></strong> The width in pixels of the source
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a>. </li><li style="text-align:justify"><strong><em>H :</em></strong> The height in pixels of the source
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a>. </li><li style="text-align:justify"><em><strong>ɑ :</strong></em> The lower case Greek alphabet letter alpha. The value represented by alpha reflects the degree of rotation.
+</li></ul>
+<p style="text-align:center">&nbsp;<strong><em>Butterfly: Rotate Red 10<sup>o</sup>, Green 0<sup>o</sup>, Blue 0<sup>o</sup></em></strong></p>
+<p><span><img id="85012" src="description/Butterfly_Rotate_Red10_Green0_Blue0.jpg" alt="" width="350" height="307" style="margin-right:auto; margin-left:auto; display:block"></span></p>
+<p style="text-align:justify">In order to apply a <a title="Rotation Transformation" rel="tag" href="http://en.wikipedia.org/wiki/Rotation_(mathematics)" >
+rotation transformation</a> each pixel forming part of the source/input <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> should be iterated. The algorithms expressed above should be applied to each pixel.</p>
+<p style="text-align:justify">The pixel coordinates located at exactly the middle of an
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> can be calculated through dividing the <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> width with a factor of two in regards to the <strong><em>X-coordinate</em></strong>. The
+<strong><em>Y-coordinate</em></strong> can be calculated through dividing the <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> height also with a factor of two. The algorithms calculate the coordinates of the
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> middle pixel and implements the coordinates as offsets. Implementing the pixel offsets&nbsp; results in
+<a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> being rotated around the <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a>&rsquo;s middle, as opposed to the the top left pixel <strong><em>(0,0)</em></strong>.</p>
+<p style="text-align:justify">This article and the associated sample source code extends the concept of traditional rotation through implementing rotation on a per colour channel basis. Through user input the individual degree of rotation can be specified for
+ each colour channel, namely <strong><em>Red</em></strong>, <strong><em>Green</em></strong> and
+<strong><em>Blue</em></strong>. Functionality has been implemented allowing each colour channel to be rotated to a different degree. In essence the algorithms described above have to be implemented three times per pixel iterated.</p>
+<p style="text-align:center"><strong><em>Daisy: Rotate Red 30<sup>o</sup>, Green 0<sup>o</sup>, Blue 180<sup>o</sup></em></strong></p>
+<p><span><img id="85014" src="description/Daisy_Rotate_Red30_Green0_Blue180.jpg" alt="" width="350" height="350" style="margin-right:auto; margin-left:auto; display:block"></span></p>
+<h1><span>Implementing a Rotation Transformation</span></h1>
+<p style="text-align:justify">The sample source code implements a <a title="Rotation Transformation" rel="tag" href="http://en.wikipedia.org/wiki/Rotation_(mathematics)" >
+rotation transformation</a> through the <a title="Wikipedia: Edge Enhancement" rel="tag" href="http://en.wikipedia.org/wiki/Edge_enhancement" >
+definition</a> of two <a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension methods</a>: <strong><em>RotateXY</em></strong> and <strong><em>RotateImage</em></strong>.</p>
+<p style="text-align:justify">The <strong><em>RotateXY</em></strong> <a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> targets the <a title="System.Drawing.Point" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.point.aspx" >
+Point</a> structure. This method serves as an encapsulation of the logic behind calculating rotating coordinates at a specified angle. The practical C# code implementation of the algorithms discussed in the previous section can be found within this method.
+ The definition as follows:</p>
+<p><span></p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Point RotateXY(this Point source, double degrees,
+                                       int offsetX, int offsetY)
+{ 
+   Point result = new Point();
+ 
+   result.X = (int)(Math.Round((source.X - offsetX) *
+              Math.Cos(degrees) - (source.Y - offsetY) *
+              Math.Sin(degrees))) &#43; offsetX;
+
+   
+   result.Y = (int)(Math.Round((source.X - offsetX) *
+              Math.Sin(degrees) &#43; (source.Y - offsetY) *
+              Math.Cos(degrees))) &#43; offsetY;
+
+    
+   return result;
+} </pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Point&nbsp;RotateXY(<span class="cs__keyword">this</span>&nbsp;Point&nbsp;source,&nbsp;<span class="cs__keyword">double</span>&nbsp;degrees,&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;offsetX,&nbsp;<span class="cs__keyword">int</span>&nbsp;offsetY)&nbsp;
+{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;Point&nbsp;result&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Point();&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;result.X&nbsp;=&nbsp;(<span class="cs__keyword">int</span>)(Math.Round((source.X&nbsp;-&nbsp;offsetX)&nbsp;*&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Cos(degrees)&nbsp;-&nbsp;(source.Y&nbsp;-&nbsp;offsetY)&nbsp;*&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Sin(degrees)))&nbsp;&#43;&nbsp;offsetX;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;result.Y&nbsp;=&nbsp;(<span class="cs__keyword">int</span>)(Math.Round((source.X&nbsp;-&nbsp;offsetX)&nbsp;*&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Sin(degrees)&nbsp;&#43;&nbsp;(source.Y&nbsp;-&nbsp;offsetY)&nbsp;*&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Cos(degrees)))&nbsp;&#43;&nbsp;offsetY;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;result;&nbsp;
+}&nbsp;</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+&nbsp;</span>
+<p></p>
+<p style="text-align:center"><span><strong><em>Rose: Rotate Red &ndash;60<sup>o</sup>, Green 0<sup>o</sup>, Blue 60<sup>o</sup></em></strong></span></p>
+<p><span><img id="85015" src="description/Rose_Rotate_Red60_Green0_Blue60neg.jpg" alt="" width="350" height="233" style="margin-right:auto; margin-left:auto; display:block"></span></p>
+<p style="text-align:justify">The <strong><em>RotateImage</em></strong> <a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> targets the <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class. This method expects three rotation degree/angle values, each corresponding to a colour channel. Positive degrees result in clockwise rotation and negative values result in counter clockwise rotation.&nbsp; The definition as follows:</p>
+<p></p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Bitmap RotateImage(this Bitmap sourceBitmap,  
+                                       double degreesBlue, 
+                                      double degreesGreen, 
+                                        double degreesRed) 
+{ 
+    BitmapData sourceData = 
+               sourceBitmap.LockBits(new Rectangle(0, 0, 
+               sourceBitmap.Width, sourceBitmap.Height), 
+               ImageLockMode.ReadOnly, 
+               PixelFormat.Format32bppArgb); 
+    
+    byte[] pixelBuffer = new byte[sourceData.Stride * 
+                                  sourceData.Height]; 
+    
+    byte[] resultBuffer = new byte[sourceData.Stride * 
+                                   sourceData.Height]; 
+    
+    Marshal.Copy(sourceData.Scan0, pixelBuffer, 0, 
+                               pixelBuffer.Length); 
+    
+    sourceBitmap.UnlockBits(sourceData); 
+    
+    //Convert to Radians 
+    degreesBlue = degreesBlue * Math.PI / 180.0; 
+    degreesGreen = degreesGreen * Math.PI / 180.0; 
+    degreesRed = degreesRed * Math.PI / 180.0; 
+   
+    //Calculate Offset in order to rotate on image middle 
+    int xOffset = (int )(sourceBitmap.Width / 2.0); 
+    int yOffset = (int )(sourceBitmap.Height / 2.0); 
+    
+    int sourceXY = 0; 
+    int resultXY = 0; 
+    
+    Point sourcePoint = new Point(); 
+    Point resultPoint = new Point(); 
+    
+    Rectangle imageBounds = new Rectangle(0, 0,  
+                            sourceBitmap.Width,  
+                           sourceBitmap.Height); 
+    
+    for (int row = 0; row &lt; sourceBitmap.Height; row&#43;&#43;) 
+    { 
+        for (int col = 0; col &lt; sourceBitmap.Width; col&#43;&#43;) 
+        { 
+            sourceXY = row * sourceData.Stride &#43; col * 4; 
+    
+            sourcePoint.X = col; 
+            sourcePoint.Y = row; 
+    
+            if (sourceXY &gt;= 0 &amp;&amp; sourceXY &#43; 3 &lt; pixelBuffer.Length) 
+            {
+                //Calculate Blue Rotation 
+                    
+                resultPoint = sourcePoint.RotateXY(degreesBlue,  
+                                             xOffset, yOffset); 
+    
+                resultXY = (int)(Math.Round( 
+                      (resultPoint.Y * sourceData.Stride) &#43;  
+                      (resultPoint.X * 4.0))); 
+    
+                if (imageBounds.Contains(resultPoint) &amp;&amp;  
+                                      resultXY &gt;= 0) 
+                { 
+                    if (resultXY &#43; 6 &lt; resultBuffer.Length) 
+                    { 
+                        resultBuffer[resultXY &#43; 4] =  
+                             pixelBuffer[sourceXY]; 
+    
+                        resultBuffer[resultXY &#43; 7] = 255; 
+                    }
+    
+                    if (resultXY &#43; 3 &lt; resultBuffer.Length) 
+                    { 
+                        resultBuffer[resultXY] =  
+                         pixelBuffer[sourceXY]; 
+    
+                        resultBuffer[resultXY &#43; 3] = 255; 
+                    }
+                } 
+    
+                //Calculate Green Rotation 
+    
+                resultPoint = sourcePoint.RotateXY(degreesGreen, 
+                                             xOffset, yOffset); 
+    
+                resultXY = (int)(Math.Round( 
+                      (resultPoint.Y * sourceData.Stride) &#43; 
+                      (resultPoint.X * 4.0))); 
+    
+                if (imageBounds.Contains(resultPoint) &amp;&amp; resultXY &gt;= 0) 
+                { 
+                    if (resultXY &#43; 6 &lt; resultBuffer.Length) 
+                    {
+                        resultBuffer[resultXY &#43; 5] =  
+                         pixelBuffer[sourceXY &#43; 1]; 
+    
+                        resultBuffer[resultXY &#43; 7] = 255; 
+                    } 
+    
+                    if (resultXY &#43; 3 &lt; resultBuffer.Length) 
+                    {
+                        resultBuffer[resultXY &#43; 1] =  
+                         pixelBuffer[sourceXY &#43; 1]; 
+    
+                        resultBuffer[resultXY &#43; 3] = 255; 
+                    }
+                }
+    
+                //Calculate Red Rotation 
+    
+                resultPoint = sourcePoint.RotateXY(degreesRed, 
+                                             xOffset, yOffset); 
+    
+                resultXY = (int)(Math.Round( 
+                      (resultPoint.Y * sourceData.Stride) &#43; 
+                      (resultPoint.X * 4.0))); 
+    
+                if (imageBounds.Contains(resultPoint) &amp;&amp; resultXY &gt;= 0) 
+                { 
+                    if (resultXY &#43; 6 &lt; resultBuffer.Length) 
+                    {
+                        resultBuffer[resultXY &#43; 6] =  
+                         pixelBuffer[sourceXY &#43; 2]; 
+ 
+                        resultBuffer[resultXY &#43; 7] = 255; 
+                    }
+    
+                    if (resultXY &#43; 3 &lt; resultBuffer.Length) 
+                    { 
+                        resultBuffer[resultXY &#43; 2] =  
+                         pixelBuffer[sourceXY &#43; 2]; 
+    
+                        resultBuffer[resultXY &#43; 3] = 255; 
+                    } 
+                } 
+            }
+        } 
+    }
+    
+    Bitmap resultBitmap = new Bitmap(sourceBitmap.Width, 
+                                     sourceBitmap.Height); 
+    
+    BitmapData resultData = 
+               resultBitmap.LockBits(new Rectangle (0, 0, 
+               resultBitmap.Width, resultBitmap.Height), 
+               ImageLockMode.WriteOnly, 
+               PixelFormat.Format32bppArgb); 
+    
+    Marshal.Copy(resultBuffer, 0, resultData.Scan0, 
+                               resultBuffer.Length); 
+    
+    resultBitmap.UnlockBits(resultData); 
+    
+    return resultBitmap; 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;RotateImage(<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">double</span>&nbsp;degreesBlue,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">double</span>&nbsp;degreesGreen,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">double</span>&nbsp;degreesRed)&nbsp;&nbsp;
+{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;sourceData&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Width,&nbsp;sourceBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.ReadOnly,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;pixelBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;resultBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(sourceData.Scan0,&nbsp;pixelBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer.Length);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.UnlockBits(sourceData);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//Convert&nbsp;to&nbsp;Radians&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;degreesBlue&nbsp;=&nbsp;degreesBlue&nbsp;*&nbsp;Math.PI&nbsp;/&nbsp;<span class="cs__number">180.0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;degreesGreen&nbsp;=&nbsp;degreesGreen&nbsp;*&nbsp;Math.PI&nbsp;/&nbsp;<span class="cs__number">180.0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;degreesRed&nbsp;=&nbsp;degreesRed&nbsp;*&nbsp;Math.PI&nbsp;/&nbsp;<span class="cs__number">180.0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//Calculate&nbsp;Offset&nbsp;in&nbsp;order&nbsp;to&nbsp;rotate&nbsp;on&nbsp;image&nbsp;middle&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;xOffset&nbsp;=&nbsp;(<span class="cs__keyword">int</span>&nbsp;)(sourceBitmap.Width&nbsp;/&nbsp;<span class="cs__number">2.0</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;yOffset&nbsp;=&nbsp;(<span class="cs__keyword">int</span>&nbsp;)(sourceBitmap.Height&nbsp;/&nbsp;<span class="cs__number">2.0</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;sourceXY&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;resultXY&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Point&nbsp;sourcePoint&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Point();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Point&nbsp;resultPoint&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Point();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Rectangle&nbsp;imageBounds&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Rectangle(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Width,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Height);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;row&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;row&nbsp;&lt;&nbsp;sourceBitmap.Height;&nbsp;row&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;col&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;col&nbsp;&lt;&nbsp;sourceBitmap.Width;&nbsp;col&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceXY&nbsp;=&nbsp;row&nbsp;*&nbsp;sourceData.Stride&nbsp;&#43;&nbsp;col&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourcePoint.X&nbsp;=&nbsp;col;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourcePoint.Y&nbsp;=&nbsp;row;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(sourceXY&nbsp;&gt;=&nbsp;<span class="cs__number">0</span>&nbsp;&amp;&amp;&nbsp;sourceXY&nbsp;&#43;&nbsp;<span class="cs__number">3</span>&nbsp;&lt;&nbsp;pixelBuffer.Length)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//Calculate&nbsp;Blue&nbsp;Rotation&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultPoint&nbsp;=&nbsp;sourcePoint.RotateXY(degreesBlue,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xOffset,&nbsp;yOffset);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultXY&nbsp;=&nbsp;(<span class="cs__keyword">int</span>)(Math.Round(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(resultPoint.Y&nbsp;*&nbsp;sourceData.Stride)&nbsp;&#43;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(resultPoint.X&nbsp;*&nbsp;<span class="cs__number">4.0</span>)));&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(imageBounds.Contains(resultPoint)&nbsp;&amp;&amp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultXY&nbsp;&gt;=&nbsp;<span class="cs__number">0</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(resultXY&nbsp;&#43;&nbsp;<span class="cs__number">6</span>&nbsp;&lt;&nbsp;resultBuffer.Length)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultXY&nbsp;&#43;&nbsp;<span class="cs__number">4</span>]&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[sourceXY];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultXY&nbsp;&#43;&nbsp;<span class="cs__number">7</span>]&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(resultXY&nbsp;&#43;&nbsp;<span class="cs__number">3</span>&nbsp;&lt;&nbsp;resultBuffer.Length)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultXY]&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[sourceXY];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultXY&nbsp;&#43;&nbsp;<span class="cs__number">3</span>]&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//Calculate&nbsp;Green&nbsp;Rotation&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultPoint&nbsp;=&nbsp;sourcePoint.RotateXY(degreesGreen,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xOffset,&nbsp;yOffset);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultXY&nbsp;=&nbsp;(<span class="cs__keyword">int</span>)(Math.Round(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(resultPoint.Y&nbsp;*&nbsp;sourceData.Stride)&nbsp;&#43;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(resultPoint.X&nbsp;*&nbsp;<span class="cs__number">4.0</span>)));&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(imageBounds.Contains(resultPoint)&nbsp;&amp;&amp;&nbsp;resultXY&nbsp;&gt;=&nbsp;<span class="cs__number">0</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(resultXY&nbsp;&#43;&nbsp;<span class="cs__number">6</span>&nbsp;&lt;&nbsp;resultBuffer.Length)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultXY&nbsp;&#43;&nbsp;<span class="cs__number">5</span>]&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[sourceXY&nbsp;&#43;&nbsp;<span class="cs__number">1</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultXY&nbsp;&#43;&nbsp;<span class="cs__number">7</span>]&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(resultXY&nbsp;&#43;&nbsp;<span class="cs__number">3</span>&nbsp;&lt;&nbsp;resultBuffer.Length)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultXY&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[sourceXY&nbsp;&#43;&nbsp;<span class="cs__number">1</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultXY&nbsp;&#43;&nbsp;<span class="cs__number">3</span>]&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//Calculate&nbsp;Red&nbsp;Rotation&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultPoint&nbsp;=&nbsp;sourcePoint.RotateXY(degreesRed,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xOffset,&nbsp;yOffset);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultXY&nbsp;=&nbsp;(<span class="cs__keyword">int</span>)(Math.Round(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(resultPoint.Y&nbsp;*&nbsp;sourceData.Stride)&nbsp;&#43;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(resultPoint.X&nbsp;*&nbsp;<span class="cs__number">4.0</span>)));&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(imageBounds.Contains(resultPoint)&nbsp;&amp;&amp;&nbsp;resultXY&nbsp;&gt;=&nbsp;<span class="cs__number">0</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(resultXY&nbsp;&#43;&nbsp;<span class="cs__number">6</span>&nbsp;&lt;&nbsp;resultBuffer.Length)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultXY&nbsp;&#43;&nbsp;<span class="cs__number">6</span>]&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[sourceXY&nbsp;&#43;&nbsp;<span class="cs__number">2</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultXY&nbsp;&#43;&nbsp;<span class="cs__number">7</span>]&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(resultXY&nbsp;&#43;&nbsp;<span class="cs__number">3</span>&nbsp;&lt;&nbsp;resultBuffer.Length)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultXY&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[sourceXY&nbsp;&#43;&nbsp;<span class="cs__number">2</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[resultXY&nbsp;&#43;&nbsp;<span class="cs__number">3</span>]&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Bitmap&nbsp;resultBitmap&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Bitmap(sourceBitmap.Width,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Height);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;resultData&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle&nbsp;(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.Width,&nbsp;resultBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.WriteOnly,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(resultBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;resultData.Scan0,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer.Length);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.UnlockBits(resultData);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;resultBitmap;&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p></p>
+<p style="text-align:center"><strong><em>Daisy: Rotate Red 15<sup>o</sup>, Green 5<sup>o</sup>, Blue 5<sup>o</sup></em></strong></p>
+<p><img id="85016" src="description/Daisy_Rotate_Red15_Green5_Blue5.jpg" alt="" width="350" height="319" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Sample Images</h1>
+<p style="text-align:justify">This article features a number of sample images. All featured images have been licensed allowing for reproduction.</p>
+<p style="text-align:justify">The sample images featuring an image of a <strong><em>yellow daisy</em></strong> is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/2.5/deed.en" >
+Attribution-Share Alike 2.5 Generic</a> license and can be <a title="Yellow Daisy" href="http://commons.wikimedia.org/wiki/File:Argyranthemum_frutescens_(aka).jpg" >
+downloaded</a> from <a title="Yellow Daisy" href="http://commons.wikimedia.org/wiki/File:Argyranthemum_frutescens_(aka).jpg" >
+Wikimedia.org</a>.</p>
+<p style="text-align:justify">The sample images featuring an image of a <strong><em>white daisy</em></strong> is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en" >
+Attribution-Share Alike 3.0 Unported</a> license and can be <a title="White Daisy" href="http://en.wikipedia.org/wiki/File:Leucanthemum_vulgare_'Filigran'_Flower_2200px.jpg" >
+downloaded</a> from <a title="White Daisy" href="http://en.wikipedia.org/wiki/File:Leucanthemum_vulgare_'Filigran'_Flower_2200px.jpg" >
+Wikipedia</a>.</p>
+<p style="text-align:justify">The sample images featuring an image of a <strong><em>CPU</em></strong> is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/2.0/deed.en" >
+Attribution-Share Alike 2.0 Generic</a> license. The original author is credited as
+<a title="Andrew Dunn" href="http://www.andrewdunnphoto.com/" >Andrew Dunn</a>. The original image can be
+<a title="Wikipedia" href="http://en.wikipedia.org/wiki/File:Intel_80486DX2_bottom.jpg" >
+downloaded</a> from <a title="Wikipedia" rel="tag" href="http://en.wikipedia.org/wiki/File:Intel_80486DX2_bottom.jpg" >
+Wikipedia</a>.</p>
+<p style="text-align:justify">The sample images featuring an image of a <em><strong>rose</strong></em> is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> Attribution-Share Alike <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en" >
+3.0 Unported</a>, <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/2.5/deed.en" >
+2.5 Generic</a>, <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/2.0/deed.en" >
+2.0 Generic</a> and <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/1.0/deed.en" >
+1.0 Generic</a> license. The original image can be <a title="Wikipedia" href="http://en.wikipedia.org/wiki/File:Rose_Amber_Flush_20070601.jpg" >
+downloaded</a> from <a title="Wikipedia" rel="tag" href="http://en.wikipedia.org/wiki/File:Rose_Amber_Flush_20070601.jpg" >
+Wikipedia</a>.</p>
+<p style="text-align:justify">The sample images featuring an image of a <strong><em>butterfly</em></strong> is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by/3.0/deed.en" >
+Attribution 3.0 Unported</a> license and can be <a title="Wikimedia" href="http://commons.wikimedia.org/wiki/File:Siproeta_epaphus_Galawebdesign.jpg" >
+downloaded</a> from <a title="Wikimedia.org" href="http://commons.wikimedia.org/wiki/File:Siproeta_epaphus_Galawebdesign.jpg" >
+Wikimedia.org</a>.</p>
+<p style="text-align:center"><strong><em>The Original Image</em></strong></p>
+<p><strong><em><img id="84993" src="description/Intel_80486DX2_bottom.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></em></strong></p>
+<p style="text-align:center"><strong><em>CPU: Rotate Red 90<sup>o</sup>, Green 0<sup>o</sup>, Blue &ndash;30<sup>o</sup></em></strong></p>
+<p><strong><em><img id="84994" src="description/CPU_Rotate_Red90_Green0_Blue30neg.jpg" alt="" width="500" height="409" style="margin-right:auto; margin-left:auto; display:block"></em></strong></p>
+<p style="text-align:center"><strong><em>CPU: Rotate Red 0<sup>o</sup>, Green 10<sup>o</sup>, Blue 0<sup>o</sup></em></strong></p>
+<p><strong><em><img id="84995" src="description/CPU_Rotate_Red0_Green10_Blue0.jpg" alt="" width="500" height="409" style="margin-right:auto; margin-left:auto; display:block"></em></strong></p>
+<p style="text-align:center"><strong><em>CPU: Rotate Red &ndash;4<sup>o</sup>, Green 4<sup>o</sup>, Blue 6<sup>o</sup></em></strong></p>
+<p><strong><em><img id="84996" src="description/CPU_Rotate_Red4neg_Green4_Blue6.jpg" alt="" width="500" height="409" style="margin-right:auto; margin-left:auto; display:block"></em></strong></p>
+<p style="text-align:center"><strong><em>CPU: Rotate Red 10<sup>o</sup>, Green 0<sup>o</sup>, Blue 0<sup>o</sup></em></strong></p>
+<p><strong><em><img id="84997" src="description/CPU_Rotate_Red10_Green0_Blue0.jpg" alt="" width="500" height="409" style="margin-right:auto; margin-left:auto; display:block"></em></strong></p>
+<p style="text-align:center"><strong><em>CPU: Rotate Red 10<sup>o</sup>, Green &ndash;5<sup>o</sup>, Blue 0<sup>o</sup></em></strong></p>
+<p><strong><em><img id="84998" src="description/CPU_Rotate_Red10_Green5neg_Blue0.jpg" alt="" width="500" height="409" style="margin-right:auto; margin-left:auto; display:block"></em></strong></p>
+<p style="text-align:center"><strong><em>CPU: Rotate Red 10<sup>o</sup>, Green 0<sup>o</sup>, Blue 10<sup>o</sup></em></strong></p>
+<p><strong><em><img id="84999" src="description/CPU_Rotate_Red10neg_Green0_Blue10.jpg" alt="" width="500" height="409" style="margin-right:auto; margin-left:auto; display:block"></em></strong></p>
+<p style="text-align:center"><strong><em>CPU: Rotate Red &ndash;10<sup>o</sup>, Green 10<sup>o</sup>, Blue 0<sup>o</sup></em></strong></p>
+<p><strong><em><img id="85000" src="description/CPU_Rotate_Red10neg_Green10_Blue0.jpg" alt="" width="500" height="409" style="margin-right:auto; margin-left:auto; display:block"></em></strong></p>
+<p style="text-align:center"><strong><em>CPU: Rotate Red 30<sup>o</sup>, Green &ndash;30<sup>o</sup>, Blue 0<sup>o</sup></em></strong></p>
+<p><strong><em><img id="85001" src="description/CPU_Rotate_Red30_Green30neg_Blue0.jpg" alt="" width="500" height="409" style="margin-right:auto; margin-left:auto; display:block"></em></strong></p>
+<p style="text-align:center"><strong><em>CPU: Rotate Red 40<sup>o</sup>, Green 20<sup>o</sup>, Blue 0<sup>o</sup></em></strong></p>
+<p><span><strong><em><img id="85002" src="description/CPU_Rotate_Red40_Green20_Blue0.jpg" alt="" width="500" height="409" style="margin-right:auto; margin-left:auto; display:block"></em></strong></span></p>
+<p style="text-align:center"><span><strong><em>CPU: Rotate Red 60<sup>o</sup>, Green 20<sup>o</sup>, Blue 0<sup>o</sup></em></strong></span></p>
+<p><span><img id="85004" src="description/CPU_Rotate_Red60_Green30_Blue0.jpg" alt="" width="500" height="409" style="margin-right:auto; margin-left:auto; display:block"></span></p>
+<h1><span>Source Code Files</span></h1>
+<ul>
+<li><em><em><em><em><em><em>ExtBitmap.cs - Contains the definition of the RotateXY and RotateImage extension methods</em></em></em></em></em>.</em>
+</li><li><em><em><em><em><em><em><em><em><em><em><em><em><em><em>MainForm.cs - Windows Forms based sample application</em></em></em></em></em></em></em></em></em></em></em></em>.</em></em>
+</li></ul>
+<h1>More Information</h1>
+<p style="text-align:justify">This article is based on an article originally posted on my
+<a href="http://softwarebydefault.com/" >blog</a>:&nbsp;<a href="http://softwarebydefault.com/2013/06/16/image-transform-rotate/">http://softwarebydefault.com/2013/06/16/image-transform-rotate/</a> If you have any questions/comments please feel
+ free to make use of the Q&amp;A section on this page, also please remember to rate this article.</p>
+<p><strong><em><a title="About Dewald Esterhuizen" rel="tag" href="http://softwarebydefault.com/about/" >Dewald Esterhuizen</a></em></strong></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

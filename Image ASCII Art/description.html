@@ -1,0 +1,790 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/0aac1760-b513-488a-ba57-e31d9413a075Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Image ASCII Art</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Image ASCII Art</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, GDI+, .NET, Class Library, User Interface, .NET Framework 4, .NET Framework 3.5 SP1, .NET Framework, .NET Framework 4.0, Image manipulation, Library, Windows General, Windows UI, C# Language, Converter, WinForms, .NET Framework 4.5, .NET Framwork, Graphics Functions, Microsoft .NET Framework 3.5 SP1, Visual C Sharp .NET, System.Drawing.<wbr />Drawing2D, Image process, Filter expression, Manipulation, Transformation, .NET 4.5, .NET Development, Image Processing, Image Transformation, Image Software
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Graphics, C#, GDI+, Class Library, User Interface, Graphics and 3D, Images, GeometryDrawing<wbr />, ImageViewer, Windows Form Controls, 2d graphics, Extensibility, Visual How To, Image manipulation, Code Sample, Image, .NET 4, Imaging, Drawing, How to, Generic C# resuable code, Extension, Image Optimization, 3D Graphics, Windows Forms Controls, C# Language Features, Graphics Functions, System.Drawing.<wbr />Drawing2D, .Net Programming, BitmapImage, Load Image, Dynamically Image, Extension methods, Transforms, image rendering, Image Filters, Cartoon Effect, Image Transformation, graphic rendering, ASCII Art
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Cloud, Phone, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">7/19/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Image-ASCII-Art-3fbc6a12">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p style="text-align:justify">This article explores the concept of rendering <a title="Wikipedia: ASCII Art" rel="tag" href="http://en.wikipedia.org/wiki/Ascii_art" >
+ASCII Art</a> from source <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a>. Beyond exploring concepts this article also provides a practical implementation of all the steps required in creating an
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+Image</a> <strong><em>ASCII Filter</em></strong>.</p>
+<p style="text-align:center"><strong><em>Sir Tim Berners-Lee: 2 Pixels Per Character, 12 Characters,&nbsp; Font Size 4, Zoom 100</em></strong></p>
+<p><img id="92599" src="description/Tim_Berners-Lee_2PixelsPerChar_12Chars_FontSize4_Zoom100.jpg" alt="" width="500" height="548" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1><span>Building the Sample</span></h1>
+<p>There are no special requirements or instructions for building the sample source code.</p>
+<h1>Using the Sample Application</h1>
+<p style="text-align:justify">The sample source code that accompanies this article includes a sample application. The concepts illustrated in this article can tested and replicated using the sample application.</p>
+<p style="text-align:justify">The sample application user interface implements a variety of functionality which can be described as follows:</p>
+<ul style="text-align:justify">
+<li><strong><em>Loading/Saving Images &ndash;</em></strong> Users are able to load source/input
+<a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> from the local <a title="System.IO.File" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.io.file.aspx" >
+file</a> system through clicking the <strong><em>Load Image</em></strong> button. Rendered
+<a title="Wikipedia: ASCII Art" rel="tag" href="http://en.wikipedia.org/wiki/Ascii_art" >
+ASCII Art</a> can be saved as an <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> file when clicking the <strong><em>Save Image</em></strong> button. </li><li><strong><em>Pixels Per Character &ndash;</em></strong> This configuration option determines the number of pixels represented by a single character. Lower values result in better detail/definition and a larger proportional output. Higher values result in
+ less detail/definition and a smaller proportional output. </li><li><strong><em>Character Count &ndash;</em></strong> The number of unique characters to be rendered can be adjusted through updating this value. This value can be considered similar to number of shades of gray in a
+<a title="Wikipedia: Grayscale" rel="tag" href="http://en.wikipedia.org/wiki/Grayscale" >
+grayscale</a>&nbsp;<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >image</a>.
+</li><li><strong><em>Font Size &ndash;</em></strong> This option determines the <strong>
+<em>Font Size</em></strong> related to the rendered text. </li><li><strong><em>Zoom Level &ndash;</em></strong> Configure this value in order to apply a scaling level when rendering text.
+</li><li><strong><em>Copy to Clipboard &ndash;</em></strong> Copy the current <a title="Wikipedia: ASCII Art" rel="tag" href="http://en.wikipedia.org/wiki/Ascii_art" >
+ASCII Art</a> string to the <strong><em>Windows Clipboard</em></strong>, in <strong>
+<em>Rich Text Format</em></strong>. </li></ul>
+<p style="text-align:justify">The following image is screenshot of the <strong><em>Image ASCII Art</em></strong> sample application is action:</p>
+<p><em><img id="92600" src="description/Image_ASCII_Art_Sample_Application.jpg" alt="" width="500" height="392" style="margin-right:auto; margin-left:auto; display:block"></em></p>
+<p style="text-align:center"><em><strong><em>Anders Hejlsberg: 1 Pixel Per Character, 24 Characters, Font Size 6, Zoom 20</em></strong></em></p>
+<p><em><img id="92601" src="description/Anders_Hejlsberg_1PixelsPerChar_24Chars_FontSize6_Zoom20.jpg" alt="" width="500" height="621" style="margin-right:auto; margin-left:auto; display:block"></em></p>
+<h1>Converting Pixels to Characters</h1>
+<p style="text-align:justify"><a title="Wikipedia: ASCII Art" rel="tag" href="http://en.wikipedia.org/wiki/Ascii_art" >ASCII Art</a> in various forms have been part of computer culture since the pioneering days of computing. From
+<a title="Wikipedia: ASCII Art" rel="tag" href="http://en.wikipedia.org/wiki/Ascii_art" >
+Wikipedia</a> we gain the <a title="Wikipedia: ASCII Art" href="http://en.wikipedia.org/wiki/Ascii_art" >
+following</a>:</p>
+<blockquote>
+<p style="text-align:justify"><strong>ASCII art</strong> is a <a title="graphic design" href="http://en.wikipedia.org/wiki/Graphic_design" >
+graphic design</a> technique that uses <a title="computers" href="http://en.wikipedia.org/wiki/Computer" >
+computers</a> for presentation and consists of pictures pieced together from the 95 printable (from a total of 128)
+<a title="characters" href="http://en.wikipedia.org/wiki/Character_(computing)" >
+characters</a> defined by the <a title="ASCII" href="http://en.wikipedia.org/wiki/ASCII" >
+ASCII</a> Standard from 1963 and ASCII compliant character sets with proprietary extended characters (beyond the 128 characters of standard
+<a title="7-bit ASCII" href="http://en.wikipedia.org/wiki/7-bit_ASCII" >
+7-bit ASCII</a>). The term is also loosely used to refer to <a title="text based visual art in general" href="http://en.wikipedia.org/wiki/Ascii_art#Other_text-based_visual_art" >
+text based visual art in general</a>. ASCII art can be created with any <a href="http://en.wikipedia.org/wiki/Text_editor">
+text editor</a>, and is often used with <a title="free-form languages" href="http://en.wikipedia.org/wiki/Free-form_language" >
+free-form languages</a>. Most examples of ASCII <a title="art" href="http://en.wikipedia.org/wiki/Art" >
+art</a> require a <a title="fixed-width font" href="http://en.wikipedia.org/wiki/Typeface#Proportion" >
+fixed-width font</a> (non-proportional <a title="fonts" href="http://en.wikipedia.org/wiki/Typeface" >
+fonts</a>, as on a traditional <a title="typewriter" href="http://en.wikipedia.org/wiki/Typewriter" >
+typewriter</a>) such as <a title="Courier" href="http://en.wikipedia.org/wiki/Courier_(typeface)" >
+Courier</a> for presentation.</p>
+<p style="text-align:justify">Among the oldest known examples of ASCII art are the creations by computer-art pioneer
+<a title="Kenneth Knowlton" href="http://en.wikipedia.org/wiki/Kenneth_Knowlton" >
+Kenneth Knowlton</a> from around 1966, who was working for <a title="Bell Labs" href="http://en.wikipedia.org/wiki/Bell_Labs" >
+Bell Labs</a> at the time.<sup><a href="http://en.wikipedia.org/wiki/Ascii_art#cite_note-cgihist-1">[1]</a></sup> &quot;Studies in Perception I&quot; by Ken Knowlton and Leon Harmon from 1966 shows some examples of their early ASCII art.<sup><a href="http://en.wikipedia.org/wiki/Ascii_art#cite_note-sip1-2">[2]</a></sup></p>
+<p style="text-align:justify">One of the main reasons ASCII art was born was because early printers often lacked graphics ability and thus characters were used in place of graphic marks. Also, to mark divisions between different print jobs from different users,
+ bulk printers often used ASCII art to print large banners, making the division easier to spot so that the results could be more easily separated by a computer operator or clerk. ASCII art was also used in early e-mail when images could not be embedded.</p>
+</blockquote>
+<p style="text-align:center"><strong><em>Bjarne Stroustrup: 1 Pixel Per Character, 12 Characters, Font Size 6, Zoom 60</em></strong></p>
+<p><img id="92602" src="description/Bjarne_Stroustrup_1PixelsPerChar_12Chars_FontSize6_Zoom60.jpg" alt="" width="500" height="343" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">This article explores the steps involved in rendering text strings representing
+<a title="Wikipedia: ASCII Art" rel="tag" href="http://en.wikipedia.org/wiki/Ascii_art" >
+ASCII Art</a>, implementing source/input <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> in rendering <a title="Wikipedia: ASCII Art" rel="tag" href="http://en.wikipedia.org/wiki/Ascii_art" >
+ASCII Art</a> text representations. The following sections details the steps required to render
+<a title="Wikipedia: ASCII Art" rel="tag" href="http://en.wikipedia.org/wiki/Ascii_art" >
+ASCII Art</a> text strings from source/input <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a>:</p>
+<ol>
+<li style="text-align:justify"><strong><em>Generate Random Characters &ndash;</em></strong> Generate a string consisting of random characters. The number of characters will be determined through user input relating to the
+<strong><em>Character Count</em></strong> option. When generating the random string ensure that all characters added to the string are unique. In addition avoid adding control characters or punctuation characters. Control characters are non-visible characters
+ such as <strong><em>Start of Text</em></strong>, <strong><em>Beep</em></strong>,
+<strong><em>New Line</em></strong> or <strong><em>Carriage Return</em></strong>. Most punctuation characters occupy a lot less screen space compared to regular alphabet characters.
+</li><li style="text-align:justify"><strong><em>Determine Row and Column Count &ndash;</em></strong>
+<strong><em>Rows</em></strong> and <em><strong>Columns</strong></em> in terms of the
+<strong><em>Character Count</em></strong> option indicate the ratio between pixels and characters. The number of rows equate to the
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> height in pixels divided by the Character Count. The number of columns equate to the
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> width in pixels divided by the <strong><em>Character Count</em></strong>.
+</li><li style="text-align:justify"><strong><em>Iterate Rows/Columns and Determine Colour Averages &ndash;</em></strong> Iterate
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> pixels in terms of a rows and columns grid strategy. Calculate the sum total of each grid region&rsquo;s colour values. Calculate the average/mean colour value through dividing the colour sum total by the
+<strong><em>Character Count</em></strong> squared. </li><li style="text-align:justify"><strong><em>Map Average Colour Intensity to a Character &ndash;</em></strong> Using the average colour values calculate in the previous step, calculate a colour intensity value ranging between 0 and the number of randomly generate
+ characters. The intensity value should be implemented as an array index in accessing the string of random characters. All of the pixels included in calculating an average value should be represented by the random character located at the index equating to
+ the colour average intensity value. </li></ol>
+<p style="text-align:center"><em><strong><em>Linus Torvalds: 1 Pixel Per Character, 16 Characters, Font Size 5, Zoom 60</em></strong></em></p>
+<p><em><img id="92603" src="description/Linus_Torvalds_1PixelsPerChar_16Chars_FontSize5_Zoom60.jpg" alt="" width="500" height="703" style="margin-right:auto; margin-left:auto; display:block"></em></p>
+<h1>Converting Text to an Image</h1>
+<p style="text-align:justify">When rendering high definition <a title="Wikipedia: ASCII Art" rel="tag" href="http://en.wikipedia.org/wiki/Ascii_art" >
+ASCII Art</a> the resulting text can easily consist of several thousand characters. Attempting to display such a vast number of text in a traditional text editor in most scenarios would be futile. An alternative method of retaining a high definition whilst
+ still being viewable can be achieved through creating an <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> from the rendered text and then reducing the <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> dimensions.</p>
+<p style="text-align:justify">The sample code employs the following steps when converting rendered text to an
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a>:</p>
+<ol>
+<li style="text-align:justify"><strong><em>Determine Required Image Dimensions &ndash;</em></strong> Determine the
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> dimensions required to fit the rendered text. </li><li style="text-align:justify"><strong><em>Create a new Image and set the background colour &ndash;</em></strong> After having determined the required
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> dimensions create a new <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> consisting of those dimensions. Set every pixel in the new <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> to <strong><em>Black</em></strong>. </li><li style="text-align:justify"><strong><em>Draw Rendered Text &ndash;</em></strong> The rendered text should be drawn on the new
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> in plain <strong><em>White</em></strong>. </li><li style="text-align:justify"><strong><em>Resize Image &ndash;</em></strong> In order to ensure more manageable
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> dimensions resize the <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> with a specified factor. </li></ol>
+<p style="text-align:center"><em><strong><em>Alan Turing: 1 Pixel Per Character, 16 Characters, Font Size 4, Zoom 100</em></strong></em></p>
+<p><em><img id="92604" src="description/Alan_Turing_1PixelsPerChar_16Chars_FontSize4_Zoom100.jpg" alt="" width="500" height="573" style="margin-right:auto; margin-left:auto; display:block"></em></p>
+<h1>Implementing an Image ASCII Filter</h1>
+<p style="text-align:justify">The sample source code implements four methods when implementing an
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+Image</a> <strong><em>ASCII Filter</em></strong>, the methods are:</p>
+<ul style="text-align:justify">
+<li><strong><em>ASCIIFilter</em></strong> </li><li><strong><em>GenerateRandomString</em></strong> </li><li><strong><em>RandomStringSort</em></strong> </li><li><em><strong>GetColorCharacter</strong></em> </li></ul>
+<p style="text-align:justify">The <strong><em>GenerateRandomString</em></strong>&nbsp; method, as the name implies, generates a string consisting of randomly selected characters. The number of characters contained in the string will be determined by the parameter
+ value passed to this method. The following code snippet provides the implementation of the
+<strong><em>GenerateRandomString </em></strong>method:</p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">private static string GenerateRandomString(int maxSize) 
+{
+    StringBuilder stringBuilder = new StringBuilder(maxSize); 
+    Random randomChar = new Random(); 
+ 
+    char charValue; 
+
+    for (int k = 0; k &lt; maxSize; k&#43;&#43;) 
+    {
+        charValue = (char)(Math.Floor(255 * randomChar.NextDouble() * 4)); 
+
+        if (stringBuilder.ToString().IndexOf(charValue) != -1) 
+        {
+            charValue = (char)(Math.Floor((byte)charValue *  
+                                    randomChar.NextDouble())); 
+        } 
+ 
+        if (Char.IsControl(charValue) == false &amp;&amp;  
+            Char.IsPunctuation(charValue) == false &amp;&amp;  
+            stringBuilder.ToString().IndexOf(charValue) == -1) 
+        {
+            stringBuilder.Append(charValue); 
+ 
+            randomChar = new Random((int)((byte)charValue *  
+                             (k &#43; 1) &#43; DateTime.Now.Ticks)); 
+        } 
+        else 
+        {
+            randomChar = new Random((int)((byte)charValue *  
+                             (k &#43; 1) &#43; DateTime.UtcNow.Ticks)); 
+            k -= 1; 
+        } 
+    } 
+
+    return stringBuilder.ToString().RandomStringSort(); 
+} </pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">string</span>&nbsp;GenerateRandomString(<span class="cs__keyword">int</span>&nbsp;maxSize)&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;StringBuilder&nbsp;stringBuilder&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;StringBuilder(maxSize);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Random&nbsp;randomChar&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Random();&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">char</span>&nbsp;charValue;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;k&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;k&nbsp;&lt;&nbsp;maxSize;&nbsp;k&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;charValue&nbsp;=&nbsp;(<span class="cs__keyword">char</span>)(Math.Floor(<span class="cs__number">255</span>&nbsp;*&nbsp;randomChar.NextDouble()&nbsp;*&nbsp;<span class="cs__number">4</span>));&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(stringBuilder.ToString().IndexOf(charValue)&nbsp;!=&nbsp;-<span class="cs__number">1</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;charValue&nbsp;=&nbsp;(<span class="cs__keyword">char</span>)(Math.Floor((<span class="cs__keyword">byte</span>)charValue&nbsp;*&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;randomChar.NextDouble()));&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(Char.IsControl(charValue)&nbsp;==&nbsp;<span class="cs__keyword">false</span>&nbsp;&amp;&amp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Char.IsPunctuation(charValue)&nbsp;==&nbsp;<span class="cs__keyword">false</span>&nbsp;&amp;&amp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stringBuilder.ToString().IndexOf(charValue)&nbsp;==&nbsp;-<span class="cs__number">1</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stringBuilder.Append(charValue);&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;randomChar&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Random((<span class="cs__keyword">int</span>)((<span class="cs__keyword">byte</span>)charValue&nbsp;*&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(k&nbsp;&#43;&nbsp;<span class="cs__number">1</span>)&nbsp;&#43;&nbsp;DateTime.Now.Ticks));&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;randomChar&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Random((<span class="cs__keyword">int</span>)((<span class="cs__keyword">byte</span>)charValue&nbsp;*&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(k&nbsp;&#43;&nbsp;<span class="cs__number">1</span>)&nbsp;&#43;&nbsp;DateTime.UtcNow.Ticks));&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;k&nbsp;-=&nbsp;<span class="cs__number">1</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;stringBuilder.ToString().RandomStringSort();&nbsp;&nbsp;
+}&nbsp;</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p style="text-align:center"><strong><em>Sir Tim Berners-Lee: 4 Pixels Per Character, 16 Characters, Font Size 6, Zoom 100</em></strong></p>
+<p><img id="92605" src="description/Tim_Berners-Lee_4PixelsPerChar_16Chars_FontSize6_Zoom100.jpg" alt="" width="500" height="542" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p>&nbsp;</p>
+<p style="text-align:justify">The <strong><em>RandomStringSort </em></strong>method has been defined as an
+<a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> targeting the string class. This method provides a means of sorting a string in a random manner, in essence shuffling a string&rsquo;s characters. The definition as follows:</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static string RandomStringSort(this string stringValue) 
+{
+    char[] charArray = stringValue.ToCharArray(); 
+
+    Random randomIndex = new Random((byte)charArray[0]); 
+    int iterator = charArray.Length; 
+ 
+    while(iterator &gt; 1) 
+    {
+        iterator -= 1; 
+ 
+        int nextIndex = randomIndex.Next(iterator &#43; 1); 
+ 
+        char nextValue = charArray[nextIndex]; 
+        charArray[nextIndex] = charArray[iterator]; 
+        charArray[iterator] = nextValue; 
+    }
+
+    return new string(charArray); 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">string</span>&nbsp;RandomStringSort(<span class="cs__keyword">this</span>&nbsp;<span class="cs__keyword">string</span>&nbsp;stringValue)&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">char</span>[]&nbsp;charArray&nbsp;=&nbsp;stringValue.ToCharArray();&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Random&nbsp;randomIndex&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Random((<span class="cs__keyword">byte</span>)charArray[<span class="cs__number">0</span>]);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;iterator&nbsp;=&nbsp;charArray.Length;&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">while</span>(iterator&nbsp;&gt;&nbsp;<span class="cs__number">1</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iterator&nbsp;-=&nbsp;<span class="cs__number">1</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;nextIndex&nbsp;=&nbsp;randomIndex.Next(iterator&nbsp;&#43;&nbsp;<span class="cs__number">1</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">char</span>&nbsp;nextValue&nbsp;=&nbsp;charArray[nextIndex];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;charArray[nextIndex]&nbsp;=&nbsp;charArray[iterator];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;charArray[iterator]&nbsp;=&nbsp;nextValue;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">string</span>(charArray);&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p style="text-align:center"><strong><em>Anders Hejlsberg: 3 Pixels Per Character, 12 Characters, Font Size 5, Zoom 50</em></strong></p>
+<p><img id="92606" src="description/Anders_Hejlsberg_3PixelsPerChar_12Chars_FontSize5_Zoom50.jpg" alt="" width="500" height="625" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">The sample source code defines the <strong><em>GetColorCharacter</em></strong> method, intended to map pixels to character values. This method has been defined as an
+<a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> targeting the string class. The definition as follows:</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">private static string colorCharacters = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;; 
+
+private static string GetColorCharacter(int blue, int green, int red) 
+{
+    string colorChar = String.Empty; 
+    int intensity = (blue &#43; green &#43; red) / 3 *  
+                    (colorCharacters.Length - 1) / 255; 
+ 
+    colorChar = colorCharacters.Substring(intensity, 1).ToUpper(); 
+    colorChar &#43;= colorChar.ToLower(); 
+
+    return colorChar; 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">string</span>&nbsp;colorCharacters&nbsp;=&nbsp;<span class="cs__string">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;</span>;&nbsp;&nbsp;
+&nbsp;
+<span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">string</span>&nbsp;GetColorCharacter(<span class="cs__keyword">int</span>&nbsp;blue,&nbsp;<span class="cs__keyword">int</span>&nbsp;green,&nbsp;<span class="cs__keyword">int</span>&nbsp;red)&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">string</span>&nbsp;colorChar&nbsp;=&nbsp;String.Empty;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;intensity&nbsp;=&nbsp;(blue&nbsp;&#43;&nbsp;green&nbsp;&#43;&nbsp;red)&nbsp;/&nbsp;<span class="cs__number">3</span>&nbsp;*&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(colorCharacters.Length&nbsp;-&nbsp;<span class="cs__number">1</span>)&nbsp;/&nbsp;<span class="cs__number">255</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;colorChar&nbsp;=&nbsp;colorCharacters.Substring(intensity,&nbsp;<span class="cs__number">1</span>).ToUpper();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;colorChar&nbsp;&#43;=&nbsp;colorChar.ToLower();&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;colorChar;&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p style="text-align:center"><strong><em>Bjarne Stroustrup: 1 Pixel Per Character, 12 Characters, Font Size 4, Zoom 100</em></strong></p>
+<p><img id="92607" src="description/Bjarne_Stroustrup_1PixelsPerChar_12Chars_FontSize4_Zoom100.jpg" alt="" width="500" height="340" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">The <strong><em>ASCIIFilter </em></strong>method defined by the sample source code has the task of translating source/input
+<a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> into text based <a title="Wikipedia: ASCII Art" rel="tag" href="http://en.wikipedia.org/wiki/Ascii_art" >
+ASCII Art</a>. This method has been defined as an <a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> targeting the <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class. The following code snippet provides the definition:</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static string ASCIIFilter(this Bitmap sourceBitmap, int pixelBlockSize,  
+                                                           int colorCount = 0) 
+{
+    BitmapData sourceData = sourceBitmap.LockBits(new Rectangle (0, 0, 
+                            sourceBitmap.Width, sourceBitmap.Height), 
+                                              ImageLockMode.ReadOnly, 
+                                        PixelFormat.Format32bppArgb); 
+
+    byte[] pixelBuffer = new byte[sourceData.Stride * sourceData.Height]; 
+
+    Marshal.Copy(sourceData.Scan0, pixelBuffer, 0, pixelBuffer.Length); 
+    sourceBitmap.UnlockBits(sourceData); 
+
+    StringBuilder asciiArt = new StringBuilder(); 
+
+    int avgBlue = 0; 
+    int avgGreen = 0; 
+    int avgRed = 0; 
+    int offset = 0; 
+
+    int rows = sourceBitmap.Height / pixelBlockSize; 
+    int columns = sourceBitmap.Width / pixelBlockSize; 
+
+    if (colorCount &gt; 0) 
+    {
+        colorCharacters = GenerateRandomString(colorCount); 
+    }
+
+    for (int y = 0; y &lt; rows; y&#43;&#43;) 
+    {
+        for (int x = 0; x &lt; columns; x&#43;&#43;) 
+        {
+            avgBlue = 0; 
+            avgGreen = 0; 
+            avgRed = 0; 
+
+            for (int pY = 0; pY &lt; pixelBlockSize; pY&#43;&#43;) 
+            { 
+                for (int pX = 0; pX &lt; pixelBlockSize; pX&#43;&#43;) 
+                { 
+                    offset = y * pixelBlockSize * sourceData.Stride &#43;  
+                             x * pixelBlockSize * 4; 
+
+                    offset &#43;= pY * sourceData.Stride; 
+                    offset &#43;= pX * 4; 
+
+                    avgBlue &#43;= pixelBuffer[offset]; 
+                    avgGreen &#43;= pixelBuffer[offset &#43; 1]; 
+                    avgRed &#43;= pixelBuffer[offset &#43; 2]; 
+                }
+            } 
+
+            avgBlue = avgBlue / (pixelBlockSize * pixelBlockSize); 
+            avgGreen = avgGreen / (pixelBlockSize * pixelBlockSize); 
+            avgRed = avgRed / (pixelBlockSize * pixelBlockSize); 
+
+            asciiArt.Append(GetColorCharacter(avgBlue, avgGreen, avgRed)); 
+        } 
+
+        asciiArt.Append(&quot;\r\n&quot; ); 
+    }
+
+    return asciiArt.ToString(); 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">string</span>&nbsp;ASCIIFilter(<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;<span class="cs__keyword">int</span>&nbsp;pixelBlockSize,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;colorCount&nbsp;=&nbsp;<span class="cs__number">0</span>)&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;sourceData&nbsp;=&nbsp;sourceBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle&nbsp;(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Width,&nbsp;sourceBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.ReadOnly,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;pixelBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(sourceData.Scan0,&nbsp;pixelBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;pixelBuffer.Length);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.UnlockBits(sourceData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;StringBuilder&nbsp;asciiArt&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;StringBuilder();&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;avgBlue&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;avgGreen&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;avgRed&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;offset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;rows&nbsp;=&nbsp;sourceBitmap.Height&nbsp;/&nbsp;pixelBlockSize;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;columns&nbsp;=&nbsp;sourceBitmap.Width&nbsp;/&nbsp;pixelBlockSize;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(colorCount&nbsp;&gt;&nbsp;<span class="cs__number">0</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colorCharacters&nbsp;=&nbsp;GenerateRandomString(colorCount);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;y&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;y&nbsp;&lt;&nbsp;rows;&nbsp;y&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;x&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;x&nbsp;&lt;&nbsp;columns;&nbsp;x&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avgBlue&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avgGreen&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avgRed&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;pY&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;pY&nbsp;&lt;&nbsp;pixelBlockSize;&nbsp;pY&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;pX&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;pX&nbsp;&lt;&nbsp;pixelBlockSize;&nbsp;pX&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offset&nbsp;=&nbsp;y&nbsp;*&nbsp;pixelBlockSize&nbsp;*&nbsp;sourceData.Stride&nbsp;&#43;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;*&nbsp;pixelBlockSize&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offset&nbsp;&#43;=&nbsp;pY&nbsp;*&nbsp;sourceData.Stride;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offset&nbsp;&#43;=&nbsp;pX&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avgBlue&nbsp;&#43;=&nbsp;pixelBuffer[offset];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avgGreen&nbsp;&#43;=&nbsp;pixelBuffer[offset&nbsp;&#43;&nbsp;<span class="cs__number">1</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avgRed&nbsp;&#43;=&nbsp;pixelBuffer[offset&nbsp;&#43;&nbsp;<span class="cs__number">2</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avgBlue&nbsp;=&nbsp;avgBlue&nbsp;/&nbsp;(pixelBlockSize&nbsp;*&nbsp;pixelBlockSize);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avgGreen&nbsp;=&nbsp;avgGreen&nbsp;/&nbsp;(pixelBlockSize&nbsp;*&nbsp;pixelBlockSize);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avgRed&nbsp;=&nbsp;avgRed&nbsp;/&nbsp;(pixelBlockSize&nbsp;*&nbsp;pixelBlockSize);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;asciiArt.Append(GetColorCharacter(avgBlue,&nbsp;avgGreen,&nbsp;avgRed));&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;asciiArt.Append(<span class="cs__string">&quot;\r\n&quot;</span>&nbsp;);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;asciiArt.ToString();&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p style="text-align:center"><strong><em>Linus Torvalds: 1 Pixel Per Character, 8 Characters, Font Size 4, Zoom 80</em></strong></p>
+<p><img id="92608" src="description/Linus_Torvalds_1PixelsPerChar_8Chars_FontSize4_Zoom80.jpg" alt="" width="500" height="703" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Implementing Text to Image Functionality</h1>
+<p style="text-align:justify">The sample source code implements the GDI&#43; <a title="Graphics" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.graphics.aspx" >
+Graphics</a> class when drawing rendered <a title="Wikipedia: ASCII Art" rel="tag" href="http://en.wikipedia.org/wiki/Ascii_art" >
+ASCII Art</a> text onto <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a>. The sample source code defines the <strong><em>TextToImage</em></strong> method, an
+<a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> extending the string class. The definition listed as follows:</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Bitmap TextToImage(this string text, Font font,  
+                                                float factor) 
+{
+    Bitmap textBitmap = new Bitmap(1, 1); 
+
+    Graphics graphics = Graphics.FromImage(textBitmap); 
+
+    int width = (int)Math.Ceiling( 
+                graphics.MeasureString(text, font).Width *  
+                factor); 
+
+    int height = (int)Math.Ceiling( 
+                 graphics.MeasureString(text, font).Height *  
+                 factor); 
+
+    graphics.Dispose(); 
+
+    textBitmap = new Bitmap(width, height,  
+                            PixelFormat.Format32bppArgb); 
+
+    graphics = Graphics.FromImage(textBitmap); 
+    graphics.Clear(Color.Black); 
+
+    graphics.CompositingQuality = CompositingQuality.HighQuality; 
+    graphics.InterpolationMode = InterpolationMode.HighQualityBicubic; 
+    graphics.PixelOffsetMode = PixelOffsetMode.HighQuality; 
+    graphics.SmoothingMode = SmoothingMode.HighQuality; 
+    graphics.TextRenderingHint = TextRenderingHint.AntiAliasGridFit; 
+
+    graphics.ScaleTransform(factor, factor); 
+    graphics.DrawString(text, font, Brushes.White, new PointF(0, 0)); 
+
+    graphics.Flush(); 
+    graphics.Dispose(); 
+
+    return textBitmap; 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;TextToImage(<span class="cs__keyword">this</span>&nbsp;<span class="cs__keyword">string</span>&nbsp;text,&nbsp;Font&nbsp;font,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">float</span>&nbsp;factor)&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Bitmap&nbsp;textBitmap&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Bitmap(<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Graphics&nbsp;graphics&nbsp;=&nbsp;Graphics.FromImage(textBitmap);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;width&nbsp;=&nbsp;(<span class="cs__keyword">int</span>)Math.Ceiling(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;graphics.MeasureString(text,&nbsp;font).Width&nbsp;*&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;factor);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;height&nbsp;=&nbsp;(<span class="cs__keyword">int</span>)Math.Ceiling(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;graphics.MeasureString(text,&nbsp;font).Height&nbsp;*&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;factor);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;graphics.Dispose();&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;textBitmap&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Bitmap(width,&nbsp;height,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;graphics&nbsp;=&nbsp;Graphics.FromImage(textBitmap);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;graphics.Clear(Color.Black);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;graphics.CompositingQuality&nbsp;=&nbsp;CompositingQuality.HighQuality;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;graphics.InterpolationMode&nbsp;=&nbsp;InterpolationMode.HighQualityBicubic;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;graphics.PixelOffsetMode&nbsp;=&nbsp;PixelOffsetMode.HighQuality;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;graphics.SmoothingMode&nbsp;=&nbsp;SmoothingMode.HighQuality;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;graphics.TextRenderingHint&nbsp;=&nbsp;TextRenderingHint.AntiAliasGridFit;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;graphics.ScaleTransform(factor,&nbsp;factor);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;graphics.DrawString(text,&nbsp;font,&nbsp;Brushes.White,&nbsp;<span class="cs__keyword">new</span>&nbsp;PointF(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>));&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;graphics.Flush();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;graphics.Dispose();&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;textBitmap;&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p style="text-align:center"><strong><em>Sir Tim Berners-Lee: 1 Pixel Per Character, 32 Characters, Font Size 4, Zoom 100</em></strong></p>
+<p><img id="92609" src="description/Tim_Berners-Lee_1PixelsPerChar_32Chars_FontSize4_Zoom100.jpg" alt="" width="500" height="548" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Sample Images</h1>
+<p>This article features a number of sample images. All featured images have been licensed allowing for reproduction. The following image files feature a sample images:</p>
+<ul>
+<li><strong><em>Alan Turing &ndash; </em></strong>British Mathematician and Computer Scientist, widely considered to be the father of Computer science and artificial intelligence.
+<a title="Alan Turing" href="http://en.wikipedia.org/wiki/Alan_Turing" >
+Wikipedia article</a>.&nbsp; In regards to the image file used in this article: The copyright is held by the National Portrait Gallery, London.
+<a title="National Portrait Gallery" href="http://www.npg.org.uk/collections/search/portrait/mw165875" >
+http://www.npg.org.uk/collections/search/portrait/mw165875</a>. <a title="Download from Wikipedia" href="http://en.wikipedia.org/wiki/File:Alan_Turing_photo.jpg" >
+Download from Wikipedia</a>. </li><li><strong><em>Anders Hejlsberg &ndash; </em></strong>Danish Software Engineer, original author of
+<strong><em>Turbo Pascal</em></strong>, chief architect of <strong><em>Delphi</em></strong>, lead architect of
+<strong><em>Microsoft C#</em></strong> and core developer of <strong><em>TypeScript</em></strong>.
+<a title="Anders Hejlsberg" href="http://en.wikipedia.org/wiki/Anders_Hejlsberg" >
+Wikipedia article</a>. In regards to the image file used in this article: This file is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by/2.0/deed.en" >
+Attribution 2.0 Generic</a> license. This image was originally posted to <a title="Flickr" href="http://en.wikipedia.org/wiki/Flickr" >
+Flickr</a> by <strong><em>DBegley</em></strong> at <a title="flickr.com" href="http://flickr.com/photos/9438069@N04/2985424826" >
+http://flickr.com/photos/9438069@N04/2985424826</a>. It was reviewed on 7 April 2009 by the
+<a title="FlickreviewR" href="http://commons.wikimedia.org/wiki/User:FlickreviewR" >
+FlickreviewR</a> robot and was confirmed to be licensed under the terms of the cc-by-2.0.
+<a title="Download from Wikipedia" href="http://en.wikipedia.org/wiki/File:Anders_Hejlsberg.jpg" >
+Download from Wikipedia</a>. </li><li><strong><em>Bjarne Stroustrup &ndash; </em></strong>Danish Computer Scientist, original developer of the
+<strong><em>C&#43;&#43; programming language. </em></strong><a title="Bjarne Stroustrup" href="http://en.wikipedia.org/wiki/Bjarne_Stroustrup" >Wikipedia article</a>.&nbsp; In regards to the image file used in this article: Permission is granted to copy,
+ distribute and/or modify this document under the terms of the <strong><a title="GNU Free Documentation License" href="http://en.wikipedia.org/wiki/en:GNU_Free_Documentation_License" >GNU Free Documentation License</a></strong>, Version 1.2 or
+ any later version published by the <a title="Free Software Foundation" href="http://en.wikipedia.org/wiki/en:Free_Software_Foundation" >
+Free Software Foundation</a>; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled
+<em><a title="GNU Free Documentation License" href="http://commons.wikimedia.org/wiki/Commons:GNU_Free_Documentation_License_1.2" >GNU Free Documentation License</a></em>.
+<a title="Download from Wikipedia" href="http://en.wikipedia.org/wiki/File:BjarneStroustrup.jpg" >
+Download from Wikipedia</a>. </li><li><strong><em>Linus Torvalds &ndash; </em></strong>Finnish American Software Engineer, chief architect and project coordinator of the
+<strong><em>Linux Kernel</em></strong>. <a title="Linus Torvalds" href="http://en.wikipedia.org/wiki/Linus_Torvalds" >
+Wikipedia article</a>.&nbsp; In regards to the image file used in this article: This file is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en" >
+Attribution-Share Alike 3.0 Unported</a> license. The image is from an article in a December 2002 issue of Linux Magazine.
+<a title="Download from Wikipedia" href="http://en.wikipedia.org/wiki/File:Linus_Torvalds.jpeg" >
+Download from Wikipedia</a>. </li><li><strong><em>Sir Tim Berners-Lee &ndash; </em></strong>British Computer Scientist, attributed as the inventor of the
+<strong><em>World Wide Web</em></strong>, director of the <strong><em>World Wide Web Consortium (W3C).
+</em></strong><a title="Tim Berners-Lee" href="http://en.wikipedia.org/wiki/Tim_Berners-Lee" >Wikipedia article</a>.<strong><em>&nbsp;
+</em></strong>In regards to the image file used in this article: This file is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/2.0/deed.en" >
+Attribution-Share Alike 2.0 Generic</a> license. This image, originally posted to
+<strong><a title="Flickr" href="http://en.wikipedia.org/wiki/Flickr" >Flickr</a></strong>, was reviewed on 15 March 2013 by the
+<a title="Creative Commons" href="http://commons.wikimedia.org/wiki/Commons:A" >
+administrator</a> or <a title="Creative Commons" href="http://commons.wikimedia.org/wiki/Commons:License_review" >
+reviewer</a> <strong><a title="Creative Commons" href="http://commons.wikimedia.org/wiki/User:Morning_Sunshine" >Morning Sunshine</a></strong>, who confirmed that it was available on Flickr under the stated license on that date.
+<a title="Download from Wikipedia" href="http://en.wikipedia.org/wiki/File:Tim_Berners-Lee-Knight-crop.jpg" >
+Download from Wikipedia</a>. </li></ul>
+<p>The following section lists the original image files that were used as source/input images in generating the
+<a title="Wikipedia: ASCII Art" rel="tag" href="http://en.wikipedia.org/wiki/Ascii_art" >
+ASCII Art</a> images found throughout this article.</p>
+<p style="text-align:center"><strong><em>Alan Turing</em></strong></p>
+<p><img id="92594" src="description/Alan_Turing_photo.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><strong><em>Anders Hejlsberg</em></strong></p>
+<p><img id="92595" src="description/Anders_Hejlsberg.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><strong><em>Bjarne Stroustrup</em></strong></p>
+<p><img id="92596" src="description/BjarneStroustrup.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><strong><em>Linus Torvalds</em></strong></p>
+<p><strong><em><img id="92597" src="description/Linus_Torvalds.jpg" alt="" width="480" height="736" style="margin-right:auto; margin-left:auto; display:block"></em></strong></p>
+<p style="text-align:center"><strong><em><strong><em>Sir Tim Berners-Lee</em></strong></em></strong></p>
+<p><strong><em><img id="92598" src="description/Tim_Berners-Lee-Knight-crop.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></em></strong></p>
+<h1><span>Source Code Files</span></h1>
+<ul>
+<li><em>ExtBitmap.cs - Provides the definition of the following methods: ASCIIFilter, GenerateRandomString, RandomStringSort, GetColorCharacter, TextToImage and ScaleBitmap.</em>
+</li><li><em><em>MainForm.cs - Windows Forms based test application.</em></em> </li></ul>
+<h1>More Information</h1>
+<p style="text-align:justify">This article is based on an article originally posted on my
+<a href="http://softwarebydefault.com/" >blog</a>:&nbsp;<a href="http://softwarebydefault.com/2013/07/14/image-ascii-art/">http://softwarebydefault.com/2013/07/14/image-ascii-art/</a> If you have any questions/comments please feel free to make
+ use of the Q&amp;A section on this page, also please remember to rate this article.</p>
+<p><strong><em><a title="About Dewald Esterhuizen" rel="tag" href="http://softwarebydefault.com/about/" >Dewald Esterhuizen</a></em></strong></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

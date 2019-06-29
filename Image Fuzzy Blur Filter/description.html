@@ -1,0 +1,749 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/a7bd86db-8a7a-43ce-8954-21f8f839f51bCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Fuzzy Blur Filter</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Fuzzy Blur Filter</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, .NET, Class Library, .NET Framework 4, .NET Framework 3.5 SP1, .NET Framework 4.0, Image manipulation, C# Language, WinForms, .NET Framework 4.5, .NET Framwork, Graphics Functions, Visual C Sharp .NET, Image process, Filter expression, Manipulation, Transformation, .NET 4.5, Computer Vision, .NET Development, Edge Detection, Image Processing, Digital Signal Processing, Image Transformation, Image Software
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Graphics, C#, Class Library, Windows Forms, Graphics and 3D, Images, GeometryDrawing<wbr />, Media, ImageViewer, Windows Form Controls, 2d graphics, DSP (digital signal processing), Generics, Visual How To, Image manipulation, Code Sample, Image, Imaging, Drawing, How to, Colors and Gradient Brushes, Generic C# resuable code, Extension, Image Optimization, Windows Forms Controls, Graphics Functions, .Net Programming, code snippets, BitmapImage, Load Image, Dynamically Image, Extension methods, image rendering, Image Filters, Image Smoothing, Image Transformation, graphic rendering
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Phone, Data, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">8/10/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Fuzzy-Blur-Filter-93e15a78">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p style="text-align:justify">This article serves to illustrate the concepts involved in implementing a
+<strong><em>Fuzzy Blur Filter</em></strong>. This filter results in rendering&nbsp; non-photo realistic images which express a certain artistic effect.</p>
+<p style="text-align:center"><em><strong>Frog: Filter Size 19&times;19</strong></em></p>
+<p><img id="94277" src="description/Frog1_FilterSize19x19.jpg" alt="" width="500" height="446" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1><span>Building the Sample</span></h1>
+<p>There are no special requirements or instructions for building the sample source code.</p>
+<h1>Using the Sample Application</h1>
+<p style="text-align:justify">The sample source code accompanying this article includes a
+<a title="Windows Forms" rel="tag" href="http://msdn.microsoft.com/en-us/library/dd30h2yb.aspx" >
+Windows Forms</a> based test application. The concepts explored throughout this article can be replicated/tested using the sample application.</p>
+<p>When executing the sample application the user interface exposes a number of configurable options:</p>
+<ul>
+<li>
+<div style="text-align:left"><strong><em>Loading and Saving Images &ndash;</em></strong> Users are able to load source/input
+<a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> from the local <a title="System.IO.File" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.io.file.aspx" >
+file</a> system by clicking the <strong><em>Load Image</em></strong> button. Clicking the
+<strong><em>Save Image</em></strong> button allow users to save filter result <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a>.</div>
+</li><li style="text-align:left">
+<div><strong><em>Filter Size &ndash;</em></strong> The specified filter size affects the filter intensity. Smaller filter sizes result in less blurry
+<a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> being rendered, whereas larger filter sizes result in more blurry <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> being rendered.</div>
+</li><li>
+<div style="text-align:left"><strong><em>Edge Factors &ndash;</em></strong> The contrast of fuzzy
+<a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a> expressed in resulting <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> depend on the specified edge factor values. Values less than one result in detected
+<a title="Image Edges" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+image edges</a> being darkened and values greater than one result in detected <a title="Image Edges" href="http://en.wikipedia.org/wiki/Edge_detection" >
+image edges</a> being lightened.</div>
+</li></ul>
+<p>The following image is a screenshot of the <strong><em>Fuzzy Blur Filter</em></strong> sample application in action:</p>
+<p><img id="94278" src="description/FuzzyBlurFilter_SampleApplication.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><strong><em>Frog: Filter Size 9&times;9</em></strong></p>
+<p><img id="94279" src="description/Frog2_FilterSize9x9.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Fuzzy Blur Overview</h1>
+<p style="text-align:justify">The <strong><em>Fuzzy Blur Filter</em></strong> relies on the interference of
+<a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a> when performing <a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+edge detection</a> in order to create a fuzzy effect. In addition <a title="Image blurring" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >
+image blurring</a> results from performing a <a title="Mean Filter" rel="tag" href="http://en.wikipedia.org/wiki/Box_blur" >
+mean filter</a>.</p>
+<p>The steps involved in performing a <strong><em>Fuzzy Blur Filter</em></strong> can be described as follows:</p>
+<ol>
+<li>
+<div style="text-align:justify"><strong><em>Edge Detection and Enhancement &ndash;</em></strong> Using the first edge factor specified enhance
+<a title="Image Edges" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+image edges</a> by performing <strong><em>Boolean Edge detection</em></strong>. Being sensitive to
+<a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a>, a fair amount of detected <a title="Image Edges" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+image edges</a> will actually be <a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a> in addition to actual <a title="Image Edges" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+image edges</a>.</div>
+</li><li>
+<div style="text-align:justify"><strong><em>Mean Filter Blur &ndash;</em></strong> Using the edge enhanced
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> created in the previous step perform a <a title="Mean Filter" rel="tag" href="http://en.wikipedia.org/wiki/Box_blur" >
+mean filter</a> blur. The enhanced edges will be blurred since a <a title="Mean Filter" rel="tag" href="http://en.wikipedia.org/wiki/Box_blur" >
+Mean filter</a> does not have edge preservation properties. The size of the <a title="Mean Filter" rel="tag" href="http://en.wikipedia.org/wiki/Box_blur" >
+Mean filter</a> implemented depends on a user specified value.</div>
+</li><li>
+<div style="text-align:justify"><strong><em>Edge Detection and Enhancement -</em></strong>&nbsp; Using the
+<a title="Mean Filter" rel="tag" href="http://en.wikipedia.org/wiki/Box_blur" >
+Mean filter</a> blurred <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> created in the previous step once again perform <strong><em>Boolean Edge detection</em></strong>, enhancing detected edges according to the second edge factor specified.</div>
+</li></ol>
+<p style="text-align:center"><strong><em>Frog: Filter Size 9&times;9</em></strong></p>
+<p><img id="94280" src="description/Frog3_FilterSize9x9.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Mean Filter Blurring</h1>
+<p style="text-align:justify">A <a title="Mean Filter" rel="tag" href="http://en.wikipedia.org/wiki/Box_blur" >
+Mean Filter</a> Blur, also known as a <a title="Box Blur" rel="tag" href="http://en.wikipedia.org/wiki/Box_blur" >
+Box Blur</a>, can be performed through <a title="Image Convolution" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution" >
+image convolution</a>. The size of the <a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a>/<a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >kernel</a> implemented when preforming
+<a title="Image Convolution" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution" >
+image convolution</a> will be determined through user input.</p>
+<p style="text-align:justify">Every <a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a>/<a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >kernel</a> element should be set to one. The resulting value should be multiplied by a factor value equating to one divided by the
+<a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a>/<a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >kernel</a> size. As an example, a
+<a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a>/<a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >kernel</a> size of
+<strong><em>3&times;3</em></strong> can be expressed as follows:</p>
+<p><img id="94281" src="description/MeanKernel1.jpg" alt="" width="249" height="119" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p>An alternative expression can also be:</p>
+<p><img id="94283" src="description/MeanKernel2.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><strong><em>Frog: Filter Size 9&times;9</em></strong></p>
+<p><img id="94284" src="description/Frog4_FilterSize9x9.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Boolean Edge Detection without a local threshold</h1>
+<p style="text-align:justify">When performing <strong><em>Boolean Edge Detection</em></strong> a local threshold should be implemented in order to exclude
+<a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a>. In this article we rely on the interference of <a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a> in order to render a fuzzy <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> effect. By not implementing a local threshold when performing <strong><em>Boolean Edge detection</em></strong> the sample source code ensures sufficient interference from
+<a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a>.</p>
+<p style="text-align:justify">The steps involved in performing <strong><em>Boolean Edge Detection</em></strong> without a local threshold can be described as follows:</p>
+<ol>
+<li><strong><em>Calculate Neighbourhood Mean &ndash;</em></strong> Iterate each <a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> forming part of the source/input <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a>. Using a <strong><em>3&times;3</em></strong> <a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a> size calculate the mean value of the neighbourhood surrounding the <a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> currently being iterated. </li><li><strong><em>Create Mean comparison Matrix &ndash;</em></strong> Once again using a
+<strong><em>3&times;3</em></strong> <a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a> size compare each neighbourhood <a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> to the newly calculated mean value. Create a temporary <strong><em>3&times;3</em></strong> size
+<a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a>, each <a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a> element&rsquo;s value should be the result of mean comparison. Should the value expressed by a neighbourhood
+<a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> exceed the mean value the corresponding temporary <a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a> element should be set to one. When the calculated mean value exceeds the value of a neighbourhood
+<a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> the corresponding temporary&nbsp; <a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a> element should be set to zero. </li><li><strong><em>Compare Edge Masks &ndash;</em></strong> Using sixteen predefined edge masks compare the temporary
+<a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a> created in the previous step to each edge mask. If the temporary <a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a> matches one of the predefined edge masks multiply the specified factor to the
+<a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> currently being iterated. </li></ol>
+<p style="text-align:justify"><strong><em><span style="text-decoration:underline">Note:</span>&nbsp;</em></strong>A detailed article on
+<strong><em>Boolean Edge detection</em></strong> implementing a local threshold can be found here:
+<a title="Boolean Edge Detection" rel="tag" href="http://softwarebydefault.com/2013/06/01/boolean-edge-detection/" >
+C# How to: Boolean Edge Detection</a></p>
+<p style="text-align:center"><strong><em>Frog: Filter Size 9&times;9</em></strong></p>
+<p><img id="94286" src="description/Frog1_FilterSize9x9.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">The sixteen predefined edge masks each represent an
+<a title="Image Edge" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+image edge</a> in a different direction. The predefined edge masks can be expressed as:</p>
+<p><img id="94287" src="description/EdgeMasks.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><strong><em>Frog: Filter Size 13&times;13</em></strong></p>
+<p><img id="94288" src="description/Frog2_FilterSize13x13.jpg" alt="" width="500" height="382" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Implementing a Mean Filter</h1>
+<p style="text-align:justify">The sample source code defines the <strong><em>MeanFilter</em></strong> method, an
+<a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> targeting the <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class. The definition listed as follows:</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">private static Bitmap MeanFilter(this Bitmap sourceBitmap, 
+                                 int meanSize)
+{
+    byte[] pixelBuffer = sourceBitmap.GetByteArray(); 
+    byte[] resultBuffer = new byte[pixelBuffer.Length];
+
+    double blue = 0.0, green = 0.0, red = 0.0;
+    double factor = 1.0 / (meanSize * meanSize);
+
+    int imageStride = sourceBitmap.Width * 4;
+    int filterOffset = meanSize / 2; 
+    int calcOffset = 0, filterY = 0, filterX = 0; 
+
+    for (int k = 0; k &#43; 4 &lt; pixelBuffer.Length; k &#43;= 4)
+    {
+        blue = 0; green = 0; red = 0;
+        filterY = -filterOffset;
+        filterX = -filterOffset;
+
+        while (filterY &lt;= filterOffset)
+        {
+            calcOffset = k &#43; (filterX * 4) &#43;
+            (filterY * imageStride); 
+
+            calcOffset = (calcOffset &lt; 0 ? 0 :
+            (calcOffset &gt;= pixelBuffer.Length - 2 ?
+            pixelBuffer.Length - 3 : calcOffset));
+
+            blue &#43;= pixelBuffer[calcOffset];
+            green &#43;= pixelBuffer[calcOffset &#43; 1];
+            red &#43;= pixelBuffer[calcOffset &#43; 2];
+
+            filterX&#43;&#43;;
+
+            if (filterX &gt; filterOffset)
+            {
+                filterX = -filterOffset;
+                filterY&#43;&#43;;
+            }
+        }
+
+        resultBuffer[k] = ClipByte(factor * blue);
+        resultBuffer[k &#43; 1] = ClipByte(factor * green);
+        resultBuffer[k &#43; 2] = ClipByte(factor * red);
+        resultBuffer[k &#43; 3] = 255;
+    }
+
+    return resultBuffer.GetImage(sourceBitmap.Width, sourceBitmap.Height);
+} </pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;MeanFilter(<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;meanSize)&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;pixelBuffer&nbsp;=&nbsp;sourceBitmap.GetByteArray();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;resultBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[pixelBuffer.Length];&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">double</span>&nbsp;blue&nbsp;=&nbsp;<span class="cs__number">0.0</span>,&nbsp;green&nbsp;=&nbsp;<span class="cs__number">0.0</span>,&nbsp;red&nbsp;=&nbsp;<span class="cs__number">0.0</span>;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">double</span>&nbsp;factor&nbsp;=&nbsp;<span class="cs__number">1.0</span>&nbsp;/&nbsp;(meanSize&nbsp;*&nbsp;meanSize);&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;imageStride&nbsp;=&nbsp;sourceBitmap.Width&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;filterOffset&nbsp;=&nbsp;meanSize&nbsp;/&nbsp;<span class="cs__number">2</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;calcOffset&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;filterY&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;filterX&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;k&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;k&nbsp;&#43;&nbsp;<span class="cs__number">4</span>&nbsp;&lt;&nbsp;pixelBuffer.Length;&nbsp;k&nbsp;&#43;=&nbsp;<span class="cs__number">4</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blue&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;green&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;red&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterY&nbsp;=&nbsp;-filterOffset;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterX&nbsp;=&nbsp;-filterOffset;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">while</span>&nbsp;(filterY&nbsp;&lt;=&nbsp;filterOffset)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calcOffset&nbsp;=&nbsp;k&nbsp;&#43;&nbsp;(filterX&nbsp;*&nbsp;<span class="cs__number">4</span>)&nbsp;&#43;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(filterY&nbsp;*&nbsp;imageStride);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calcOffset&nbsp;=&nbsp;(calcOffset&nbsp;&lt;&nbsp;<span class="cs__number">0</span>&nbsp;?&nbsp;<span class="cs__number">0</span>&nbsp;:&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(calcOffset&nbsp;&gt;=&nbsp;pixelBuffer.Length&nbsp;-&nbsp;<span class="cs__number">2</span>&nbsp;?&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer.Length&nbsp;-&nbsp;<span class="cs__number">3</span>&nbsp;:&nbsp;calcOffset));&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blue&nbsp;&#43;=&nbsp;pixelBuffer[calcOffset];&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;green&nbsp;&#43;=&nbsp;pixelBuffer[calcOffset&nbsp;&#43;&nbsp;<span class="cs__number">1</span>];&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;red&nbsp;&#43;=&nbsp;pixelBuffer[calcOffset&nbsp;&#43;&nbsp;<span class="cs__number">2</span>];&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterX&#43;&#43;;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(filterX&nbsp;&gt;&nbsp;filterOffset)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterX&nbsp;=&nbsp;-filterOffset;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterY&#43;&#43;;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[k]&nbsp;=&nbsp;ClipByte(factor&nbsp;*&nbsp;blue);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]&nbsp;=&nbsp;ClipByte(factor&nbsp;*&nbsp;green);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]&nbsp;=&nbsp;ClipByte(factor&nbsp;*&nbsp;red);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">3</span>]&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;resultBuffer.GetImage(sourceBitmap.Width,&nbsp;sourceBitmap.Height);&nbsp;
+}&nbsp;</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p style="text-align:center"><strong><em>Frog: Filter Size 19&times;19</em></strong></p>
+<p><img id="94289" src="description/Frog3_FilterSize19x19.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Implementing Boolean Edge Detection</h1>
+<p style="text-align:justify"><strong><em>Boolean Edge detection</em></strong> is performed in the sample source code through the implementation of the
+<strong><em>BooleanEdgeDetectionFilter</em></strong> method. This method has been defined as an
+<a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> targeting the <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class.</p>
+<p style="text-align:justify">The following code snippet provides the definition of the
+<strong><em>BooleanEdgeDetectionFilter</em></strong> <a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a>:</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Bitmap BooleanEdgeDetectionFilter( 
+       this Bitmap sourceBitmap, float edgeFactor) 
+{
+    byte[] pixelBuffer = sourceBitmap.GetByteArray(); 
+    byte[] resultBuffer = new byte[pixelBuffer.Length]; 
+    Buffer.BlockCopy(pixelBuffer, 0, resultBuffer, 
+                     0, pixelBuffer.Length); 
+
+    List&lt;string&gt; edgeMasks = GetBooleanEdgeMasks(); 
+ 
+    int imageStride = sourceBitmap.Width * 4; 
+    int matrixMean = 0, pixelTotal = 0; 
+    int filterY = 0, filterX = 0, calcOffset = 0; 
+    string matrixPatern = String.Empty; 
+
+    for (int k = 0; k &#43; 4 &lt; pixelBuffer.Length; k &#43;= 4) 
+    {
+        matrixPatern = String.Empty; 
+        matrixMean = 0; pixelTotal = 0; 
+        filterY = -1; filterX = -1; 
+
+        while (filterY &lt; 2) 
+        {
+            calcOffset = k &#43; (filterX * 4) &#43; 
+            (filterY * imageStride); 
+
+            calcOffset = (calcOffset &lt; 0 ? 0 : 
+            (calcOffset &gt;= pixelBuffer.Length - 2 ? 
+            pixelBuffer.Length - 3 : calcOffset)); 
+ 
+            matrixMean &#43;= pixelBuffer[calcOffset]; 
+            matrixMean &#43;= pixelBuffer[calcOffset &#43; 1]; 
+            matrixMean &#43;= pixelBuffer[calcOffset &#43; 2]; 
+
+            filterX &#43;= 1; 
+
+            if (filterX &gt; 1) 
+             { filterX = -1; filterY &#43;= 1; } 
+        }
+
+        matrixMean = matrixMean / 9; 
+        filterY = -1; filterX = -1; 
+
+        while (filterY &lt; 2) 
+        {
+            calcOffset = k &#43; (filterX * 4) &#43; 
+            (filterY * imageStride); 
+
+            calcOffset = (calcOffset &lt; 0 ? 0 : 
+            (calcOffset &gt;= pixelBuffer.Length - 2 ? 
+            pixelBuffer.Length - 3 : calcOffset)); 
+
+            pixelTotal = pixelBuffer[calcOffset]; 
+            pixelTotal &#43;= pixelBuffer[calcOffset &#43; 1]; 
+            pixelTotal &#43;= pixelBuffer[calcOffset &#43; 2]; 
+ 
+            matrixPatern &#43;= (pixelTotal &gt; matrixMean 
+                                       ? &quot;1&quot; : &quot;0&quot;); 
+            filterX &#43;= 1; 
+
+            if (filterX &gt; 1) 
+            { filterX = -1; filterY &#43;= 1; } 
+        } 
+
+        if (edgeMasks.Contains(matrixPatern)) 
+        {
+            resultBuffer[k] = 
+            ClipByte(resultBuffer[k] * edgeFactor); 
+
+            resultBuffer[k &#43; 1] = 
+            ClipByte(resultBuffer[k &#43; 1] * edgeFactor); 
+
+            resultBuffer[k &#43; 2] = 
+            ClipByte(resultBuffer[k &#43; 2] * edgeFactor); 
+        }
+    }
+
+    return resultBuffer.GetImage(sourceBitmap.Width, sourceBitmap.Height); 
+} </pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;BooleanEdgeDetectionFilter(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;<span class="cs__keyword">float</span>&nbsp;edgeFactor)&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;pixelBuffer&nbsp;=&nbsp;sourceBitmap.GetByteArray();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;resultBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[pixelBuffer.Length];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Buffer.BlockCopy(pixelBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;resultBuffer,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__number">0</span>,&nbsp;pixelBuffer.Length);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;List&lt;<span class="cs__keyword">string</span>&gt;&nbsp;edgeMasks&nbsp;=&nbsp;GetBooleanEdgeMasks();&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;imageStride&nbsp;=&nbsp;sourceBitmap.Width&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;matrixMean&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;pixelTotal&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;filterY&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;filterX&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;calcOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">string</span>&nbsp;matrixPatern&nbsp;=&nbsp;String.Empty;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;k&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;k&nbsp;&#43;&nbsp;<span class="cs__number">4</span>&nbsp;&lt;&nbsp;pixelBuffer.Length;&nbsp;k&nbsp;&#43;=&nbsp;<span class="cs__number">4</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrixPatern&nbsp;=&nbsp;String.Empty;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrixMean&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;pixelTotal&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterY&nbsp;=&nbsp;-<span class="cs__number">1</span>;&nbsp;filterX&nbsp;=&nbsp;-<span class="cs__number">1</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">while</span>&nbsp;(filterY&nbsp;&lt;&nbsp;<span class="cs__number">2</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calcOffset&nbsp;=&nbsp;k&nbsp;&#43;&nbsp;(filterX&nbsp;*&nbsp;<span class="cs__number">4</span>)&nbsp;&#43;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(filterY&nbsp;*&nbsp;imageStride);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calcOffset&nbsp;=&nbsp;(calcOffset&nbsp;&lt;&nbsp;<span class="cs__number">0</span>&nbsp;?&nbsp;<span class="cs__number">0</span>&nbsp;:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(calcOffset&nbsp;&gt;=&nbsp;pixelBuffer.Length&nbsp;-&nbsp;<span class="cs__number">2</span>&nbsp;?&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer.Length&nbsp;-&nbsp;<span class="cs__number">3</span>&nbsp;:&nbsp;calcOffset));&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrixMean&nbsp;&#43;=&nbsp;pixelBuffer[calcOffset];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrixMean&nbsp;&#43;=&nbsp;pixelBuffer[calcOffset&nbsp;&#43;&nbsp;<span class="cs__number">1</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrixMean&nbsp;&#43;=&nbsp;pixelBuffer[calcOffset&nbsp;&#43;&nbsp;<span class="cs__number">2</span>];&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterX&nbsp;&#43;=&nbsp;<span class="cs__number">1</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(filterX&nbsp;&gt;&nbsp;<span class="cs__number">1</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;filterX&nbsp;=&nbsp;-<span class="cs__number">1</span>;&nbsp;filterY&nbsp;&#43;=&nbsp;<span class="cs__number">1</span>;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrixMean&nbsp;=&nbsp;matrixMean&nbsp;/&nbsp;<span class="cs__number">9</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterY&nbsp;=&nbsp;-<span class="cs__number">1</span>;&nbsp;filterX&nbsp;=&nbsp;-<span class="cs__number">1</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">while</span>&nbsp;(filterY&nbsp;&lt;&nbsp;<span class="cs__number">2</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calcOffset&nbsp;=&nbsp;k&nbsp;&#43;&nbsp;(filterX&nbsp;*&nbsp;<span class="cs__number">4</span>)&nbsp;&#43;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(filterY&nbsp;*&nbsp;imageStride);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calcOffset&nbsp;=&nbsp;(calcOffset&nbsp;&lt;&nbsp;<span class="cs__number">0</span>&nbsp;?&nbsp;<span class="cs__number">0</span>&nbsp;:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(calcOffset&nbsp;&gt;=&nbsp;pixelBuffer.Length&nbsp;-&nbsp;<span class="cs__number">2</span>&nbsp;?&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer.Length&nbsp;-&nbsp;<span class="cs__number">3</span>&nbsp;:&nbsp;calcOffset));&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelTotal&nbsp;=&nbsp;pixelBuffer[calcOffset];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelTotal&nbsp;&#43;=&nbsp;pixelBuffer[calcOffset&nbsp;&#43;&nbsp;<span class="cs__number">1</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelTotal&nbsp;&#43;=&nbsp;pixelBuffer[calcOffset&nbsp;&#43;&nbsp;<span class="cs__number">2</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrixPatern&nbsp;&#43;=&nbsp;(pixelTotal&nbsp;&gt;&nbsp;matrixMean&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;<span class="cs__string">&quot;1&quot;</span>&nbsp;:&nbsp;<span class="cs__string">&quot;0&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterX&nbsp;&#43;=&nbsp;<span class="cs__number">1</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(filterX&nbsp;&gt;&nbsp;<span class="cs__number">1</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;filterX&nbsp;=&nbsp;-<span class="cs__number">1</span>;&nbsp;filterY&nbsp;&#43;=&nbsp;<span class="cs__number">1</span>;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(edgeMasks.Contains(matrixPatern))&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[k]&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ClipByte(resultBuffer[k]&nbsp;*&nbsp;edgeFactor);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ClipByte(resultBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]&nbsp;*&nbsp;edgeFactor);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ClipByte(resultBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]&nbsp;*&nbsp;edgeFactor);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;resultBuffer.GetImage(sourceBitmap.Width,&nbsp;sourceBitmap.Height);&nbsp;&nbsp;
+}&nbsp;</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p style="text-align:center"><strong><em>Frog: Filter Size 13&times;13</em></strong></p>
+<p><img id="94290" src="description/Frog4_FilterSize13x13.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">The predefined edge masks implemented in mean comparison have been wrapped by the
+<strong><em>GetBooleanEdgeMasks</em></strong> method. The definition as follows:</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static List&lt;string&gt; GetBooleanEdgeMasks() 
+{
+    List&lt;string&gt; edgeMasks = new List&lt;string&gt;(); 
+
+    edgeMasks.Add(&quot;011011011&quot;); 
+    edgeMasks.Add(&quot;000111111&quot;); 
+    edgeMasks.Add(&quot;110110110&quot;); 
+    edgeMasks.Add(&quot;111111000&quot;); 
+    edgeMasks.Add(&quot;011011001&quot;); 
+    edgeMasks.Add(&quot;100110110&quot;); 
+    edgeMasks.Add(&quot;111011000&quot;); 
+    edgeMasks.Add(&quot;111110000&quot;); 
+    edgeMasks.Add(&quot;111011001&quot;); 
+    edgeMasks.Add(&quot;100110111&quot;); 
+    edgeMasks.Add(&quot;001011111&quot;); 
+    edgeMasks.Add(&quot;111110100&quot;); 
+    edgeMasks.Add(&quot;000011111&quot;); 
+    edgeMasks.Add(&quot;000110111&quot;); 
+    edgeMasks.Add(&quot;001011011&quot;); 
+    edgeMasks.Add(&quot;110110100&quot;); 
+
+    return edgeMasks; 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;List&lt;<span class="cs__keyword">string</span>&gt;&nbsp;GetBooleanEdgeMasks()&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;List&lt;<span class="cs__keyword">string</span>&gt;&nbsp;edgeMasks&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;List&lt;<span class="cs__keyword">string</span>&gt;();&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;011011011&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;000111111&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;110110110&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;111111000&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;011011001&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;100110110&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;111011000&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;111110000&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;111011001&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;100110111&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;001011111&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;111110100&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;000011111&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;000110111&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;001011011&quot;</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;edgeMasks.Add(<span class="cs__string">&quot;110110100&quot;</span>);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;edgeMasks;&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p style="text-align:center"><strong><em>Frog: Filter Size 19&times;19</em></strong></p>
+<p><img id="94291" src="description/Frog2_FilterSize19x19.jpg" alt="" width="500" height="382" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Implementing a Fuzzy Blur Filter</h1>
+<p style="text-align:justify">The <strong><em>FuzzyEdgeBlurFilter</em></strong> method serves as the implementation of a
+<strong><em>Fuzzy Blur Filter</em></strong>. As discussed earlier a <strong><em>Fuzzy Blur Filter</em></strong> involves enhancing
+<a title="Image Edges" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+image edges</a> through <strong><em>Boolean Edge detection</em></strong>, performing a
+<a title="Mean Filter" rel="tag" href="http://en.wikipedia.org/wiki/Box_blur" >
+Mean Filter</a> blur and then once again performing <strong><em>Boolean Edge detection</em></strong>. This method has been defined as an extension method targeting the
+<a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class.</p>
+<p style="text-align:justify">The following code snippet provides the definition of the
+<strong><em>FuzzyEdgeBlurFilter</em></strong> method:</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Bitmap FuzzyEdgeBlurFilter(this Bitmap sourceBitmap,  
+                                         int filterSize,  
+                                         float edgeFactor1,  
+                                         float edgeFactor2) 
+{
+    return  
+    sourceBitmap.BooleanEdgeDetectionFilter(edgeFactor1). 
+    MeanFilter(filterSize).BooleanEdgeDetectionFilter(edgeFactor2); 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;FuzzyEdgeBlurFilter(<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;filterSize,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">float</span>&nbsp;edgeFactor1,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">float</span>&nbsp;edgeFactor2)&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.BooleanEdgeDetectionFilter(edgeFactor1).&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;MeanFilter(filterSize).BooleanEdgeDetectionFilter(edgeFactor2);&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p style="text-align:center"><strong><em>Frog: Filter Size 3&times;3</em></strong></p>
+<p><img id="94292" src="description/Frog1_FilterSize3x3.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Sample Images</h1>
+<p style="text-align:justify">This article features a number of sample images. All featured images have been licensed allowing for reproduction. The following images feature as sample images:</p>
+<p><img id="94293" src="description/Litoria_tyleri.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p>&nbsp;</p>
+<ul>
+<li><strong><em>Tyler&rsquo;s Tree Frog</em></strong> </li><li><strong><em>Attribution:</em></strong> <a title="Wikipedia" href="http://en.wikipedia.org/wiki/User:LiquidGhoul" >
+LiquidGhoul</a>. This file has been released into the <a title="Wikipedia" href="http://en.wikipedia.org/wiki/en:public_domain" >
+public domain</a> by its author, <a href="http://en.wikipedia.org/wiki/User:LiquidGhoul">
+LiquidGhoul</a>. This applies worldwide. </li><li>Download from <a title="Wikipedia" href="http://en.wikipedia.org/wiki/File:Litoria_tyleri.jpg" >
+Wikipedia</a>. </li></ul>
+<p>&nbsp;</p>
+<p><img id="94294" src="description/Schrecklicherpfeilgiftfrosch-01.jpg" alt="" width="500" height="382" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p>&nbsp;</p>
+<ul>
+<li><strong><em>Phyllobates Terribilis</em></strong> </li><li><strong><em>Attribution:</em> </strong><a title="Wikipedia" href="http://de.wikipedia.org/wiki/Benutzer:Wilfried_Berns" >Wilfried Berns</a>. This file is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/2.0/de/deed.en" >
+Attribution-Share Alike 2.0 Germany</a> license. </li><li>Download from <a title="Wikipedia" href="http://en.wikipedia.org/wiki/File:Schrecklicherpfeilgiftfrosch-01.jpg" >
+Wikipedia</a>. </li></ul>
+<p>&nbsp;</p>
+<p><img id="94295" src="description/Dendropsophus_microcephalus_-_calling_male_.html(Cope%2c_1886).jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p>&nbsp;</p>
+<ul>
+<li><strong><em>Dendropsophus Microcephalus</em></strong> </li><li><strong><em>Attribution:</em> </strong><a title="Flickr" href="http://www.flickr.com/people/19731486@N07">Brian Gratwicke</a>. This file is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by/2.0/deed.en" >
+Attribution 2.0 Generic</a> license. </li><li>Download from <a title="Wikipedia" href="http://en.wikipedia.org/wiki/File:Dendropsophus_microcephalus_-_calling_male_(Cope,_1886).jpg" >
+Wikipedia</a> </li></ul>
+<p>&nbsp;</p>
+<p><img id="94296" src="description/Atelopus_zeteki1.jpg" alt="" width="500" height="316" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p>&nbsp;</p>
+<ul>
+<li><strong><em>Panamanian Golden Frog</em></strong> </li><li><strong><em>Attribution:</em> </strong><a title="Flickr" href="http://www.flickr.com/people/19731486@N07" >Brian Gratwicke</a>. This file is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by/2.0/deed.en" >
+Attribution 2.0 Generic</a> license. </li><li>Download from <a title="Wikipedia" href="http://en.wikipedia.org/wiki/File:Atelopus_zeteki1.jpg" >
+Wikipedia</a>. </li></ul>
+<h1><span>Source Code Files</span></h1>
+<ul>
+<li><em>ExtBitmap.cs - Contains the definition of the FuzzyEdgeBlurFilter,&nbsp;MeanFilter and BooleanEdgeDetectionFilter extension methods.</em>
+</li><li><em><em>MainForm.cs - Windows Forms based Sample Application.</em></em> </li></ul>
+<h1>More Information</h1>
+<p style="text-align:justify">This article is based on an article originally posted on my
+<a href="http://softwarebydefault.com/" >blog</a>:&nbsp;<a href="http://softwarebydefault.com/2013/08/09/fuzzy-blur-filter/">http://softwarebydefault.com/2013/08/09/fuzzy-blur-filter/</a>&nbsp;If you have any questions/comments please feel free
+ to make use of the Q&amp;A section on this page, also please remember to rate this article.</p>
+<p><strong><em><a title="About Dewald Esterhuizen" rel="tag" href="http://softwarebydefault.com/about/" >Dewald Esterhuizen</a></em></strong></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

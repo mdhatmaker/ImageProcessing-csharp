@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/0aac1760-b513-488a-ba57-e31d9413a075Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Image Solarise</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Image Solarise</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, GDI+, File System, .NET, Windows Forms, .NET Framework 4, .NET 3.0, .NET Framework 3.5 SP1, .NET Framework, .NET Framework 4.0, Library, Windows General, C# Language, WinForms, System.Media Namespace, .NET Framework 4.5, .NET Framwork, C# 3.0, Graphics Functions, Microsoft .NET Framework 3.5 SP1, Visual C Sharp .NET, System.Drawing.<wbr />Drawing2D, Image process, Filter expression, Manipulation, .NET 4.5, .NET 2.0, .NET Development
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Graphics, C#, File System, User Interface, Windows Forms, Graphics and 3D, Images, Media, ImageViewer, Windows Forms Designer, 2d graphics, Image manipulation, Image Gallery, Image, .NET 4, Imaging, Drawing, How to, Generic C# resuable code, Image Optimization, general, Windows Forms Controls, C# Language Features, Graphics Functions, BitmapImage, Load Image, Dynamically Image
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Phone, Data, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">4/19/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Image-Solarise-60f3b145">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p style="text-align:justify">The focus of this article is set on exploring the concept of Image Solarisation. In this article the tasks required to perform Image Solarisation&nbsp; are entirely implemented on pixel data level.
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+Image</a> manipulation is only implemented in the form of updating the individual
+<strong>Alpha</strong>, <strong>Red</strong>, <strong>Green</strong> and <strong>
+Blue</strong> colour components expressed by <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+Image</a> pixels.</p>
+<h1><span>Building the Sample</span></h1>
+<p>There are&nbsp;no special requirements or instructions for building the sample source code.</p>
+<h1><span style="font-size:20px">What is Image Solarisation?</span></h1>
+<p style="text-align:justify">Image Solarisation can be described as a form of Image inversion/colour inversion. A distinction can be made&nbsp; between solarisation and colour inversion when taking into regard threshold values implemented when performing image
+ solarisation.</p>
+<p style="text-align:justify">Colour inversion can be implemented by subtracting each colour component from the value 255 and then assigning the relevant colour component to the result of subtraction. Colour inversion in terms of a formula can be expressed
+ as follows:</p>
+<p style="text-align:center"><strong><em>R = 255 &ndash; R<sup>1</sup></em></strong></p>
+<p style="text-align:center"><strong><em>G = 255 &ndash; G<sup>1</sup></em></strong></p>
+<p style="text-align:center"><strong><em>B = 255 &ndash; B<sup>1</sup></em></strong></p>
+<p style="text-align:justify">In this expression <strong><em>R<sup>1</sup></em></strong>
+<strong><em>G<sup>2</sup></em></strong> and <strong><em>B<sup>1</sup></em></strong> represent the original value of a pixel&rsquo;s
+<strong><em>Red</em></strong>, <strong><em>Green</em></strong> and <strong><em>Blue</em></strong> colour components prior to being updated. Image Solarisation when expressed as a formula could be represented as follows:</p>
+<p style="text-align:center"><strong><em>R = R<sup>1</sup></em></strong></p>
+<p style="text-align:center"><strong><em>If R<sup>1</sup> &lt; R<sub>T</sub>&nbsp;&nbsp; Then R = 255 &ndash; R<sup>1</sup></em></strong></p>
+<p style="text-align:center"><strong><em>G = G<sup>1</sup></em></strong></p>
+<p style="text-align:center"><strong><em>If G<sup>1</sup> &lt; G<sub>T</sub>&nbsp;&nbsp; Then G = 255 &ndash; G<sup>1</sup></em></strong></p>
+<p style="text-align:center"><strong><em>B = B<sup>1</sup></em></strong></p>
+<p style="text-align:center"><strong><em>If B<sup>1</sup> &lt; B<sub>T</sub>&nbsp;&nbsp; Then B = 255 &ndash; B<sup>1</sup></em></strong></p>
+<p style="text-align:justify">When implementing this expression <strong><em>R<sup>1</sup></em></strong>
+<strong><em>G<sup>1</sup></em></strong> and <strong><em>B<sup>1</sup></em></strong> represent the original value of a pixel&rsquo;s
+<strong><em>Red</em></strong>, <strong><em>Green</em></strong> and <strong><em>Blue</em></strong> colour components prior to being updated.
+<strong><em>R<sub>T</sub></em></strong> <strong><em>G<sub>T</sub></em></strong> and
+<strong><em>B<sub>T</sub></em></strong> in this scenario represent configurable threshold values applicable to individual colour components. If a colour component&rsquo;s original value equates to less than the corresponding threshold value only then should
+ colour inversion be implemented.</p>
+<h1><span>Using the Sample Application</span></h1>
+<p style="text-align:justify">The concepts discussed in this article are implemented/tested by means of a
+<a title="Windows Forms" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.form.aspx" >
+Windows Forms application</a>. When using the sample application a user has the ability to browse the local file system in order to specify a source/input image. The user interface includes three
+<strong><em>trackbar</em></strong> controls, each related to a colour component threshold value. Threshold values can range from 0 to 255 inclusive. A threshold value of 0 results in no change, whereas a value of 255 equates to regular colour inversion.</p>
+<p style="text-align:justify">Updated/filtered images can be saved to the local file system at any stage by clicking the
+<strong><em>&lsquo;Save Image&rsquo;</em></strong> button. The following image is a screenshot of the
+<strong><em>Image Solarise</em></strong> sample application in action:</p>
+<div><span>&nbsp;</span>&nbsp;</div>
+<div><span><img id="80226" src="description/ImageSolarise_Screenshot.png" alt=""></span></div>
+<p><span>&nbsp;</span></p>
+<h1><span>The Solarise Extension Method</span></h1>
+<p style="text-align:justify">The sample source code provides the definition for the
+<strong><em>Solarise</em></strong> extension method. The method has been defined as an extension method targeting the
+<a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class.</p>
+<p style="text-align:justify">The following code snippet details the implementation of the
+<strong><em>Solarise</em></strong> extension method:</p>
+<div><span>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Bitmap Solarise(this Bitmap sourceBitmap, byte blueValue, 
+                              byte greenValue, byte redValue) 
+{ 
+    BitmapData sourceData = sourceBitmap.LockBits(new Rectangle  (0, 0, 
+                            sourceBitmap.Width, sourceBitmap.Height), 
+                            ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb); 
+
+   
+    byte[] pixelBuffer = new byte[sourceData.Stride * sourceData.Height]; 
+
+   
+    Marshal.Copy(sourceData.Scan0, pixelBuffer, 0, pixelBuffer.Length); 
+
+   
+    sourceBitmap.UnlockBits(sourceData); 
+
+   
+    byte byte255 = 255; 
+
+   
+    for (int k = 0; k &#43; 4 &lt; pixelBuffer.Length; k &#43;= 4) 
+    { 
+        if (pixelBuffer[k] &lt; blueValue) 
+        { 
+             pixelBuffer[k] = (byte)(byte255 - pixelBuffer[k]); 
+        }
+
+   
+        if (pixelBuffer[k &#43; 1] &lt; greenValue) 
+        { 
+             pixelBuffer[k &#43; 1] = (byte)(byte255 - pixelBuffer[k &#43; 1]); 
+        }
+
+   
+        if (pixelBuffer[k &#43; 2] &lt; redValue) 
+        {
+             pixelBuffer[k &#43; 2] = (byte)(byte255 - pixelBuffer[k &#43; 2]); 
+        } 
+    } 
+
+   
+    Bitmap resultBitmap = new Bitmap(sourceBitmap.Width, sourceBitmap.Height); 
+  
+    BitmapData resultData = resultBitmap.LockBits(new Rectangle  (0, 0, 
+                             resultBitmap.Width, resultBitmap.Height), 
+                             ImageLockMode.WriteOnly, PixelFormat.Format32bppArgb); 
+
+   
+    Marshal.Copy(pixelBuffer, 0, resultData.Scan0, pixelBuffer.Length); 
+    resultBitmap.UnlockBits(resultData); 
+
+   
+    return resultBitmap; 
+ } </pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;Solarise(<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;<span class="cs__keyword">byte</span>&nbsp;blueValue,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>&nbsp;greenValue,&nbsp;<span class="cs__keyword">byte</span>&nbsp;redValue)&nbsp;&nbsp;
+{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;sourceData&nbsp;=&nbsp;sourceBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle&nbsp;&nbsp;(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Width,&nbsp;sourceBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.ReadOnly,&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;pixelBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(sourceData.Scan0,&nbsp;pixelBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;pixelBuffer.Length);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.UnlockBits(sourceData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>&nbsp;byte255&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;k&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;k&nbsp;&#43;&nbsp;<span class="cs__number">4</span>&nbsp;&lt;&nbsp;pixelBuffer.Length;&nbsp;k&nbsp;&#43;=&nbsp;<span class="cs__number">4</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(pixelBuffer[k]&nbsp;&lt;&nbsp;blueValue)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[k]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)(byte255&nbsp;-&nbsp;pixelBuffer[k]);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(pixelBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]&nbsp;&lt;&nbsp;greenValue)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)(byte255&nbsp;-&nbsp;pixelBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(pixelBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]&nbsp;&lt;&nbsp;redValue)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)(byte255&nbsp;-&nbsp;pixelBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Bitmap&nbsp;resultBitmap&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Bitmap(sourceBitmap.Width,&nbsp;sourceBitmap.Height);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;resultData&nbsp;=&nbsp;resultBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle&nbsp;&nbsp;(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.Width,&nbsp;resultBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.WriteOnly,&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(pixelBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;resultData.Scan0,&nbsp;pixelBuffer.Length);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.UnlockBits(resultData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;resultBitmap;&nbsp;&nbsp;
+&nbsp;}&nbsp;</pre>
+</div>
+</div>
+</div>
+</span>
+<div class="endscriptcode">&nbsp;</div>
+<p>In order to manipulate pixel colour component values directly we first need to lock the source
+<a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> into memory by invoking the <a href="http://msdn.microsoft.com/en-us/library/5ey6h79d.aspx">
+Bitmap.LockBits</a> method. Once the source <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> is locked into memory we can copy the underlying pixel buffer using the
+<a href="http://msdn.microsoft.com/en-us/library/system.runtime.interopservices.marshal.copy.aspx">
+Marshal.Copy</a> method.</p>
+</div>
+<p style="text-align:justify">The next step involves iterating through the <a href="http://msdn.microsoft.com/en-us/library/5bdb6693.aspx">
+byte</a> buffer of colour components. Notice how each iteration modifies an entire pixel by iterating by 4. As discussed earlier when implementing image solarisation the associated formula employs threshold comparison, which determines whether or not colour
+ inversion should be applied.</p>
+<p style="text-align:justify">The final operation performed by the <strong><em>Solarise</em></strong> method involves copying the modified pixel buffer into a newly created
+<a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> object which will be returned to the calling code.</p>
+<h1><span>Sample Images</span></h1>
+<p style="text-align:justify"><span>The original source <a href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx">
+image</a> used to create all of the solarised sample images in this <a title="Image Solarise" rel="tag" href="http://softwarebydefault.com/2013/04/13/image-solarise/" >
+article</a> has been licensed under the <a href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> Attribution-Share Alike <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en" >
+3.0 Unported</a>, <a href="http://creativecommons.org/licenses/by-sa/2.5/deed.en" >
+2.5 Generic</a>, <a href="http://creativecommons.org/licenses/by-sa/2.0/deed.en" >
+2.0 Generic</a> and <a href="http://creativecommons.org/licenses/by-sa/1.0/deed.en" >
+1.0 Generic</a> license. The original image is attributed to <a title="Kenneth Dwain Harrelson" href="http://en.wikipedia.org/wiki/User:HaarFager" >
+Kenneth Dwain Harrelson</a> and can be <a href="http://en.wikipedia.org/wiki/File:Monarch_In_May.jpg">
+downloaded</a> from <a href="http://en.wikipedia.org/wiki/File:Monarch_In_May.jpg">
+Wikipedia</a>.</span></p>
+<h1><span>The Original Image</span></h1>
+<div></div>
+<div></div>
+<div><img id="80225" src="description/Monarch_In_May.jpg" alt="" width="480" height="319" style="margin-right:auto; margin-left:auto; display:block"></div>
+<div>&nbsp;</div>
+<h1><span>Solarised Images</span></h1>
+<p><span>&nbsp;</span></p>
+<table border="0" cellspacing="10" cellpadding="0" width="490" style="margin-right:auto; margin-left:auto">
+<tbody>
+<tr>
+<td width="244" align="center">&nbsp;<img id="80216" src="description/Butterfly1.jpg" alt="" width="200" height="133"></td>
+<td width="244" align="center">&nbsp;<img id="80217" src="description/Butterfly2.jpg" alt="" width="200" height="133"></td>
+</tr>
+<tr>
+<td width="244" align="center">&nbsp;<img id="80218" src="description/Butterfly3.jpg" alt="" width="200" height="133"></td>
+<td width="244" align="center">&nbsp;<img id="80220" src="description/Butterfly4.jpg" alt="" width="200" height="133"></td>
+</tr>
+<tr>
+<td width="244" align="center">&nbsp;<img id="80221" src="description/Butterfly5.jpg" alt="" width="200" height="133"></td>
+<td width="244" align="center"><img id="80222" src="description/Butterfly6.jpg" alt="" width="200" height="133">&nbsp;</td>
+</tr>
+<tr>
+<td width="244" align="center"><img id="80223" src="description/Butterfly7.jpg" alt="" width="200" height="133">&nbsp;</td>
+<td width="244" align="center">&nbsp;<img id="80224" src="description/Butterfly10.jpg" alt="" width="200" height="133"></td>
+</tr>
+</tbody>
+</table>
+<div><span>&nbsp;</span></div>
+<h1><span>Source Code Files</span></h1>
+<ul>
+</ul>
+<ul>
+<li><em>ExtBitmap.cs - Contains the definition of&nbsp;Solarise extension method.</em>
+</li><li><em><em>MainForm.cs - Windows forms application implementing and testing the Solarise extension method.</em></em>
+</li></ul>
+<h1>More Information</h1>
+<p>This article is based on an article originally posted on my <a rel="tag" rev="alternate" href="http://softwarebydefault.com/">
+blog</a>:&nbsp;<a href="http://softwarebydefault.com/2013/04/13/image-solarise/">http://softwarebydefault.com/2013/04/13/image-solarise/</a> If you have any questions/comments please feel free to make use of the Q&amp;A section on this page, also please remember
+ to rate this article.</p>
+<p><em><strong><a title="Dewald Esterhuizen" href="http://softwarebydefault.com/about/" >Dewald Esterhuizen</a></strong></em></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

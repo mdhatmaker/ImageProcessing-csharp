@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/0aac1760-b513-488a-ba57-e31d9413a075Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Image to Icon Generator</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Image to Icon Generator</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, GDI+, Class Library, Windows Forms, .NET Framework 4, .NET Framework, .NET Framework 4.0, Library, Windows General, C# 3.0, Graphics Functions, Image process, .NET 4.5
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Graphics, C#, Images, 2d graphics, Image manipulation, Image, Generic C# resuable code, Image Optimization, C# Language Features, Graphics Functions, Load Image, Extension methods
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Phone, Data
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">3/16/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Image-to-Icon-Generator-0dbffe44">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p style="text-align:justify">This article illustrates the process of generating icon files (*.ico) from user specified input images. The accompanying sample source code implements a
+<a title="Windows Forms" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.windows.forms.form.aspx" >
+Windows Forms application</a>, allowing for easily testing the icon generation process.</p>
+<h1><span>Building the Sample</span></h1>
+<p>There are no&nbsp;special requirements or instructions for building the sample source code.</p>
+<h1><span style="font-size:20px">Using the Sample Application</span></h1>
+<p style="text-align:justify">The sample application can be used to test/implement the concepts described in this article. The user interface enables the user to browse and select an
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+Image</a> file from the file system, which loads as a scaled preview. In addition, the user can select an icon size from a list of standard icon dimensions:
+<strong><em>16&times;16</em></strong>, <strong><em>24&times;24</em></strong>, <strong>
+<em>32&times;32</em></strong>, <strong><em>48&times;48</em></strong>, <strong><em>64&times;64</em></strong>,
+<strong><em>96&times;96</em></strong> and <strong><em>128&times;128</em></strong> pixels. When a user clicks on the
+<strong>&ldquo;Save Icon&rdquo;</strong> button the sample application generates an icon in memory based on the specified size converting and scaling the provided input image. If an icon was successfully generated, the in-memory representation will be saved
+ to the file system, based on the filename and file path specified by the user.</p>
+<p style="text-align:justify">The image below is screenshot of the <strong><em>Image to Icon Generator</em></strong> application in action:</p>
+<div style="text-align:center">&nbsp;</div>
+<div><img id="77800" src="description/ImageToIconGenerator.png" alt="" width="447" height="492" style="margin-right:auto; margin-left:auto; display:block"></div>
+<div>&nbsp;</div>
+<p style="text-align:justify">The source image features <strong><em>Bellis perennis</em></strong> also known as the common European Daisy (see
+<a href="http://en.wikipedia.org/wiki/Bellis_perennis">Wikipedia</a>). The image file is licensed under the
+<a href="http://en.wikipedia.org/wiki/en:Creative_Commons" >Creative Commons</a>
+<a href="http://creativecommons.org/licenses/by-sa/2.5/deed.en" >Attribution-Share Alike 2.5 Generic</a> license. The original image can be downloaded
+<a href="http://en.wikipedia.org/wiki/File:Bellis_perennis_white_(aka).jpg" >
+here</a>.</p>
+<p style="text-align:justify">The resulting icon file generated by the sample application:</p>
+<div>&nbsp;</div>
+<div><img id="77801" src="description/Daisy_icon_alt.png" alt="" width="128" height="128" style="margin-right:auto; margin-left:auto; display:block"></div>
+<div>&nbsp;</div>
+<h1>Scaling and Aspect Ratio</h1>
+<p style="text-align:justify">Icons conform to a set of standard dimensions, all of which equate to a square image due to the width and height values being equal. A potential issue exists in that the specified source image might not have exact square dimensions.
+ In other words, the width and height values of specified source images might differ. The solution lies in creating a square image based on the specified source image. Consider the concept of a square canvas onto which is drawn the source image whilst maintaining
+ its aspect ratio, implementing center alignment from the horizontal and vertical aspect. Listed below is the implementation of an extension method defined as
+<strong><em>CopyToSquareCanvas</em></strong>, targeting the <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class.</p>
+<div>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Bitmap CopyToSquareCanvas(this Bitmap sourceBitmap, Color canvasBackground)
+{
+    int maxSide = sourceBitmap.Width &gt; sourceBitmap.Height ? sourceBitmap.Width : sourceBitmap.Height;
+ 
+    Bitmap bitmapResult = new Bitmap(maxSide, maxSide, PixelFormat.Format32bppArgb);
+ 
+    using (Graphics graphicsResult = Graphics.FromImage(bitmapResult))
+   {
+        graphicsResult.Clear(canvasBackground);
+ 
+        int xOffset = (sourceBitmap.Width - maxSide) / 2;
+        int yOffset = (sourceBitmap.Height - maxSide) / 2;
+ 
+        graphicsResult.DrawImage(sourceBitmap, new Point(xOffset, xOffset));
+   }
+ 
+    return bitmapResult;
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;CopyToSquareCanvas(<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;Color&nbsp;canvasBackground)&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;maxSide&nbsp;=&nbsp;sourceBitmap.Width&nbsp;&gt;&nbsp;sourceBitmap.Height&nbsp;?&nbsp;sourceBitmap.Width&nbsp;:&nbsp;sourceBitmap.Height;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Bitmap&nbsp;bitmapResult&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Bitmap(maxSide,&nbsp;maxSide,&nbsp;PixelFormat.Format32bppArgb);&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">using</span>&nbsp;(Graphics&nbsp;graphicsResult&nbsp;=&nbsp;Graphics.FromImage(bitmapResult))&nbsp;
+&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;graphicsResult.Clear(canvasBackground);&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;xOffset&nbsp;=&nbsp;(sourceBitmap.Width&nbsp;-&nbsp;maxSide)&nbsp;/&nbsp;<span class="cs__number">2</span>;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;yOffset&nbsp;=&nbsp;(sourceBitmap.Height&nbsp;-&nbsp;maxSide)&nbsp;/&nbsp;<span class="cs__number">2</span>;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;graphicsResult.DrawImage(sourceBitmap,&nbsp;<span class="cs__keyword">new</span>&nbsp;Point(xOffset,&nbsp;xOffset));&nbsp;
+&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;bitmapResult;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+</div>
+<p style="text-align:justify">The size of the resulting <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> image is determined by the source image&rsquo;s longest side, either width or height. To ensure middle alignment both vertically and horizontally the source image is drawn at an offset, determined by the additional buffer area added by the canvas.</p>
+<h1><span>Generating the Icon</span></h1>
+<p style="text-align:justify">Once we have created an image conforming to exact square dimensions the next step would be to scale said image to the desired icon size. A convenient method of quickly scaling source images to icon dimensions comes in the form
+ of creating thumbnails.</p>
+<p style="text-align:justify">The sample source code defines the enumeration <strong>
+<em>IconSizeDimensions</em></strong>, which serves to provide a developer friendly reference coupled with actual dimension values by means of specifying explicit enumeration values. Consider the following code snippet:</p>
+<div><span>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public enum IconSizeDimensions
+{
+    IconSize16x16Pixels = 16,
+    IconSize24x24Pixels = 24,
+    IconSize32x32Pixels = 32,
+    IconSize48x48Pixels = 48,
+    IconSize64x64Pixels = 64,
+    IconSize96x96Pixels = 96,
+    IconSize128x128Pixels = 128
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">enum</span>&nbsp;IconSizeDimensions&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;IconSize16x16Pixels&nbsp;=&nbsp;<span class="cs__number">16</span>,&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;IconSize24x24Pixels&nbsp;=&nbsp;<span class="cs__number">24</span>,&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;IconSize32x32Pixels&nbsp;=&nbsp;<span class="cs__number">32</span>,&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;IconSize48x48Pixels&nbsp;=&nbsp;<span class="cs__number">48</span>,&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;IconSize64x64Pixels&nbsp;=&nbsp;<span class="cs__number">64</span>,&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;IconSize96x96Pixels&nbsp;=&nbsp;<span class="cs__number">96</span>,&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;IconSize128x128Pixels&nbsp;=&nbsp;<span class="cs__number">128</span>&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+</span></div>
+<p style="text-align:justify"><span>The crux of this article and sample source code can considered to be the definition of the
+<strong><em>CreateIcon</em></strong> extension method, which targets the <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class. The definition is as follows:</span></p>
+<div><span>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Icon CreateIcon(this Bitmap sourceBitmap, IconSizeDimensions iconSize)
+{
+    Bitmap squareCanvas = 
+    sourceBitmap.CopyToSquareCanvas(Color.Transparent);
+    squareCanvas = (Bitmap)
+    squareCanvas.GetThumbnailImage((int)iconSize, 
+               (int)iconSize, null, new IntPtr());
+ 
+    Icon iconResult = Icon.FromHandle(
+               squareCanvas.GetHicon());
+ 
+    return iconResult;
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Icon&nbsp;CreateIcon(<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;IconSizeDimensions&nbsp;iconSize)&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Bitmap&nbsp;squareCanvas&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.CopyToSquareCanvas(Color.Transparent);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;squareCanvas&nbsp;=&nbsp;(Bitmap)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;squareCanvas.GetThumbnailImage((<span class="cs__keyword">int</span>)iconSize,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="cs__keyword">int</span>)iconSize,&nbsp;<span class="cs__keyword">null</span>,&nbsp;<span class="cs__keyword">new</span>&nbsp;IntPtr());&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Icon&nbsp;iconResult&nbsp;=&nbsp;Icon.FromHandle(&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;squareCanvas.GetHicon());&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;iconResult;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+</span></div>
+<p style="text-align:justify"><span>As discussed the first step is to ensure that the source image conforms to square dimensions, implemented here by invoking the
+<strong><em>CopyToSquareCanvas</em></strong> extension method. Next the source code implements image scaling by creating a thumbnail image of which the size is based on the specified
+<strong><em>IconSizeDimensions</em></strong> <a title="MSDN: enum" rel="tag" href="http://msdn.microsoft.com/en-us/library/sbbt4032(v=vs.110).aspx" >
+enum</a> value. The <a title="Bitmap.GetHicon" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.gethicon.aspx" >
+Bitmap.GetHicon</a> method returns a handle to an <a title="Icon" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.icon.aspx" >
+Icon</a> in the form of an <a title="IntPtr" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.intptr.aspx" >
+IntPtr</a>, which serves as a parameter to the <a title="Icon.FromHandle" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.icon.fromhandle.aspx" >
+Icon.FromHandle</a> static method, which returns an instance of the <a title="Icon" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.icon.aspx" >
+Icon</a> class.</span></p>
+<h1><span>The Implementation</span></h1>
+<p style="text-align:justify"><span>When the user clicks the save button the sample application will present the user with a file save dialog. After the user specifies a file name and file path the sample application creates a
+<a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> reference of the source image by casting the picturebox&rsquo;s Image property to type
+<a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a>.</span></p>
+<div><span>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">private void btnSaveIcon_Click(object sender, EventArgs e)
+{
+    if (picSource.Image != null)
+    {
+        SaveFileDialog sfd = new SaveFileDialog();
+        sfd.Title = &quot;Specify a file name and file path&quot;;
+        sfd.Filter = &quot;Icon Files(*.ico)|*.ico&quot;;  
+        if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+        {
+            <a class="libraryLink" href="http://msdn.microsoft.com/en-US/library/System.Drawing.Icon.aspx"  title="Auto generated link to System.Drawing.Icon">System.Drawing.Icon</a> tempIcon = ((Bitmap)picSource.Image).CreateIcon(
+                                             (IconSizeDimensions)cmbIconSize.SelectedItem);
+  
+            using (StreamWriter streamWriter = new 
+                  StreamWriter(sfd.FileName, false))
+            {
+                tempIcon.Save(streamWriter.BaseStream);  
+                streamWriter.Flush();
+                streamWriter.Close();
+            }
+        }
+    }
+}
+ </pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">void</span>&nbsp;btnSaveIcon_Click(<span class="cs__keyword">object</span>&nbsp;sender,&nbsp;EventArgs&nbsp;e)&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(picSource.Image&nbsp;!=&nbsp;<span class="cs__keyword">null</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SaveFileDialog&nbsp;sfd&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;SaveFileDialog();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sfd.Title&nbsp;=&nbsp;<span class="cs__string">&quot;Specify&nbsp;a&nbsp;file&nbsp;name&nbsp;and&nbsp;file&nbsp;path&quot;</span>;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sfd.Filter&nbsp;=&nbsp;<span class="cs__string">&quot;Icon&nbsp;Files(*.ico)|*.ico&quot;</span>;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(sfd.ShowDialog()&nbsp;==&nbsp;System.Windows.Forms.DialogResult.OK)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.Drawing.Icon&nbsp;tempIcon&nbsp;=&nbsp;((Bitmap)picSource.Image).CreateIcon(&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IconSizeDimensions)cmbIconSize.SelectedItem);&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">using</span>&nbsp;(StreamWriter&nbsp;streamWriter&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StreamWriter(sfd.FileName,&nbsp;<span class="cs__keyword">false</span>))&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempIcon.Save(streamWriter.BaseStream);&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;streamWriter.Flush();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;streamWriter.Close();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+}&nbsp;
+&nbsp;</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+</span></div>
+<p style="text-align:justify"><span>When the <strong><em>CreateIcon</em></strong> extension method is invoked, the
+<a title="Icon" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.icon.aspx" >
+Icon</a> dimensions selected through the user interface will be passed as a parameter. The last step performed involves persisting the in-memory
+<a title="Icon" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.icon.aspx" >
+Icon</a> data to the file system.</span></p>
+<h1><span>Source Code Files</span></h1>
+<ul>
+<li><em>ExtBitmap.cs - Contains the definition of CopyToSquareCanvas and CreateIcon extention methods</em>
+</li><li><em><em>MainForm.cs - Windows Forms based application providing example implementation of extention methods</em></em>
+</li></ul>
+<h1>More Information</h1>
+<p style="text-align:justify">This article is based on an article originally posted on my
+<a href="http://softwarebydefault.com">blog</a>:&nbsp;<a title="Icon Images - SoftwareByDefault" href="http://softwarebydefault.com/2013/03/16/icons-images/" >http://softwarebydefault.com/2013/03/16/icons-images/</a> If you have any questions/comments
+ please feel free to make use of the Q&amp;A section on this page, also please remember to rate this article.</p>
+<p style="text-align:justify"><strong><em>Dewald Esterhuizen</em></strong></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

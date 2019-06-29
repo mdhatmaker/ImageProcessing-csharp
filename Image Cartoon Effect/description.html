@@ -1,0 +1,1928 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/0aac1760-b513-488a-ba57-e31d9413a075Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Image Cartoon Effect</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Image Cartoon Effect</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, GDI+, .NET, Class Library, User Interface, Windows Forms, WPF, .NET Framework 4, .NET Framework 3.5 SP1, .NET Framework, .NET Framework 4.0, Library, Windows General, Windows UI, C# Language, Converter, WinForms, System.Media Namespace, .NET Framework 4.5, .NET Framwork, Graphics Functions, Microsoft .NET Framework 3.5 SP1, Visual C Sharp .NET, System.Drawing.<wbr />Drawing2D, System.Windows.<wbr />Forms.UserContr<wbr />ol, Image process, Filter expression, Manipulation, .NET 4.5, .NET Development
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Controls, Graphics, C#, GDI+, User Controls, User Interface, Graphics and 3D, Images, GeometryDrawing<wbr />, ImageViewer, custom controls, Windows Form Controls, Dynamic Controls, 2d graphics, Visual How To, Image manipulation, Code Sample, Windows UI, Common Controls, Image Gallery, Image, Optional &amp; Named Parameters in C#, Drawing, How to, Generic C# resuable code, Image Optimization, Form controls, Windows Forms Controls, C# Language Features, System.Drawing.<wbr />Drawing2D, BitmapImage, Augmented Reality, Load Image, Dynamically Image, Extending Controls + Handling Events, Edge Detection, Line Detection, Blob Detection, Image Filters, Image Convolution, Image Smoothing, Cartoon Effect
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Cloud, Phone, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">6/6/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Image-Cartoon-Effect-fd1b0b53">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p style="text-align:justify">In this article we explore the tasks related to creating a
+<strong><em>Cartoon Effect</em></strong> from <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> which reflect real world non-animated scenarios. When applying a <strong>
+<em>Cartoon Effect</em></strong> it becomes possible with relative ease to create
+<a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> appearing to have originated from a drawing/animation.</p>
+<p style="text-align:center"><strong><em>Cartoon version of Steve Ballmer: Low Pass 3&times;3, Threshold 65.</em></strong></p>
+<p><img id="83820" src="description/LowPass3x3_Threshold_65_Balmer.jpg" alt="" width="500" height="598" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1><span>Building the Sample</span></h1>
+<p>There are no special requirements or instructions for building the sample source code.</p>
+<p style="text-align:center"><strong><em>CPU: Gaussian 7&times;7, Threshold 84</em></strong></p>
+<p><strong><em><img id="83819" src="description/Gaussian7x7_Threshold_84_CPU.jpg" alt="" width="300" height="245" style="margin-right:auto; margin-left:auto; display:block"></em></strong></p>
+<h1><span style="font-size:20px">Using the Sample Application</span></h1>
+<p style="text-align:justify">A <strong><em>Sample Application</em></strong> has been included as part of the sample source code accompanying this article. The
+<strong><em>Sample Application</em></strong> is a <a title="Windows Forms" rel="tag" href="http://msdn.microsoft.com/en-us/library/dd30h2yb.aspx" >
+Windows Forms</a> based application which enables a user to specify source/input <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a>, apply various methods of implementing the <strong><em>Cartoon Effect</em></strong>. In addition users are able to save generated images to the local
+<a title="System.IO.File" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.io.file.aspx" >
+file</a> system.</p>
+<p style="text-align:justify">When using the <strong><em>Sample Application</em></strong> click the
+<strong><em>Load Image</em></strong> button to load <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> files from the local file system. On the right-hand side of the Sample application&rsquo;s user interface, users are provided with two configuration options:
+<strong><em>Smoothing Filter</em></strong> and <strong><em>Threshold</em></strong>.</p>
+<p style="text-align:center"><strong><em>Rose: Gaussian 3&times;3 Threshold 28.</em></strong></p>
+<p><img id="83821" src="description/Gaussian3x3_Threshold_28_Rose.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">In this article and sample source code <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> detail and definition can be reduced through means of image smoothing filters. Several
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> smoothing options are available to the user, the following section serves as a discussion of each option.</p>
+<p style="text-align:justify"><strong><em>None &ndash; </em></strong>When specifying the
+<strong><em>Smoothing Filter</em></strong> option <strong><em>None</em></strong>, no
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> smoothing operations will be performed on source/input <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a>.</p>
+<p style="text-align:justify"><a title="Wikipedia: Gaussian Blur" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >Gaussian</a>
+<strong><em>3&times;3 &ndash; </em></strong><a title="Gaussian blur" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >Gaussian blur</a> filters can be very effective at removing
+<a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a>, smoothing an <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> background, whilst still preserving the edges expressed in the sample/input
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a>. A <a title="Convolution" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution" >
+Convolution</a>&nbsp;<a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >matrix</a>/<a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >kernel</a> of
+<strong><em>3&times;3</em></strong> dimensions result in slight <a title="Image blurring" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >
+image blurring</a>.</p>
+<p style="text-align:justify"><a title="Wikipedia: Gaussian Blur" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >Gaussian</a>&nbsp;<strong><em>5&times;5 &ndash;
+</em></strong>A <a title="Gaussian blur" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >
+Gaussian blur</a> operation being implemented by making use of a <a title="Convolution" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution" >
+convolution</a> <a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a>/<a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >kernel</a> defined with dimensions of
+<strong><em>5&times;5. </em></strong>A slightly larger <a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >
+kernel</a> results in an increased level of <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> <a title="blurring" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >
+blurring</a> being expressed by output <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a>. A greater level of <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> <a title="blurring" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >
+blurring</a>&nbsp; equates to a larger degree of <a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a> reduction/removal.</p>
+<p style="text-align:center"><strong><em>Rose: Gaussian 7&times;7 Threshold 48.</em></strong></p>
+<p><img id="83822" src="description/Gaussian7x7_Threshold_48_Rose.jpg" alt="" width="300" height="200" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify"><a title="Wikipedia: Gaussian Blur" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >Gaussian</a>
+<strong><em>7&times;7 &ndash; </em></strong>As can be expected when specifying a <a title="Convolution" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution" >
+convolution</a> <a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a>/<a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >kernel</a> conforming to
+<strong><em>7&times;7</em></strong> size dimension an even more intense level of <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> <a title="blurring" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >
+blurring</a> can be detected when looking at result <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a>. Notice how increased levels of <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> <a title="blurring" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >
+blurring</a> negatively affects the process of <a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+edge detection</a>. Consider the following: In a scenario where too many elements are being detected as part of an edge as a result of
+<a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a>, specifying a higher level of <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> <a title="blurring" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >
+blurring</a> should reduce edges being detected. The reasoning can be explained in terms of
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> <a title="blurring" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >
+blurring</a> reducing <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> <a title="Wikipedia: Edge Enhancement" rel="tag" href="http://en.wikipedia.org/wiki/Edge_enhancement" >
+definition</a>/detail, higher levels of <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> <a title="blurring" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >
+blurring</a> will thus result in a greater level of <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> detail/definition reduction. Lower definition <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> are less likely to express the same level of detected edges when compared to higher definition
+<a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a>.</p>
+<p style="text-align:center"><strong><em>CPU: Median 3&times;3, Threshold 96.</em></strong></p>
+<p><img id="83823" src="description/Median3x3_Threshold_96_CPU.jpg" alt="" width="300" height="245" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify"><a title="Wikipedia: Median" rel="tag" href="http://en.wikipedia.org/wiki/Median" >Median</a>&nbsp;<strong><em>3&times;3 &ndash;
+</em></strong>When applying a <a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median filter</a> to an <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> the resulting <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> should express a lesser degree of <a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a>. In other words, the <a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median filter</a> can be considered as well suited to performing <a title="Wikipedia: Noise Reduction" rel="tag" href="http://en.wikipedia.org/wiki/Noise_reduction" >
+noise reduction</a>. Also note that a <a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median filter</a> under certain conditions has the ability to preserve the edges contained in an
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a>. In the following section we explore the importance of <a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+edge detection</a> in achieving a <strong><em>Cartoon Effect</em></strong>. Important concepts to
+<strong><em>take note</em></strong> of: The <a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median Filter</a> when implemented on an <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> performs <a title="Wikipedia: Noise Reduction" rel="tag" href="http://en.wikipedia.org/wiki/Noise_reduction" >
+noise reduction</a> whilst preserving <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> edges. In relation, <a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+edge detection</a> represents a core concept/task when creating a <strong><em>Cartoon Effect</em></strong>. The
+<a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median Filter</a>&rsquo;s edge preservation property compliments the process of <a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+edge detection</a>. When an <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> contains a low level of <a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a> the <strong><em>Median 3&times;3 Filter</em></strong> could be considered.</p>
+<p style="text-align:justify"><a title="Wikipedia: Median" rel="tag" href="http://en.wikipedia.org/wiki/Median" >Median</a>
+<strong><em>5&times;5</em></strong> &ndash; The <strong><em>5&times;5</em></strong> dimension implementation of the
+<a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median Filter</a> result in producing <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> which exhibit a higher degree of smoothing and a lesser expression of <a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a>. If the <strong><em>3&times;3</em></strong>&nbsp;<a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >Median Filter</a> fails to provide adequate levels of
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> smoothing and <a title="Wikipedia: Noise Reduction" rel="tag" href="http://en.wikipedia.org/wiki/Noise_reduction" >
+noise reduction</a> the <strong><em>5&times;5</em></strong> <a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median Filter</a> could be implemented.</p>
+<p style="text-align:center"><strong><em>Cartoon version of Steve Ballmer: Sharpen 3&times;3, Threshold 80.</em></strong></p>
+<p><img id="83824" src="description/Sharpen3x3_Threshold_80_Balmer.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify"><a title="Wikipedia: Median" rel="tag" href="http://en.wikipedia.org/wiki/Median" >Median</a>
+<strong><em>7&times;7</em></strong> &ndash; The last <a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median Filter</a> implemented by the sample source code conforms to a <strong><em>7&times;7</em></strong> size dimension. This filter variation results in a high level of image
+<a title="Wikipedia: Noise Reduction" rel="tag" href="http://en.wikipedia.org/wiki/Noise_reduction" >
+noise reduction</a>. The trade off to more effective <a title="Wikipedia: Noise Reduction" rel="tag" href="http://en.wikipedia.org/wiki/Noise_reduction" >
+noise reduction</a> will be expressed in result <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> appearing extremely smooth, in some scenarios perhaps overly so.</p>
+<p style="text-align:justify"><strong><em>Mean 3&times;3 &ndash; </em></strong>The
+<strong><em>Mean Filter</em></strong> provides a different implementation towards achieving image smoothing and
+<a title="Wikipedia: Noise Reduction" rel="tag" href="http://en.wikipedia.org/wiki/Noise_reduction" >
+noise reduction</a>.</p>
+<p style="text-align:justify"><strong><em>Mean 5&times;5</em></strong> &ndash; The
+<strong><em>5&times;5</em></strong> dimension <strong><em>Mean Filter</em></strong> variation serves as a more intense version of the
+<strong><em>Mean 3&times;3 Filter</em></strong>. Depending on the level of <a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a> and type of <a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a> a <strong><em>Mean Filter</em></strong> could prove a more efficient implementation in comparison to a
+<a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median Filter</a>.</p>
+<p style="text-align:justify"><strong><em>Low Pass 3&times;3</em></strong> &ndash; In much the same fashion as
+<a title="Wikipedia: Median" rel="tag" href="http://en.wikipedia.org/wiki/Median" >
+Median</a> and <strong><em>Mean Filters,</em></strong> a <a title="Wikipedia: Low Pass Filter" rel="tag" href="http://en.wikipedia.org/wiki/Low_pass_filter" >
+Low Pass Filter</a> achieves <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> smoothing and <a title="Wikipedia: Noise Reduction" rel="tag" href="http://en.wikipedia.org/wiki/Noise_reduction" >
+noise reduction</a>. Notice when comparing <a title="Wikipedia: Median" rel="tag" href="http://en.wikipedia.org/wiki/Median" >
+Median</a>, <strong><em>Mean</em></strong> and <a title="Wikipedia: Low Pass Filter" rel="tag" href="http://en.wikipedia.org/wiki/Low_pass_filter" >
+Low Pass</a> Filtering, the differences observed in output results are only expressed as slight differences. The most effective filter to apply should be seen as as being dependent on the input/source
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> characteristics.</p>
+<p style="text-align:center"><strong><em>CPU: Gaussian 3&times;3, Threshold 92.</em></strong></p>
+<p><img id="83825" src="description/Gaussian3x3_Threshold_92_CPU.jpg" alt="" width="300" height="245" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify"><strong><em>Low Pass 5&times;5</em></strong> &ndash; This filter variation being of a larger dimension serves as a more intense implementation of the
+<a title="Wikipedia: Low Pass Filter" rel="tag" href="http://en.wikipedia.org/wiki/Low_pass_filter" >
+Low Pass</a> <strong><em>3&times;3 Filter</em></strong>.</p>
+<p style="text-align:justify"><strong><em>Sharpen 3&times;3</em></strong> &ndash; In certain scenarios input/source
+<a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> may already be smoothed/blurred to such an extent where the <a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+edge detection</a> process performs below expectation. <a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+Edge detection</a> can be improved when applying a <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> <a title="Sharpen filter" rel="tag" href="http://en.wikipedia.org/wiki/Sharpness_(visual)#Sharpness" >
+Sharpen filter</a>.</p>
+<p style="text-align:justify"><strong><em>Threshold</em></strong> values specified by the user through the user interface serves the purpose of enabling the user to finely control the extent/intensity of edges being detected. Implementing a higher
+<strong><em>Threshold</em></strong> value will have the result of less edges being detected. In order to reduce the level of
+<a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a> being detected as false edges the <strong><em>Threshold</em></strong> value should be increased. When too few edges are being detected the
+<strong><em>Threshold</em></strong> value should be decreased.</p>
+<p style="text-align:justify">The following image is a screenshot of the <strong>
+<em>Image Cartoon Effect Sample Application</em></strong> in action:</p>
+<p><img id="83826" src="description/ImageCartoonEffect_SampleApplication.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Explanation of the Cartoon Effect</h1>
+<p style="text-align:justify">The <strong><em>Cartoon Effect</em></strong> can be characterised as an
+<strong><em>image</em></strong> filter producing result <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> which appear similar to input/source <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> with the exception of having an animated appearance.</p>
+<p style="text-align:justify">The <strong><em>Cartoon Effect</em></strong> consists of reducing
+<strong><em>image</em></strong> detail/definition whilst at the same instance performing
+<a title="Wikipedia: Edge detection" rel="tag" href="http://en.wikipedia.org/wiki/Edge_detection" >
+edge detection</a>. The resulting smoothed <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> and the edges detected in the source/input <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> should be combined, where detected edges are being expressed in the colour black. The final
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> reflects an appearance similar to that of an animated/artist drawn image.</p>
+<p style="text-align:justify">Various methods of reducing <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> detail/definition are supported in the sample source code. Most methods consist of implementing
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> smoothing. The following configurable methods are implemented:</p>
+<ul>
+<li><strong><em>None</em></strong> </li><li><a title="Wikipedia: Gaussian Blur" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >Gaussian</a>
+<strong><em>3&times;3</em></strong> </li><li><a title="Wikipedia: Gaussian Blur" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >Gaussian</a>
+<strong><em>5&times;5</em></strong> </li><li><a title="Wikipedia: Gaussian Blur" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >Gaussian</a>
+<strong><em>7&times;7</em></strong> </li><li><a title="Wikipedia: Median" rel="tag" href="http://en.wikipedia.org/wiki/Median" >Median</a>
+<strong><em>3&times;3</em></strong> </li><li><a title="Wikipedia: Median" rel="tag" href="http://en.wikipedia.org/wiki/Median" >Median</a>
+<strong><em>5&times;5</em></strong> </li><li><a title="Wikipedia: Median" rel="tag" href="http://en.wikipedia.org/wiki/Median" >Median</a>
+<strong><em>7&times;7</em></strong> </li><li><a title="Wikipedia: Median" rel="tag" href="http://en.wikipedia.org/wiki/Median" >Median</a>
+<strong><em>9&times;9</em></strong> </li><li><strong><em>Mean 3&times;3</em></strong> </li><li><strong><em>Mean 5&times;5</em></strong> </li><li><a title="Wikipedia: Low Pass Filter" rel="tag" href="http://en.wikipedia.org/wiki/Low_pass_filter" >Low Pass</a>
+<strong><em>3&times;3</em></strong> </li><li><a title="Wikipedia: Low Pass Filter" rel="tag" href="http://en.wikipedia.org/wiki/Low_pass_filter" >Low Pass</a>
+<strong><em>5&times;5</em></strong> </li><li><a title="Wikipedia: Sharpen" rel="tag" href="http://en.wikipedia.org/wiki/Sharpness_(visual)#Sharpness" >Sharpen</a>
+<strong><em>3&times;3</em></strong> </li></ul>
+<p style="text-align:center"><strong><em>Rose: Mean 5&times;5 Threshold 37.</em></strong></p>
+<p><img id="83827" src="description/Mean5x5_Threshold_37_Rose.jpg" alt="" width="300" height="200" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">All of the filter methods listed above are implemented by means of
+<a title="Image Convolution" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution" >
+Image Convolution</a>. The size dimensions listed for each filter option relates to the dimension of the
+<a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >
+kernel</a>/<a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >matrix</a> being implemented by a filter.</p>
+<p style="text-align:justify">When applying a filter, the intensity/extent will be determined by the size dimensions of the
+<a title="Convolution" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution" >
+Convolution</a> <a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >
+kernel</a>/<a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >matrix</a> implemented. Smaller
+<a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >
+kernel</a>/<a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >matrix</a> dimensions result in a filter being applied to a lesser extent. Larger
+<a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >
+kernel</a>/<a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >matrix</a> dimensions will result in the filter effect being more evident, being applied to a greater extent.
+<a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+Image noise</a> reduction will be achieved when implementing a filter.</p>
+<p style="text-align:justify">The Sample Source code implements <strong><em>Gradient Based Edge Detection</em></strong> using the original source/input
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a>, therefore not being influenced by any smoothing operations. I have published an in-depth article on the topic of
+<strong><em>Gradient Based Edge Detection</em></strong> which can be located <a title="Difference Of Gaussians sample application" href="http://code.msdn.microsoft.com/Image-Cartoon-Effect-fd1b0b53/https://skydrive.live.com/redir?resid=C9DBA2BC5A16373B!175&amp;authkey=!AJHartJwEEecdvw" >
+here</a>: <a title="C# How to: Gradient Based Edge Detection" rel="tag" href="http://softwarebydefault.com/2013/06/01/gradient-based-edge-detection/" >
+C# How to: Gradient Based Edge Detection</a>.</p>
+<p style="text-align:center"><strong><em>Rose: Median 3&times;3 Threshold 37.</em></strong></p>
+<p><img id="83828" src="description/Median3x3_Threshold_37_Rose.jpg" alt="" width="300" height="200" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">The Sample source code implements <strong><em>Gradient Based Edge Detection</em></strong> by means of iterating each pixel that forms part of the sample/input
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a>. Whilst iterating <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> pixels the sample code calculate various gradients from the current pixel&rsquo;s neighbouring pixels, on a per colour component basis (<strong><em>Red</em></strong>,
+<strong><em>Green</em></strong> and <strong><em>Blue</em></strong>). Referring to neighbouring pixels, calculations include the value of each of the surrounding pixels in regards to the pixel currently being iterated. Neighbouring pixel calculations are better
+ know as <a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >
+kernel</a>/window/<a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >matrix</a> operations.</p>
+<p style="text-align:justify"><strong><em>Note: </em></strong>Do not confuse <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> <a title="Convolution" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution" >
+convolution</a> and the method in which we iterate and calculate gradients. Although both methods have various aspects in common,
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> <a title="Convolution" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution" >
+convolution</a> is regarded as linear filter processing, whereas our method qualifies as a non-linear filter.</p>
+<p style="text-align:justify">We calculate various gradients, which is to be compared against the user specified global threshold value. If a calculated gradient value exceeds the value of the user specified threshold the pixel currently being iterated will
+ be considered as part of an edge.</p>
+<p style="text-align:justify">The first gradients to be calculated involves the pixel directly above, below, left and right of the current pixel. A gradient will be calculated for each colour component. The gradient values being calculated can be considered
+ as an indicator reflecting the rate of change. If the sum total of the calculated gradients exceed that of the global threshold the pixel will be considered as forming part an edge.</p>
+<p style="text-align:justify">When the comparison of the threshold value and the total gradient value reflects in favour of the threshold the following set of gradients will be calculated. This process of calculating gradients will continue either until a gradient
+ value exceeds the threshold or all gradients have been calculated.</p>
+<p style="text-align:justify">If a pixel was detected as forming part of an edge, the pixel&rsquo;s colour will be set to black. In the case of non-edge pixels, the original colour components from the source/input image will be used in setting the current pixel&rsquo;s
+ value.</p>
+<p style="text-align:center"><strong><em>Rose: Low Pass 3&times;3 Threshold 61</em></strong></p>
+<p><img id="83829" src="description/LowPass3x3_Threshold_61_Rose.jpg" alt="" width="300" height="200" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Implementing Cartoon Effects</h1>
+<p style="text-align:justify">The sample source code implementation can be divided into five distinct components:
+<strong><em>Cartoon Effect Filter</em></strong>, smoothing helper method, <a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median Filter</a> implementation, <a title="Convolution" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution" >
+Convolution</a> implementation and the collection of pre-defined <a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >
+matrix</a>/<a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >kernel</a> values.</p>
+<p style="text-align:justify">The sample source code defines the <strong><em>MedianFilter</em></strong>
+<a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> targeting the <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class. The following code snippet provides the definition:</p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Bitmap MedianFilter(this Bitmap sourceBitmap, 
+                                   int matrixSize) 
+{ 
+     BitmapData sourceData = 
+                sourceBitmap.LockBits(new Rectangle(0, 0, 
+                sourceBitmap.Width, sourceBitmap.Height), 
+                ImageLockMode.ReadOnly, 
+                PixelFormat.Format32bppArgb); 
+
+   
+     byte[] pixelBuffer = new byte[sourceData.Stride * 
+                                   sourceData.Height]; 
+
+   
+     byte[] resultBuffer = new byte[sourceData.Stride * 
+                                    sourceData.Height]; 
+
+   
+     Marshal.Copy(sourceData.Scan0, pixelBuffer, 0, 
+                                pixelBuffer.Length); 
+
+   
+     sourceBitmap.UnlockBits(sourceData); 
+
+   
+     int filterOffset = (matrixSize - 1) / 2; 
+     int calcOffset = 0; 
+
+   
+     int byteOffset = 0; 
+
+   
+     List&lt;int&gt; neighbourPixels = new List&lt;int&gt;(); 
+     byte[] middlePixel; 
+
+   
+     for (int offsetY = filterOffset; offsetY &lt; 
+         sourceBitmap.Height - filterOffset; offsetY&#43;&#43;) 
+     { 
+         for (int offsetX = filterOffset; offsetX &lt; 
+             sourceBitmap.Width - filterOffset; offsetX&#43;&#43;) 
+         { 
+             byteOffset = offsetY * 
+                          sourceData.Stride &#43; 
+                          offsetX * 4; 
+
+   
+             neighbourPixels.Clear(); 
+
+   
+             for (int filterY = -filterOffset; 
+                 filterY &lt;= filterOffset; filterY&#43;&#43;) 
+             {
+                 for (int filterX = -filterOffset; 
+                     filterX &lt;= filterOffset; filterX&#43;&#43;) 
+                 {
+
+   
+                     calcOffset = byteOffset &#43; 
+                                  (filterX * 4) &#43; 
+                                  (filterY * sourceData.Stride); 
+
+   
+                     neighbourPixels.Add(BitConverter.ToInt32( 
+                                      pixelBuffer, calcOffset)); 
+                 } 
+             } 
+
+   
+             neighbourPixels.Sort(); 
+  
+             middlePixel = BitConverter.GetBytes( 
+                                neighbourPixels[filterOffset]); 
+
+   
+             resultBuffer[byteOffset] = middlePixel[0]; 
+             resultBuffer[byteOffset &#43; 1] = middlePixel[1]; 
+             resultBuffer[byteOffset &#43; 2] = middlePixel[2]; 
+             resultBuffer[byteOffset &#43; 3] = middlePixel[3]; 
+         } 
+     }
+
+   
+     Bitmap resultBitmap = new Bitmap (sourceBitmap.Width, 
+                                      sourceBitmap.Height); 
+
+   
+     BitmapData resultData = 
+                resultBitmap.LockBits(new Rectangle  (0, 0, 
+                resultBitmap.Width, resultBitmap.Height), 
+                ImageLockMode.WriteOnly, 
+                PixelFormat.Format32bppArgb); 
+
+   
+     Marshal.Copy(resultBuffer, 0, resultData.Scan0, 
+                                resultBuffer.Length); 
+
+   
+     resultBitmap.UnlockBits(resultData); 
+
+   
+     return resultBitmap; 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;MedianFilter(<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;matrixSize)&nbsp;&nbsp;
+{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;sourceData&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Width,&nbsp;sourceBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.ReadOnly,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;pixelBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;resultBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(sourceData.Scan0,&nbsp;pixelBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer.Length);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.UnlockBits(sourceData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;filterOffset&nbsp;=&nbsp;(matrixSize&nbsp;-&nbsp;<span class="cs__number">1</span>)&nbsp;/&nbsp;<span class="cs__number">2</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;calcOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;byteOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;List&lt;<span class="cs__keyword">int</span>&gt;&nbsp;neighbourPixels&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;List&lt;<span class="cs__keyword">int</span>&gt;();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;middlePixel;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;offsetY&nbsp;=&nbsp;filterOffset;&nbsp;offsetY&nbsp;&lt;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Height&nbsp;-&nbsp;filterOffset;&nbsp;offsetY&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;offsetX&nbsp;=&nbsp;filterOffset;&nbsp;offsetX&nbsp;&lt;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Width&nbsp;-&nbsp;filterOffset;&nbsp;offsetX&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&nbsp;=&nbsp;offsetY&nbsp;*&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceData.Stride&nbsp;&#43;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offsetX&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;neighbourPixels.Clear();&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;filterY&nbsp;=&nbsp;-filterOffset;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterY&nbsp;&lt;=&nbsp;filterOffset;&nbsp;filterY&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;filterX&nbsp;=&nbsp;-filterOffset;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterX&nbsp;&lt;=&nbsp;filterOffset;&nbsp;filterX&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calcOffset&nbsp;=&nbsp;byteOffset&nbsp;&#43;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(filterX&nbsp;*&nbsp;<span class="cs__number">4</span>)&nbsp;&#43;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(filterY&nbsp;*&nbsp;sourceData.Stride);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;neighbourPixels.Add(BitConverter.ToInt32(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer,&nbsp;calcOffset));&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;neighbourPixels.Sort();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;middlePixel&nbsp;=&nbsp;BitConverter.GetBytes(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;neighbourPixels[filterOffset]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[byteOffset]&nbsp;=&nbsp;middlePixel[<span class="cs__number">0</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]&nbsp;=&nbsp;middlePixel[<span class="cs__number">1</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]&nbsp;=&nbsp;middlePixel[<span class="cs__number">2</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">3</span>]&nbsp;=&nbsp;middlePixel[<span class="cs__number">3</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bitmap&nbsp;resultBitmap&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Bitmap&nbsp;(sourceBitmap.Width,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Height);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;resultData&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle&nbsp;&nbsp;(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.Width,&nbsp;resultBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.WriteOnly,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(resultBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;resultData.Scan0,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer.Length);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.UnlockBits(resultData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;resultBitmap;&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p>&nbsp;</p>
+<p style="text-align:justify">The <strong><em>SmoothingFilterType</em></strong> <a title="Enum" rel="tag" href="http://msdn.microsoft.com/en-us/library/sbbt4032(v=vs.110).aspx" >
+enumeration</a>, defined by the sample source code, serves as a strongly typed definition of a the collection of implemented smoothing filters. The definition as follows:</p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public enum SmoothingFilterType  
+ {
+     None, 
+     Gaussian3x3, 
+     Gaussian5x5, 
+     Gaussian7x7, 
+     Median3x3, 
+     Median5x5, 
+     Median7x7, 
+     Median9x9, 
+     Mean3x3, 
+     Mean5x5, 
+     LowPass3x3, 
+     LowPass5x5, 
+     Sharpen3x3, 
+ } </pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">enum</span>&nbsp;SmoothingFilterType&nbsp;&nbsp;&nbsp;
+&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaussian3x3,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaussian5x5,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaussian7x7,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Median3x3,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Median5x5,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Median7x7,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Median9x9,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mean3x3,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mean5x5,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LowPass3x3,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LowPass5x5,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sharpen3x3,&nbsp;&nbsp;
+&nbsp;}&nbsp;</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p>&nbsp;</p>
+<p style="text-align:justify">The <strong><em>Matrix</em></strong> class contains the definition of all the two dimensional
+<a title="Image Kernel" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)" >
+kernel</a>/<a title="Matrix" rel="tag" href="http://en.wikipedia.org/wiki/Matrix_(mathematics)" >matrix</a> values implemented when performing
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> <a title="Convolution" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution" >
+convolution</a>. The definition as follows:</p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static class Matrix 
+{ 
+    public static double[,] Gaussian3x3 
+    { 
+        get 
+        {
+            return new double[,]   
+             { { 1, 2, 1, },  
+               { 2, 4, 2, },  
+               { 1, 2, 1, }, }; 
+        } 
+    }
+ 
+    public static double[,] Gaussian5x5 
+    {
+        get 
+        { 
+            return new double[,]   
+             { { 2, 04, 05, 04, 2  },  
+               { 4, 09, 12, 09, 4  },  
+               { 5, 12, 15, 12, 5  }, 
+               { 4, 09, 12, 09, 4  }, 
+               { 2, 04, 05, 04, 2  }, }; 
+        } 
+    } 
+ 
+    public static double[,] Gaussian7x7 
+    {
+        get 
+        { 
+            return new double[,]   
+             { { 1,  1,  2,  2,  2,  1,  1, },  
+               { 1,  2,  2,  4,  2,  2,  1, },  
+               { 2,  2,  4,  8,  4,  2,  2, },  
+               { 2,  4,  8, 16,  8,  4,  2, },  
+               { 2,  2,  4,  8,  4,  2,  2, },  
+               { 1,  2,  2,  4,  2,  2,  1, },  
+               { 1,  1,  2,  2,  2,  1,  1, }, }; 
+        } 
+    } 
+ 
+    public static double[,] Mean3x3 
+    { 
+        get 
+        { 
+            return new double[,]   
+             { { 1, 1, 1, },  
+               { 1, 1, 1, },  
+               { 1, 1, 1, }, }; 
+        } 
+    } 
+ 
+    public static double[,] Mean5x5 
+    { 
+        get 
+        { 
+            return new double[,]   
+             { { 1, 1, 1, 1, 1, },  
+               { 1, 1, 1, 1, 1, },  
+               { 1, 1, 1, 1, 1, },  
+               { 1, 1, 1, 1, 1, },  
+               { 1, 1, 1, 1, 1, }, }; 
+        } 
+    } 
+ 
+    public static double [,] LowPass3x3 
+    { 
+        get 
+        { 
+            return new double [,]   
+             { { 1, 2, 1, },  
+               { 2, 4, 2, },   
+               { 1, 2, 1, }, }; 
+        }
+    } 
+ 
+    public static double[,] LowPass5x5 
+    { 
+        get 
+        { 
+            return new double[,]   
+             { { 1, 1,  1, 1, 1, },  
+               { 1, 4,  4, 4, 1, },  
+               { 1, 4, 12, 4, 1, },  
+               { 1, 4,  4, 4, 1, },  
+               { 1, 1,  1, 1, 1, }, }; 
+        }
+    }
+ 
+    public static double[,] Sharpen3x3 
+    { 
+        get 
+         {
+            return new double[,]   
+             { { -1, -2, -1, },  
+               {  2,  4,  2, },   
+               {  1,  2,  1, }, }; 
+         }
+    } 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">class</span>&nbsp;Matrix&nbsp;&nbsp;
+{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;Gaussian3x3&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">2</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">2</span>,&nbsp;<span class="cs__number">4</span>,&nbsp;<span class="cs__number">2</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">2</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;};&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;Gaussian5x5&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;{&nbsp;<span class="cs__number">2</span>,&nbsp;<span class="cs__number">04</span>,&nbsp;<span class="cs__number">05</span>,&nbsp;<span class="cs__number">04</span>,&nbsp;<span class="cs__number">2</span>&nbsp;&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">4</span>,&nbsp;<span class="cs__number">09</span>,&nbsp;<span class="cs__number">12</span>,&nbsp;<span class="cs__number">09</span>,&nbsp;<span class="cs__number">4</span>&nbsp;&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">5</span>,&nbsp;<span class="cs__number">12</span>,&nbsp;<span class="cs__number">15</span>,&nbsp;<span class="cs__number">12</span>,&nbsp;<span class="cs__number">5</span>&nbsp;&nbsp;},&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">4</span>,&nbsp;<span class="cs__number">09</span>,&nbsp;<span class="cs__number">12</span>,&nbsp;<span class="cs__number">09</span>,&nbsp;<span class="cs__number">4</span>&nbsp;&nbsp;},&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">2</span>,&nbsp;<span class="cs__number">04</span>,&nbsp;<span class="cs__number">05</span>,&nbsp;<span class="cs__number">04</span>,&nbsp;<span class="cs__number">2</span>&nbsp;&nbsp;},&nbsp;};&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;Gaussian7x7&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;&nbsp;<span class="cs__number">1</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">1</span>,&nbsp;&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;<span class="cs__number">8</span>,&nbsp;&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;<span class="cs__number">8</span>,&nbsp;<span class="cs__number">16</span>,&nbsp;&nbsp;<span class="cs__number">8</span>,&nbsp;&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;<span class="cs__number">8</span>,&nbsp;&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;&nbsp;<span class="cs__number">1</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">1</span>,&nbsp;&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;};&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;Mean3x3&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;};&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;Mean5x5&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;};&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">double</span>&nbsp;[,]&nbsp;LowPass3x3&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">double</span>&nbsp;[,]&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">2</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">2</span>,&nbsp;<span class="cs__number">4</span>,&nbsp;<span class="cs__number">2</span>,&nbsp;},&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">2</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;};&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;LowPass5x5&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;<span class="cs__number">4</span>,&nbsp;<span class="cs__number">4</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">4</span>,&nbsp;<span class="cs__number">12</span>,&nbsp;<span class="cs__number">4</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;<span class="cs__number">4</span>,&nbsp;<span class="cs__number">4</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;};&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;Sharpen3x3&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">get</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;{&nbsp;-<span class="cs__number">1</span>,&nbsp;-<span class="cs__number">2</span>,&nbsp;-<span class="cs__number">1</span>,&nbsp;},&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">4</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;},&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;<span class="cs__number">1</span>,&nbsp;&nbsp;<span class="cs__number">2</span>,&nbsp;&nbsp;<span class="cs__number">1</span>,&nbsp;},&nbsp;};&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p>&nbsp;</p>
+<p style="text-align:center"><em><strong>CPU: Low Pass 5x5 Threshold 125</strong></em></p>
+<p><img id="83830" src="description/LowPass5x5_Threshold_125_CPU.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">The <strong><em>SmoothingFilter</em></strong> <a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> targets the <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class. This method implements <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> <a title="Convolution" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution" >
+convolution</a>. The primary task performed by the <strong><em>SmoothingFilter</em></strong>
+<a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> involves translating <a title="Convolution" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution" >
+convolution</a> filter options into the correct method calls. The definition as follows:</p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Bitmap SmoothingFilter(this Bitmap sourceBitmap, 
+                            SmoothingFilterType smoothFilter = 
+                            SmoothingFilterType.None) 
+ {
+    Bitmap inputBitmap = null; 
+
+   
+    switch (smoothFilter) 
+    { 
+        case SmoothingFilterType.None: 
+            {
+                inputBitmap = sourceBitmap; 
+            } break; 
+        case SmoothingFilterType.Gaussian3x3: 
+            {
+                inputBitmap = sourceBitmap.ConvolutionFilter( 
+                           Matrix.Gaussian3x3, 1.0 / 16.0, 0); 
+            } break; 
+        case SmoothingFilterType.Gaussian5x5: 
+            { 
+                inputBitmap = sourceBitmap.ConvolutionFilter( 
+                          Matrix.Gaussian5x5, 1.0 / 159.0, 0); 
+            } break; 
+        case SmoothingFilterType.Gaussian7x7: 
+            { 
+                inputBitmap = sourceBitmap.ConvolutionFilter( 
+                          Matrix.Gaussian7x7, 1.0 / 136.0, 0); 
+            } break; 
+        case SmoothingFilterType.Median3x3: 
+            { 
+                inputBitmap = sourceBitmap.MedianFilter(3); 
+            } break; 
+        case SmoothingFilterType.Median5x5: 
+            { 
+                inputBitmap = sourceBitmap.MedianFilter(5); 
+            } break; 
+        case SmoothingFilterType.Median7x7: 
+            { 
+                inputBitmap = sourceBitmap.MedianFilter(7); 
+            } break; 
+        case SmoothingFilterType.Median9x9: 
+            { 
+                inputBitmap = sourceBitmap.MedianFilter(9); 
+            } break; 
+        case SmoothingFilterType.Mean3x3: 
+            { 
+                inputBitmap = sourceBitmap.ConvolutionFilter( 
+                              Matrix.Mean3x3, 1.0 / 9.0, 0); 
+            } break; 
+        case SmoothingFilterType.Mean5x5: 
+            { 
+                inputBitmap = sourceBitmap.ConvolutionFilter( 
+                              Matrix.Mean5x5, 1.0 / 25.0, 0); 
+            } break; 
+        case SmoothingFilterType.LowPass3x3: 
+            { 
+                inputBitmap = sourceBitmap.ConvolutionFilter( 
+                              Matrix.LowPass3x3, 1.0 / 16.0, 0); 
+            } break; 
+        case SmoothingFilterType.LowPass5x5: 
+            { 
+                inputBitmap = sourceBitmap.ConvolutionFilter( 
+                              Matrix.LowPass5x5, 1.0 / 60.0, 0); 
+            } break; 
+        case SmoothingFilterType.Sharpen3x3: 
+            { 
+                inputBitmap = sourceBitmap.ConvolutionFilter( 
+                              Matrix.Sharpen3x3, 1.0 / 8.0, 0); 
+            } break; 
+    } 
+
+   
+    return inputBitmap; 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;SmoothingFilter(<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SmoothingFilterType&nbsp;smoothFilter&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SmoothingFilterType.None)&nbsp;&nbsp;
+&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Bitmap&nbsp;inputBitmap&nbsp;=&nbsp;<span class="cs__keyword">null</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">switch</span>&nbsp;(smoothFilter)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">case</span>&nbsp;SmoothingFilterType.None:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inputBitmap&nbsp;=&nbsp;sourceBitmap;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="cs__keyword">break</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">case</span>&nbsp;SmoothingFilterType.Gaussian3x3:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inputBitmap&nbsp;=&nbsp;sourceBitmap.ConvolutionFilter(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matrix.Gaussian3x3,&nbsp;<span class="cs__number">1.0</span>&nbsp;/&nbsp;<span class="cs__number">16.0</span>,&nbsp;<span class="cs__number">0</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="cs__keyword">break</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">case</span>&nbsp;SmoothingFilterType.Gaussian5x5:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inputBitmap&nbsp;=&nbsp;sourceBitmap.ConvolutionFilter(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matrix.Gaussian5x5,&nbsp;<span class="cs__number">1.0</span>&nbsp;/&nbsp;<span class="cs__number">159.0</span>,&nbsp;<span class="cs__number">0</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="cs__keyword">break</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">case</span>&nbsp;SmoothingFilterType.Gaussian7x7:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inputBitmap&nbsp;=&nbsp;sourceBitmap.ConvolutionFilter(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matrix.Gaussian7x7,&nbsp;<span class="cs__number">1.0</span>&nbsp;/&nbsp;<span class="cs__number">136.0</span>,&nbsp;<span class="cs__number">0</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="cs__keyword">break</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">case</span>&nbsp;SmoothingFilterType.Median3x3:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inputBitmap&nbsp;=&nbsp;sourceBitmap.MedianFilter(<span class="cs__number">3</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="cs__keyword">break</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">case</span>&nbsp;SmoothingFilterType.Median5x5:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inputBitmap&nbsp;=&nbsp;sourceBitmap.MedianFilter(<span class="cs__number">5</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="cs__keyword">break</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">case</span>&nbsp;SmoothingFilterType.Median7x7:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inputBitmap&nbsp;=&nbsp;sourceBitmap.MedianFilter(<span class="cs__number">7</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="cs__keyword">break</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">case</span>&nbsp;SmoothingFilterType.Median9x9:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inputBitmap&nbsp;=&nbsp;sourceBitmap.MedianFilter(<span class="cs__number">9</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="cs__keyword">break</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">case</span>&nbsp;SmoothingFilterType.Mean3x3:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inputBitmap&nbsp;=&nbsp;sourceBitmap.ConvolutionFilter(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matrix.Mean3x3,&nbsp;<span class="cs__number">1.0</span>&nbsp;/&nbsp;<span class="cs__number">9.0</span>,&nbsp;<span class="cs__number">0</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="cs__keyword">break</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">case</span>&nbsp;SmoothingFilterType.Mean5x5:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inputBitmap&nbsp;=&nbsp;sourceBitmap.ConvolutionFilter(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matrix.Mean5x5,&nbsp;<span class="cs__number">1.0</span>&nbsp;/&nbsp;<span class="cs__number">25.0</span>,&nbsp;<span class="cs__number">0</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="cs__keyword">break</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">case</span>&nbsp;SmoothingFilterType.LowPass3x3:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inputBitmap&nbsp;=&nbsp;sourceBitmap.ConvolutionFilter(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matrix.LowPass3x3,&nbsp;<span class="cs__number">1.0</span>&nbsp;/&nbsp;<span class="cs__number">16.0</span>,&nbsp;<span class="cs__number">0</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="cs__keyword">break</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">case</span>&nbsp;SmoothingFilterType.LowPass5x5:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inputBitmap&nbsp;=&nbsp;sourceBitmap.ConvolutionFilter(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matrix.LowPass5x5,&nbsp;<span class="cs__number">1.0</span>&nbsp;/&nbsp;<span class="cs__number">60.0</span>,&nbsp;<span class="cs__number">0</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="cs__keyword">break</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">case</span>&nbsp;SmoothingFilterType.Sharpen3x3:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inputBitmap&nbsp;=&nbsp;sourceBitmap.ConvolutionFilter(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matrix.Sharpen3x3,&nbsp;<span class="cs__number">1.0</span>&nbsp;/&nbsp;<span class="cs__number">8.0</span>,&nbsp;<span class="cs__number">0</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="cs__keyword">break</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;inputBitmap;&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p>&nbsp;</p>
+<p style="text-align:justify">The <strong><em>ConvolutionFilter</em></strong> <a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> which targets the <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class implements <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> <a title="Convolution" rel="tag" href="http://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution" >
+convolution</a>. The definition as follows:</p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">private static Bitmap ConvolutionFilter(this Bitmap sourceBitmap, 
+                                          double[,] filterMatrix, 
+                                               double factor = 1, 
+                                                    int bias = 0) 
+{ 
+    BitmapData sourceData = sourceBitmap.LockBits(new Rectangle(0, 0, 
+                             sourceBitmap.Width, sourceBitmap.Height), 
+                                               ImageLockMode.ReadOnly, 
+                                         PixelFormat.Format32bppArgb); 
+
+   
+    byte[] pixelBuffer = new byte[sourceData.Stride * sourceData.Height]; 
+    byte[] resultBuffer = new byte[sourceData.Stride * sourceData.Height]; 
+
+   
+    Marshal.Copy(sourceData.Scan0, pixelBuffer, 0, pixelBuffer.Length); 
+    sourceBitmap.UnlockBits(sourceData); 
+
+   
+    double blue = 0.0; 
+    double green = 0.0; 
+    double red = 0.0; 
+
+   
+    int filterWidth = filterMatrix.GetLength(1); 
+    int filterHeight = filterMatrix.GetLength(0); 
+
+   
+    int filterOffset = (filterWidth - 1) / 2; 
+    int calcOffset = 0; 
+
+   
+    int byteOffset = 0; 
+
+   
+    for (int offsetY = filterOffset; offsetY &lt; 
+        sourceBitmap.Height - filterOffset; offsetY&#43;&#43;) 
+     { 
+        for (int offsetX = filterOffset; offsetX &lt; 
+            sourceBitmap.Width - filterOffset; offsetX&#43;&#43;) 
+         { 
+            blue = 0; 
+            green = 0; 
+            red = 0; 
+
+   
+            byteOffset = offsetY * 
+                         sourceData.Stride &#43; 
+                         offsetX * 4; 
+
+   
+            for (int filterY = -filterOffset; 
+                filterY &lt;= filterOffset; filterY&#43;&#43;) 
+             { 
+                for (int filterX = -filterOffset; 
+                    filterX &lt;= filterOffset; filterX&#43;&#43;) 
+                 { 
+
+   
+                    calcOffset = byteOffset &#43; 
+                                 (filterX * 4) &#43; 
+                                 (filterY * sourceData.Stride); 
+
+   
+                    blue &#43;= (double)(pixelBuffer[calcOffset]) * 
+                            filterMatrix[filterY &#43; filterOffset, 
+                                                filterX &#43; filterOffset]; 
+
+   
+                    green &#43;= (double)(pixelBuffer[calcOffset &#43; 1]) * 
+                             filterMatrix[filterY &#43; filterOffset, 
+                                                filterX &#43; filterOffset]; 
+
+   
+                    red &#43;= (double)(pixelBuffer[calcOffset &#43; 2]) * 
+                           filterMatrix[filterY &#43; filterOffset, 
+                                              filterX &#43; filterOffset]; 
+                 } 
+             }
+
+   
+            blue = factor * blue &#43; bias; 
+            green = factor * green &#43; bias; 
+            red = factor * red &#43; bias; 
+
+   
+            blue = (blue &gt; 255 ? 255 : 
+                   (blue &lt; 0 ? 0 : 
+                    blue)); 
+
+   
+            green = (green &gt; 255 ? 255 : 
+                    (green &lt; 0 ? 0 : 
+                     green)); 
+
+   
+            red = (red &gt; 255 ? 255 : 
+                  (red &lt; 0 ? 0 : 
+                   red));  
+
+   
+            resultBuffer[byteOffset] = (byte)(blue); 
+            resultBuffer[byteOffset &#43; 1] = (byte)(green); 
+            resultBuffer[byteOffset &#43; 2] = (byte)(red); 
+            resultBuffer[byteOffset &#43; 3] = 255; 
+         } 
+     }
+
+   
+    Bitmap resultBitmap = new Bitmap(sourceBitmap.Width, sourceBitmap.Height); 
+
+   
+    BitmapData resultData = resultBitmap.LockBits(new Rectangle (0, 0, 
+                             resultBitmap.Width, resultBitmap.Height), 
+                                              ImageLockMode .WriteOnly, 
+                                         PixelFormat .Format32bppArgb); 
+
+   
+    Marshal.Copy(resultBuffer, 0, resultData.Scan0, resultBuffer.Length); 
+    resultBitmap.UnlockBits(resultData); 
+
+   
+    return resultBitmap; 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">private</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;ConvolutionFilter(<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">double</span>[,]&nbsp;filterMatrix,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">double</span>&nbsp;factor&nbsp;=&nbsp;<span class="cs__number">1</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;bias&nbsp;=&nbsp;<span class="cs__number">0</span>)&nbsp;&nbsp;
+{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;sourceData&nbsp;=&nbsp;sourceBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Width,&nbsp;sourceBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.ReadOnly,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;pixelBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;resultBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(sourceData.Scan0,&nbsp;pixelBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;pixelBuffer.Length);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.UnlockBits(sourceData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">double</span>&nbsp;blue&nbsp;=&nbsp;<span class="cs__number">0.0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">double</span>&nbsp;green&nbsp;=&nbsp;<span class="cs__number">0.0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">double</span>&nbsp;red&nbsp;=&nbsp;<span class="cs__number">0.0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;filterWidth&nbsp;=&nbsp;filterMatrix.GetLength(<span class="cs__number">1</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;filterHeight&nbsp;=&nbsp;filterMatrix.GetLength(<span class="cs__number">0</span>);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;filterOffset&nbsp;=&nbsp;(filterWidth&nbsp;-&nbsp;<span class="cs__number">1</span>)&nbsp;/&nbsp;<span class="cs__number">2</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;calcOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;byteOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;offsetY&nbsp;=&nbsp;filterOffset;&nbsp;offsetY&nbsp;&lt;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Height&nbsp;-&nbsp;filterOffset;&nbsp;offsetY&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;offsetX&nbsp;=&nbsp;filterOffset;&nbsp;offsetX&nbsp;&lt;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Width&nbsp;-&nbsp;filterOffset;&nbsp;offsetX&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blue&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;green&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;red&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&nbsp;=&nbsp;offsetY&nbsp;*&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceData.Stride&nbsp;&#43;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offsetX&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;filterY&nbsp;=&nbsp;-filterOffset;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterY&nbsp;&lt;=&nbsp;filterOffset;&nbsp;filterY&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;filterX&nbsp;=&nbsp;-filterOffset;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterX&nbsp;&lt;=&nbsp;filterOffset;&nbsp;filterX&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calcOffset&nbsp;=&nbsp;byteOffset&nbsp;&#43;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(filterX&nbsp;*&nbsp;<span class="cs__number">4</span>)&nbsp;&#43;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(filterY&nbsp;*&nbsp;sourceData.Stride);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blue&nbsp;&#43;=&nbsp;(<span class="cs__keyword">double</span>)(pixelBuffer[calcOffset])&nbsp;*&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterMatrix[filterY&nbsp;&#43;&nbsp;filterOffset,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterX&nbsp;&#43;&nbsp;filterOffset];&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;green&nbsp;&#43;=&nbsp;(<span class="cs__keyword">double</span>)(pixelBuffer[calcOffset&nbsp;&#43;&nbsp;<span class="cs__number">1</span>])&nbsp;*&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterMatrix[filterY&nbsp;&#43;&nbsp;filterOffset,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterX&nbsp;&#43;&nbsp;filterOffset];&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;red&nbsp;&#43;=&nbsp;(<span class="cs__keyword">double</span>)(pixelBuffer[calcOffset&nbsp;&#43;&nbsp;<span class="cs__number">2</span>])&nbsp;*&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterMatrix[filterY&nbsp;&#43;&nbsp;filterOffset,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterX&nbsp;&#43;&nbsp;filterOffset];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blue&nbsp;=&nbsp;factor&nbsp;*&nbsp;blue&nbsp;&#43;&nbsp;bias;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;green&nbsp;=&nbsp;factor&nbsp;*&nbsp;green&nbsp;&#43;&nbsp;bias;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;red&nbsp;=&nbsp;factor&nbsp;*&nbsp;red&nbsp;&#43;&nbsp;bias;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blue&nbsp;=&nbsp;(blue&nbsp;&gt;&nbsp;<span class="cs__number">255</span>&nbsp;?&nbsp;<span class="cs__number">255</span>&nbsp;:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(blue&nbsp;&lt;&nbsp;<span class="cs__number">0</span>&nbsp;?&nbsp;<span class="cs__number">0</span>&nbsp;:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blue));&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;green&nbsp;=&nbsp;(green&nbsp;&gt;&nbsp;<span class="cs__number">255</span>&nbsp;?&nbsp;<span class="cs__number">255</span>&nbsp;:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(green&nbsp;&lt;&nbsp;<span class="cs__number">0</span>&nbsp;?&nbsp;<span class="cs__number">0</span>&nbsp;:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;green));&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;red&nbsp;=&nbsp;(red&nbsp;&gt;&nbsp;<span class="cs__number">255</span>&nbsp;?&nbsp;<span class="cs__number">255</span>&nbsp;:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(red&nbsp;&lt;&nbsp;<span class="cs__number">0</span>&nbsp;?&nbsp;<span class="cs__number">0</span>&nbsp;:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;red));&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[byteOffset]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)(blue);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)(green);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)(red);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">3</span>]&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Bitmap&nbsp;resultBitmap&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Bitmap(sourceBitmap.Width,&nbsp;sourceBitmap.Height);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;resultData&nbsp;=&nbsp;resultBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle&nbsp;(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.Width,&nbsp;resultBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode&nbsp;.WriteOnly,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PixelFormat&nbsp;.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(resultBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;resultData.Scan0,&nbsp;resultBuffer.Length);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.UnlockBits(resultData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;resultBitmap;&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p>&nbsp;</p>
+<p style="text-align:center"><strong><em>Cartoon version of Steve Ballmer: </em></strong><strong><em>Sharpen 3&times;3 Threshold 80</em></strong></p>
+<p><img id="83831" src="description/890049e8-fdeb-4356-87e8-83e68382e7edSharpen3x3_Threshold_80_Balmer.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:justify">The <strong><em>CartoonEffectFilter</em></strong> <a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> targets the <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class. This method defines all the tasks required in order to implement a
+<strong><em>Cartoon Filter</em></strong>. From an implementation point of view, consuming code is only required to invoke this method, no other additional method calls are required. The definition as follows:</p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Bitmap CartoonEffectFilter( 
+                                this Bitmap sourceBitmap, 
+                                byte threshold = 0, 
+                                SmoothingFilterType smoothFilter  
+                                = SmoothingFilterType.None) 
+{ 
+    sourceBitmap = sourceBitmap.SmoothingFilter(smoothFilter); 
+
+       
+    BitmapData sourceData = 
+               sourceBitmap.LockBits(new Rectangle (0, 0, 
+               sourceBitmap.Width, sourceBitmap.Height), 
+               ImageLockMode.ReadOnly, 
+               PixelFormat.Format32bppArgb); 
+
+   
+    byte[] pixelBuffer = new byte[sourceData.Stride * 
+                                  sourceData.Height]; 
+
+   
+    byte[] resultBuffer = new byte[sourceData.Stride * 
+                                   sourceData.Height]; 
+
+   
+    Marshal.Copy(sourceData.Scan0, pixelBuffer, 0, 
+                               pixelBuffer.Length); 
+
+   
+    sourceBitmap.UnlockBits(sourceData); 
+
+   
+    int byteOffset = 0; 
+    int blueGradient, greenGradient, redGradient = 0; 
+    double blue = 0, green = 0, red = 0; 
+
+   
+    bool exceedsThreshold = false; 
+
+   
+    for (int offsetY = 1; offsetY &lt;  
+         sourceBitmap.Height - 1; offsetY&#43;&#43;) 
+    {
+        for (int offsetX = 1; offsetX &lt; 
+            sourceBitmap.Width - 1; offsetX&#43;&#43;) 
+        { 
+            byteOffset = offsetY * sourceData.Stride &#43; 
+                         offsetX * 4; 
+
+   
+            blueGradient =  
+            Math.Abs(pixelBuffer[byteOffset - 4] - 
+            pixelBuffer[byteOffset &#43; 4]); 
+
+   
+            blueGradient &#43;=  
+            Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] -  
+            pixelBuffer[byteOffset &#43; sourceData.Stride]); 
+
+               
+            byteOffset&#43;&#43;; 
+
+   
+            greenGradient =  
+            Math.Abs(pixelBuffer[byteOffset - 4] -  
+            pixelBuffer[byteOffset &#43; 4]); 
+
+   
+            greenGradient &#43;=  
+            Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] -  
+            pixelBuffer[byteOffset &#43; sourceData.Stride]); 
+
+   
+            byteOffset&#43;&#43;; 
+
+   
+            redGradient =  
+            Math.Abs(pixelBuffer[byteOffset - 4] -  
+            pixelBuffer[byteOffset &#43; 4]); 
+
+   
+            redGradient &#43;=  
+            Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] -  
+            pixelBuffer[byteOffset &#43; sourceData.Stride]); 
+
+               
+            if (blueGradient &#43; greenGradient &#43; redGradient &gt; threshold) 
+            { exceedsThreshold = true ; } 
+            else 
+            { 
+                byteOffset -= 2; 
+
+   
+                blueGradient = Math.Abs(pixelBuffer[byteOffset - 4] -  
+                                        pixelBuffer[byteOffset &#43; 4]); 
+                byteOffset&#43;&#43;; 
+
+   
+                greenGradient = Math.Abs(pixelBuffer[byteOffset - 4] -  
+                                         pixelBuffer[byteOffset &#43; 4]); 
+                byteOffset&#43;&#43;; 
+
+   
+                redGradient = Math.Abs(pixelBuffer[byteOffset - 4] -  
+                                       pixelBuffer[byteOffset &#43; 4]); 
+
+   
+                if (blueGradient &#43; greenGradient &#43; redGradient &gt; threshold) 
+                { exceedsThreshold = true ; } 
+                else 
+                { 
+                    byteOffset -= 2; 
+
+   
+                    blueGradient =  
+                    Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] -  
+                    pixelBuffer[byteOffset &#43; sourceData.Stride]); 
+
+   
+                    byteOffset&#43;&#43;; 
+
+   
+                    greenGradient =  
+                    Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] -  
+                    pixelBuffer[byteOffset &#43; sourceData.Stride]); 
+
+   
+                    byteOffset&#43;&#43;; 
+
+   
+                    redGradient =  
+                    Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] -  
+                    pixelBuffer[byteOffset &#43; sourceData.Stride]); 
+
+   
+                    if (blueGradient &#43; greenGradient &#43;  
+                              redGradient &gt; threshold) 
+                    { exceedsThreshold = true ; } 
+                    else 
+                    { 
+                        byteOffset -= 2; 
+
+   
+                        blueGradient =  
+                        Math.Abs(pixelBuffer[byteOffset - 4 - sourceData.Stride] -  
+                        pixelBuffer[byteOffset &#43; 4 &#43; sourceData.Stride]); 
+
+   
+                        blueGradient &#43;=  
+                        Math.Abs(pixelBuffer[byteOffset - sourceData.Stride &#43; 4] -  
+                        pixelBuffer[byteOffset &#43; sourceData.Stride - 4]); 
+
+   
+                        byteOffset&#43;&#43;; 
+
+   
+                        greenGradient =  
+                        Math.Abs(pixelBuffer[byteOffset - 4 - sourceData.Stride] -  
+                        pixelBuffer[byteOffset &#43; 4 &#43; sourceData.Stride]); 
+
+   
+                        greenGradient &#43;=  
+                        Math.Abs(pixelBuffer[byteOffset - sourceData.Stride &#43; 4] -  
+                        pixelBuffer[byteOffset &#43; sourceData.Stride - 4]); 
+
+   
+                        byteOffset&#43;&#43;; 
+
+   
+                        redGradient =  
+                        Math.Abs(pixelBuffer[byteOffset - 4 - sourceData.Stride] -  
+                        pixelBuffer[byteOffset &#43; 4 &#43; sourceData.Stride]); 
+
+   
+                        redGradient &#43;= 
+                        Math.Abs(pixelBuffer[byteOffset - sourceData.Stride &#43; 4] -  
+                        pixelBuffer[byteOffset &#43; sourceData.Stride - 4]); 
+
+   
+                        if (blueGradient &#43; greenGradient &#43; redGradient &gt; threshold) 
+                        { exceedsThreshold = true ; } 
+                        else 
+                        { exceedsThreshold = false ; } 
+                    } 
+                } 
+            }
+
+   
+            byteOffset -= 2; 
+
+   
+            if (exceedsThreshold) 
+            { 
+                blue = 0; 
+                green = 0; 
+                red = 0; 
+            } 
+            else 
+            { 
+                blue = pixelBuffer[byteOffset]; 
+                green = pixelBuffer[byteOffset &#43; 1]; 
+                red = pixelBuffer[byteOffset &#43; 2]; 
+            } 
+
+   
+            blue = (blue &gt; 255 ? 255 : 
+                   (blue &lt; 0 ? 0 : 
+                    blue)); 
+
+   
+            green = (green &gt; 255 ? 255 : 
+                    (green &lt; 0 ? 0 : 
+                     green)); 
+
+   
+            red = (red &gt; 255 ? 255 : 
+                  (red &lt; 0 ? 0 : 
+                   red));  
+
+   
+            resultBuffer[byteOffset] = (byte)blue; 
+            resultBuffer[byteOffset &#43; 1] = (byte)green; 
+            resultBuffer[byteOffset &#43; 2] = (byte)red; 
+            resultBuffer[byteOffset &#43; 3] = 255;   
+        } 
+    } 
+
+   
+    Bitmap resultBitmap = new Bitmap(sourceBitmap.Width, 
+                                     sourceBitmap.Height); 
+
+   
+    BitmapData resultData = 
+               resultBitmap.LockBits(new Rectangle(0, 0, 
+               resultBitmap.Width, resultBitmap.Height), 
+               ImageLockMode.WriteOnly, 
+               PixelFormat.Format32bppArgb); 
+
+   
+    Marshal.Copy(resultBuffer, 0, resultData.Scan0, 
+                               resultBuffer.Length); 
+
+   
+    resultBitmap.UnlockBits(resultData); 
+
+   
+    return resultBitmap; 
+} </pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;CartoonEffectFilter(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>&nbsp;threshold&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SmoothingFilterType&nbsp;smoothFilter&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;SmoothingFilterType.None)&nbsp;&nbsp;
+{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap&nbsp;=&nbsp;sourceBitmap.SmoothingFilter(smoothFilter);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;sourceData&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle&nbsp;(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Width,&nbsp;sourceBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.ReadOnly,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;pixelBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;resultBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[sourceData.Stride&nbsp;*&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceData.Height];&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(sourceData.Scan0,&nbsp;pixelBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer.Length);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.UnlockBits(sourceData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;byteOffset&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;blueGradient,&nbsp;greenGradient,&nbsp;redGradient&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">double</span>&nbsp;blue&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;green&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;red&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">bool</span>&nbsp;exceedsThreshold&nbsp;=&nbsp;<span class="cs__keyword">false</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;offsetY&nbsp;=&nbsp;<span class="cs__number">1</span>;&nbsp;offsetY&nbsp;&lt;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Height&nbsp;-&nbsp;<span class="cs__number">1</span>;&nbsp;offsetY&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;offsetX&nbsp;=&nbsp;<span class="cs__number">1</span>;&nbsp;offsetX&nbsp;&lt;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Width&nbsp;-&nbsp;<span class="cs__number">1</span>;&nbsp;offsetX&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&nbsp;=&nbsp;offsetY&nbsp;*&nbsp;sourceData.Stride&nbsp;&#43;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offsetX&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blueGradient&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;<span class="cs__number">4</span>]&nbsp;-&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blueGradient&nbsp;&#43;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;sourceData.Stride]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;sourceData.Stride]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&#43;&#43;;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;greenGradient&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;<span class="cs__number">4</span>]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;greenGradient&nbsp;&#43;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;sourceData.Stride]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;sourceData.Stride]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&#43;&#43;;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;redGradient&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;<span class="cs__number">4</span>]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;redGradient&nbsp;&#43;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;sourceData.Stride]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;sourceData.Stride]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(blueGradient&nbsp;&#43;&nbsp;greenGradient&nbsp;&#43;&nbsp;redGradient&nbsp;&gt;&nbsp;threshold)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;exceedsThreshold&nbsp;=&nbsp;<span class="cs__keyword">true</span>&nbsp;;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&nbsp;-=&nbsp;<span class="cs__number">2</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blueGradient&nbsp;=&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;<span class="cs__number">4</span>]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>]);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&#43;&#43;;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;greenGradient&nbsp;=&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;<span class="cs__number">4</span>]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>]);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&#43;&#43;;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;redGradient&nbsp;=&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;<span class="cs__number">4</span>]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(blueGradient&nbsp;&#43;&nbsp;greenGradient&nbsp;&#43;&nbsp;redGradient&nbsp;&gt;&nbsp;threshold)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;exceedsThreshold&nbsp;=&nbsp;<span class="cs__keyword">true</span>&nbsp;;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&nbsp;-=&nbsp;<span class="cs__number">2</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blueGradient&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;sourceData.Stride]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;sourceData.Stride]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&#43;&#43;;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;greenGradient&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;sourceData.Stride]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;sourceData.Stride]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&#43;&#43;;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;redGradient&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;sourceData.Stride]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;sourceData.Stride]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(blueGradient&nbsp;&#43;&nbsp;greenGradient&nbsp;&#43;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;redGradient&nbsp;&gt;&nbsp;threshold)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;exceedsThreshold&nbsp;=&nbsp;<span class="cs__keyword">true</span>&nbsp;;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&nbsp;-=&nbsp;<span class="cs__number">2</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blueGradient&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;<span class="cs__number">4</span>&nbsp;-&nbsp;sourceData.Stride]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>&nbsp;&#43;&nbsp;sourceData.Stride]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blueGradient&nbsp;&#43;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;sourceData.Stride&nbsp;&#43;&nbsp;<span class="cs__number">4</span>]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;sourceData.Stride&nbsp;-&nbsp;<span class="cs__number">4</span>]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&#43;&#43;;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;greenGradient&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;<span class="cs__number">4</span>&nbsp;-&nbsp;sourceData.Stride]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>&nbsp;&#43;&nbsp;sourceData.Stride]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;greenGradient&nbsp;&#43;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;sourceData.Stride&nbsp;&#43;&nbsp;<span class="cs__number">4</span>]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;sourceData.Stride&nbsp;-&nbsp;<span class="cs__number">4</span>]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&#43;&#43;;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;redGradient&nbsp;=&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;<span class="cs__number">4</span>&nbsp;-&nbsp;sourceData.Stride]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>&nbsp;&#43;&nbsp;sourceData.Stride]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;redGradient&nbsp;&#43;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.Abs(pixelBuffer[byteOffset&nbsp;-&nbsp;sourceData.Stride&nbsp;&#43;&nbsp;<span class="cs__number">4</span>]&nbsp;-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;sourceData.Stride&nbsp;-&nbsp;<span class="cs__number">4</span>]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(blueGradient&nbsp;&#43;&nbsp;greenGradient&nbsp;&#43;&nbsp;redGradient&nbsp;&gt;&nbsp;threshold)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;exceedsThreshold&nbsp;=&nbsp;<span class="cs__keyword">true</span>&nbsp;;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;exceedsThreshold&nbsp;=&nbsp;<span class="cs__keyword">false</span>&nbsp;;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteOffset&nbsp;-=&nbsp;<span class="cs__number">2</span>;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(exceedsThreshold)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blue&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;green&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;red&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blue&nbsp;=&nbsp;pixelBuffer[byteOffset];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;green&nbsp;=&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">1</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;red&nbsp;=&nbsp;pixelBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">2</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blue&nbsp;=&nbsp;(blue&nbsp;&gt;&nbsp;<span class="cs__number">255</span>&nbsp;?&nbsp;<span class="cs__number">255</span>&nbsp;:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(blue&nbsp;&lt;&nbsp;<span class="cs__number">0</span>&nbsp;?&nbsp;<span class="cs__number">0</span>&nbsp;:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blue));&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;green&nbsp;=&nbsp;(green&nbsp;&gt;&nbsp;<span class="cs__number">255</span>&nbsp;?&nbsp;<span class="cs__number">255</span>&nbsp;:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(green&nbsp;&lt;&nbsp;<span class="cs__number">0</span>&nbsp;?&nbsp;<span class="cs__number">0</span>&nbsp;:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;green));&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;red&nbsp;=&nbsp;(red&nbsp;&gt;&nbsp;<span class="cs__number">255</span>&nbsp;?&nbsp;<span class="cs__number">255</span>&nbsp;:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(red&nbsp;&lt;&nbsp;<span class="cs__number">0</span>&nbsp;?&nbsp;<span class="cs__number">0</span>&nbsp;:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;red));&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[byteOffset]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)blue;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)green;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]&nbsp;=&nbsp;(<span class="cs__keyword">byte</span>)red;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[byteOffset&nbsp;&#43;&nbsp;<span class="cs__number">3</span>]&nbsp;=&nbsp;<span class="cs__number">255</span>;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Bitmap&nbsp;resultBitmap&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Bitmap(sourceBitmap.Width,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Height);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;BitmapData&nbsp;resultData&nbsp;=&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.LockBits(<span class="cs__keyword">new</span>&nbsp;Rectangle(<span class="cs__number">0</span>,&nbsp;<span class="cs__number">0</span>,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.Width,&nbsp;resultBitmap.Height),&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImageLockMode.WriteOnly,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PixelFormat.Format32bppArgb);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Marshal.Copy(resultBuffer,&nbsp;<span class="cs__number">0</span>,&nbsp;resultData.Scan0,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer.Length);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;resultBitmap.UnlockBits(resultData);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;resultBitmap;&nbsp;&nbsp;
+}&nbsp;</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p>&nbsp;</p>
+<h1>Sample Images</h1>
+<p style="text-align:justify">The sample image used in this article which features
+<strong><em>Bill Gates</em></strong> has been licensed under the <a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by/2.0/deed.en" >
+Attribution 2.0 Generic</a> license and can be <a title="Wikipedia" rel="tag" href="http://en.wikipedia.org/wiki/File:BillGates2012.jpg" >
+downloaded</a> from <a title="Wikipedia" rel="tag" href="http://en.wikipedia.org/wiki/File:BillGates2012.jpg" >
+Wikipedia</a>.</p>
+<p style="text-align:justify">The sample image featuring <strong><em>Steve Ballmer</em></strong> has been licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by/2.0/deed.en" >
+Attribution 2.0 Generic</a> license and can be <a title="Wikipedia" rel="tag" href="http://en.wikipedia.org/wiki/File:Steve_Ballmer_at_CES_2010_cropped.jpg" >
+downloaded</a> from <a title="Wikipedia" rel="tag" href="http://en.wikipedia.org/wiki/File:Steve_Ballmer_at_CES_2010_cropped.jpg" >
+Wikipedia</a>.</p>
+<p style="text-align:justify">The sample image featuring an <strong><em>Amber flush Rose</em></strong> has been licensed under the
+<a href="http://en.wikipedia.org/wiki/en:Creative_Commons">Creative Commons</a> Attribution-Share Alike
+<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">3.0 Unported</a>,
+<a href="http://creativecommons.org/licenses/by-sa/2.5/deed.en">2.5 Generic</a>, <a href="http://creativecommons.org/licenses/by-sa/2.0/deed.en">
+2.0 Generic</a> and <a href="http://creativecommons.org/licenses/by-sa/1.0/deed.en">
+1.0 Generic</a> license and can be <a title="Wikipedia" rel="tag" href="http://en.wikipedia.org/wiki/File:Rose_Amber_Flush_20070601.jpg" >
+downloaded</a> from <a title="Wikipedia" rel="tag" href="http://en.wikipedia.org/wiki/File:Rose_Amber_Flush_20070601.jpg" >
+Wikipedia</a>.</p>
+<p style="text-align:justify">The sample image featuring a <strong><em>Computer Processor</em></strong> has been licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/2.0/deed.en" >
+Attribution-Share Alike 2.0 Generic</a> license and can be <a title="Wikipedia" href="http://en.wikipedia.org/wiki/File:Intel_80486DX2_bottom.jpg" >
+downloaded</a> from <a title="Wikipedia" rel="tag" href="http://en.wikipedia.org/wiki/File:Intel_80486DX2_bottom.jpg" >
+Wikipedia</a>.l The original author is attributed as <a title="Andrew Dunn" href="http://en.wikipedia.org/wiki/User:Solipsist" >
+Andrew Dunn</a> &ndash; <a title="Andrew Dunn" href="http://www.andrewdunnphoto.com/" >
+http://www.andrewdunnphoto.com/</a></p>
+<p style="text-align:center"><strong><em>The Original Image</em></strong></p>
+<p style="text-align:center"><img id="83832" src="description/BillGates2012.jpg" alt=""></p>
+<p style="text-align:center"><strong><em>No Smoothing, Threshold 100</em></strong></p>
+<p style="text-align:center"><img id="83833" src="description/No_Smoothing_Threshold_100_Gates.jpg" alt=""></p>
+<p style="text-align:center"><strong><em>Gaussian 3&times;3, Threshold 73</em></strong></p>
+<p style="text-align:center"><img id="83834" src="description/Gaussian3x3_Threshold_73_Gates.jpg" alt=""></p>
+<p style="text-align:center"><strong><em>Gaussian 5&times;5, Threshold 78</em></strong></p>
+<p style="text-align:center"><img id="83835" src="description/Gaussian5x5_Threshold_78_Gates.jpg" alt=""></p>
+<p style="text-align:center"><strong><em>Gaussian 7&times;7, Threshold 84</em></strong></p>
+<p style="text-align:center"><img id="83836" src="description/Gaussian7x7_Threshold_84_Gates.jpg" alt=""></p>
+<p style="text-align:center"><strong><em>Low Pass 3&times;3, Threshold 72</em></strong></p>
+<p style="text-align:center"><img id="83837" src="description/LowPass3x3_Threshold_72_Gates.jpg" alt=""></p>
+<p style="text-align:center"><strong><em>Low Pass 5&times;5, Threshold 81</em></strong></p>
+<p style="text-align:center"><img id="83838" src="description/LowPass5x5_Threshold_81_Gates.jpg" alt=""></p>
+<p style="text-align:center"><strong><em>Mean 3&times;3, Threshold 79</em></strong></p>
+<p style="text-align:center"><img id="83839" src="description/Mean3x3_Threshold_79_Gates.jpg" alt=""></p>
+<p style="text-align:center"><strong><em>Mean 5&times;5, Threshold 80</em></strong></p>
+<p style="text-align:center"><img id="83840" src="description/Mean5x5_Threshold_80_Gates.jpg" alt=""></p>
+<p style="text-align:center"><strong><em>Median 3&times;3, Threshold 85</em></strong></p>
+<p style="text-align:center"><img id="83841" src="description/Median3x3_Threshold_85_Gates.jpg" alt=""></p>
+<p style="text-align:center"><strong><em>Median 5&times;5, Threshold 105</em></strong></p>
+<p style="text-align:center"><img id="83842" src="description/Median5x5_Threshold_105_Gates.jpg" alt=""></p>
+<p style="text-align:center"><strong><em>Median 7&times;7, Threshold 127</em></strong></p>
+<p style="text-align:center"><img id="83843" src="description/Median7x7_Threshold_127_Gates.jpg" alt=""></p>
+<p style="text-align:center"><strong><em>Median 9&times;9, Threshold 154</em></strong></p>
+<p style="text-align:center"><img id="83844" src="description/Median9x9_Threshold_154_Gates.jpg" alt="" width="500" height="657"></p>
+<p style="text-align:center"><strong><em>Sharpen 3&times;3, Threshold 114</em></strong></p>
+<p><img id="83845" src="description/Sharpen3x3_Threshold_114_Gates.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1><span>Source Code Files</span></h1>
+<ul>
+<li><em><em><em><em>ExtBitmap.cs - Contains the definition of the extension methods:&nbsp;CartoonEffectFilter, ConvolutionFilter, SmoothingFilter and MedianFilter.</em></em></em><em>&nbsp;</em></em>
+</li><li><em>Matrix.cs - Definition of smoothing/blur pre-defined matrix kernels.</em>
+</li><li><em><em><em><em><em><em><em><em>MainForm.cs - Windows Forms based sample application.</em></em></em></em></em></em></em></em>
+</li></ul>
+<h1>More Information</h1>
+<p style="text-align:justify">This article is based on an article originally posted on my
+<a href="http://softwarebydefault.com/" >blog</a>:&nbsp;<a href="http://softwarebydefault.com/2013/06/02/cartoon-effect-image/" >http://softwarebydefault.com/2013/06/02/cartoon-effect-image/</a>&nbsp;If you have any questions/comments
+ please feel free to make use of the Q&amp;A section on this page, also please remember to rate this article.</p>
+<p><strong><em><a title="About Dewald Esterhuizen" rel="tag" href="http://softwarebydefault.com/about/" >Dewald Esterhuizen</a></em></strong></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

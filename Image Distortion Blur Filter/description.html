@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/0aac1760-b513-488a-ba57-e31d9413a075Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Image Distortion Blur</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Image Distortion Blur</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, .NET, Class Library, Windows Forms, .NET Framework 4, .NET Framework, Windows, .NET Framework 4.0, Image manipulation, Library, Windows General, C# Language, WinForms, .NET Framework 4.5, .NET Framwork, Graphics Functions, Visual C Sharp .NET, Image process, Filter expression, Manipulation, Transformation, .NET 4.5, Computer Vision, .NET Development, Edge Detection, Image Blur, Image Processing, Digital Signal Processing, Image Transformation, Image Software
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Graphics, C#, Class Library, Windows Forms, Graphics and 3D, Images, Media, ImageViewer, 2d graphics, DSP (digital signal processing), Extensibility, Image manipulation, Code Sample, Image Gallery, Image, .NET 4, Imaging, Drawing, How to, Colors and Gradient Brushes, Generic C# resuable code, Image Optimization, Windows Forms Controls, Graphics Functions, .Net Programming, code snippets, BitmapImage, Load Image, Dynamically Image, image rendering, Edge Detection, Image Filters, Image Smoothing, Image Transformation, graphic rendering
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Phone, Data, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">8/10/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Image-Distortion-Blur-673b1bdd">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p style="text-align:justify">This article explores the process of implementing an
+<strong><em>Image Distortion Blur filter</em></strong>. This image filter is classified as a non-photo realistic image filter, primarily implemented in rendering artistic effects.</p>
+<p style="text-align:center"><strong><em>Flower: Distortion Factor 15</em></strong></p>
+<p><img id="94300" src="description/Flower2_DistortionFactor_15.jpg" alt="" width="400" height="600" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1><span>Building the Sample</span></h1>
+<p>There are no special requirements or instructions for building the sample source code.</p>
+<p style="text-align:center"><strong><em>Flower: Distortion Factor 10</em></strong></p>
+<p><img id="94301" src="description/Flower1_DistortionFactor_10.jpg" alt="" width="400" height="608" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Using the Sample Application</h1>
+<p style="text-align:justify">The sample source code that accompanies this article includes a
+<a title="Windows Forms" rel="tag" href="http://msdn.microsoft.com/en-us/library/dd30h2yb.aspx" >
+Windows Forms</a> based sample application. The concepts explored in this article have all been implemented as part of the sample application. From an end user perspective the following configurable options are available:</p>
+<ul>
+<li><strong><em>Load/Save Images &ndash;</em></strong> Clicking the <strong><em>Load Image</em></strong> button allows a user to specify a source/input
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a>. If desired, output filtered <a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> can be saved to the local <a title="System.IO.File" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.io.file.aspx" >
+file</a> system by clicking the <strong><em>Save Image</em></strong> button. </li><li><strong><em>Distortion Factor &ndash;</em></strong> The level or intensity of
+<a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> distortion applied when implementing the filter can be specified when adjusting the
+<strong><em>Distortion Factor</em></strong> through the user interface. Lower factor values result in less distortion being evident in resulting
+<a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a>. Specifying higher factor values result in more intense <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> distortion being applied. </li></ul>
+<p>The following image is screenshot of the <strong><em>Image Distortion Blur</em></strong> sample application:</p>
+<p><img id="94302" src="description/ImageDistortionBlur_SampleApplication.jpg" alt="" width="500" height="412" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><em><strong>Flower: Distortion Factor 10</strong></em></p>
+<p><img id="94303" src="description/Flower3_DistortionFactor_10.jpg" alt="" width="500" height="501" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><strong><em>Flower: Distortion Factor 10</em></strong></p>
+<p><img id="94304" src="description/Flower5_DistortionFactor_10.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Image Distortion</h1>
+<p style="text-align:justify">In this article and the accompanying sample source code
+<a title="images" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+images</a> are distorted through slightly adjusting each individual <a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a>&rsquo;s coordinates. The direction and distance by which <a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> coordinates are adjusted differ per <a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> as a result of being randomly selected. The maximum distance offset applied depends on the user specified
+<strong><em>Distortion Factor</em></strong>. Once all <a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> coordinates have been updated, implementing a <a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median Filter</a> provides smoothing and an <a title="Image Blur" rel="tag" href="http://en.wikipedia.org/wiki/Gaussian_blur" >
+image blur</a> effect.</p>
+<p>Applying an <strong><em>Image Distortion Filter</em></strong> requires implementing the following steps:</p>
+<ol>
+<li><strong><em>Iterate Pixels &ndash;</em></strong> Each <a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> forming part of the source/input <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> should be iterated. </li><li><strong><em>Calculate new Coordinates &ndash;</em></strong> For every <a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> being iterated generate two random values representing <strong><em>XY-coordinate</em></strong> offsets to be applied to a
+<a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a>&rsquo;s current coordinates. Offset values can equate to less than zero in order to represent coordinates above or to the left of the current
+<a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a>. </li><li><strong><em>Apply Median Filter &ndash;</em></strong> The newly offset <a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixels</a> will appear somewhat speckled in the resulting <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a>. Applying a <a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median Filter</a> reduces the speckled appearance whilst retaining a distortion effect.
+</li></ol>
+<p style="text-align:center"><strong><em>Flower: Distortion Factor 10</em></strong></p>
+<p><img id="94305" src="description/Flower6_DistortionFactor_10.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><strong><em>Flower: Distortion Factor 10</em></strong></p>
+<p><img id="94306" src="description/Flower7_DistortionFactor_10.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Median Filter</h1>
+<p style="text-align:justify">Applying a <a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median Filter</a> is the final step required when implementing an <strong><em>Image Distortion Blur filter</em></strong>.
+<a title="Median Filters" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median Filters</a> are often implemented in reducing <a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a>. The method of image distortion illustrated in this article express similarities when compared to
+<a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a>. In order to soften the appearance of <a title="Image noise" rel="tag" href="http://en.wikipedia.org/wiki/Image_noise" >
+image noise</a> we implement a <a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median Filter</a>.</p>
+<p style="text-align:justify">A <a title="Wikipedia: Median Filter" rel="tag" href="http://en.wikipedia.org/wiki/Median_filter" >
+Median Filter</a> can be applied through implementing the following steps:</p>
+<ol>
+<li style="text-align:justify"><strong><em>Iterate Pixels &ndash;</em></strong> Each
+<a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> forming part of the source/input <a title="Image" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.image.aspx" >
+image</a> should be iterated. </li><li style="text-align:justify"><strong><em>Inspect Pixel Neighbourhood &ndash;</em></strong> Each neighbouring
+<a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> in relation to the <a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> currently being iterated should be added to a temporary collection. </li><li style="text-align:justify"><strong><em>Determine Neighbourhood Median &ndash;</em></strong> Once all neighbourhood
+<a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixels</a> have been added to a temporary collection, sort the collection by value. The element value located at the middle of the collection represents the
+<a title="Wikipedia: Pixel" rel="tag" href="http://en.wikipedia.org/wiki/Pixel" >
+pixel</a> neighbourhood&rsquo;s <a title="Wikipedia: Median" rel="tag" href="http://en.wikipedia.org/wiki/Median" >
+Median</a> value. </li></ol>
+<p style="text-align:center"><strong><em>Flower: Distortion Factor 10</em></strong></p>
+<p><img id="94307" src="description/Flower8_DistortionFactor_10.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<p style="text-align:center"><strong><em>Flower: Distortion Factor 15</em></strong></p>
+<p><img id="94308" src="description/Flower3_DistortionFactor_15.jpg" alt="" width="500" height="501" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Implementing Image Distortion</h1>
+<p style="text-align:justify">The sample source code defines the <strong><em>DistortionBlurFilter</em></strong> method, an
+<a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> targeting the <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class. The following code snippet illustrates the implementation:</p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Bitmap DistortionBlurFilter( 
+         this Bitmap sourceBitmap, int distortFactor) 
+{
+    byte[] pixelBuffer = sourceBitmap.GetByteArray(); 
+    byte[] resultBuffer = sourceBitmap.GetByteArray(); 
+
+    int imageStride = sourceBitmap.Width * 4; 
+    int calcOffset = 0, filterY = 0, filterX = 0; 
+    int factorMax = (distortFactor &#43; 1) * 2; 
+    Random rand = new Random(); 
+ 
+    for (int k = 0; k &#43; 4 &lt; pixelBuffer.Length; k &#43;= 4) 
+    {
+        filterY = distortFactor - rand.Next(0, factorMax); 
+        filterX = distortFactor - rand.Next(0, factorMax); 
+ 
+        if (filterX * 4 &#43; (k % imageStride) &lt; imageStride  
+                   &amp;&amp; filterX * 4 &#43; (k % imageStride) &gt; 0) 
+        { 
+            calcOffset = k &#43; filterY * imageStride &#43;  
+                         4 * filterX; 
+
+            if (calcOffset &gt;= 0 &amp;&amp;  
+                calcOffset &#43; 4 &lt; resultBuffer.Length) 
+            { 
+                resultBuffer[calcOffset] = pixelBuffer[k]; 
+                resultBuffer[calcOffset &#43; 1] = pixelBuffer[k &#43; 1]; 
+                resultBuffer[calcOffset &#43; 2] = pixelBuffer[k &#43; 2]; 
+            }
+        }
+    }
+
+    return resultBuffer.GetImage(sourceBitmap.Width,  
+                        sourceBitmap.Height).MedianFilter(3); 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;DistortionBlurFilter(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;<span class="cs__keyword">int</span>&nbsp;distortFactor)&nbsp;&nbsp;
+{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;pixelBuffer&nbsp;=&nbsp;sourceBitmap.GetByteArray();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;resultBuffer&nbsp;=&nbsp;sourceBitmap.GetByteArray();&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;imageStride&nbsp;=&nbsp;sourceBitmap.Width&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;calcOffset&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;filterY&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;filterX&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;factorMax&nbsp;=&nbsp;(distortFactor&nbsp;&#43;&nbsp;<span class="cs__number">1</span>)&nbsp;*&nbsp;<span class="cs__number">2</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Random&nbsp;rand&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Random();&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;k&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;k&nbsp;&#43;&nbsp;<span class="cs__number">4</span>&nbsp;&lt;&nbsp;pixelBuffer.Length;&nbsp;k&nbsp;&#43;=&nbsp;<span class="cs__number">4</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterY&nbsp;=&nbsp;distortFactor&nbsp;-&nbsp;rand.Next(<span class="cs__number">0</span>,&nbsp;factorMax);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterX&nbsp;=&nbsp;distortFactor&nbsp;-&nbsp;rand.Next(<span class="cs__number">0</span>,&nbsp;factorMax);&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(filterX&nbsp;*&nbsp;<span class="cs__number">4</span>&nbsp;&#43;&nbsp;(k&nbsp;%&nbsp;imageStride)&nbsp;&lt;&nbsp;imageStride&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&amp;&nbsp;filterX&nbsp;*&nbsp;<span class="cs__number">4</span>&nbsp;&#43;&nbsp;(k&nbsp;%&nbsp;imageStride)&nbsp;&gt;&nbsp;<span class="cs__number">0</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calcOffset&nbsp;=&nbsp;k&nbsp;&#43;&nbsp;filterY&nbsp;*&nbsp;imageStride&nbsp;&#43;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__number">4</span>&nbsp;*&nbsp;filterX;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(calcOffset&nbsp;&gt;=&nbsp;<span class="cs__number">0</span>&nbsp;&amp;&amp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calcOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>&nbsp;&lt;&nbsp;resultBuffer.Length)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[calcOffset]&nbsp;=&nbsp;pixelBuffer[k];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[calcOffset&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]&nbsp;=&nbsp;pixelBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">1</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[calcOffset&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]&nbsp;=&nbsp;pixelBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">2</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;resultBuffer.GetImage(sourceBitmap.Width,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Height).MedianFilter(<span class="cs__number">3</span>);&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p>&nbsp;</p>
+<p style="text-align:center"><strong><em>Flower: Distortion Factor 15</em></strong></p>
+<p><img id="94310" src="description/Flower1_DistortionFactor_15.jpg" alt="" width="400" height="608" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Implementing a Median Filter</h1>
+<p>The <strong><em>MedianFilter</em></strong> <a title="MSDN: Extension Methods" rel="tag" href="http://msdn.microsoft.com/en-us/library/vstudio/bb383977.aspx" >
+extension method</a> targets the <a title="Bitmap" rel="tag" href="http://msdn.microsoft.com/en-us/library/system.drawing.bitmap.aspx" >
+Bitmap</a> class. The implementation as follows:</p>
+<p>&nbsp;</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">public static Bitmap MedianFilter(this Bitmap sourceBitmap, 
+                                  int matrixSize) 
+{ 
+    byte[] pixelBuffer = sourceBitmap.GetByteArray(); 
+    byte[] resultBuffer = new byte[pixelBuffer.Length]; 
+    byte[] middlePixel; 
+
+    int imageStride = sourceBitmap.Width * 4; 
+    int filterOffset = (matrixSize - 1) / 2; 
+    int calcOffset = 0, filterY = 0, filterX = 0; 
+    List&lt;int&gt; neighbourPixels = new List&lt;int&gt;(); 
+
+    for (int k = 0; k &#43; 4 &lt; pixelBuffer.Length; k &#43;= 4) 
+    { 
+        filterY = -filterOffset; filterX = -filterOffset; 
+        neighbourPixels.Clear(); 
+
+        while (filterY &lt;= filterOffset) 
+        { 
+            calcOffset = k &#43; (filterX * 4) &#43; 
+            (filterY * imageStride); 
+
+            if (calcOffset &gt; 0 &amp;&amp;  
+                calcOffset &#43; 4 &lt; pixelBuffer.Length) 
+            { 
+                neighbourPixels.Add(BitConverter.ToInt32( 
+                                    pixelBuffer, calcOffset)); 
+            } 
+
+            filterX&#43;&#43;; 
+
+            if (filterX &gt; filterOffset) 
+             { filterX = -filterOffset; filterY&#43;&#43;; }
+        }
+
+        neighbourPixels.Sort(); 
+        middlePixel = BitConverter.GetBytes( 
+                      neighbourPixels[filterOffset]); 
+
+        resultBuffer[k] = middlePixel[0]; 
+        resultBuffer[k &#43; 1] = middlePixel[1]; 
+        resultBuffer[k &#43; 2] = middlePixel[2]; 
+        resultBuffer[k &#43; 3] = middlePixel[3]; 
+    }
+
+    return resultBuffer.GetImage(sourceBitmap.Width,  
+                                 sourceBitmap.Height); 
+}</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__keyword">public</span>&nbsp;<span class="cs__keyword">static</span>&nbsp;Bitmap&nbsp;MedianFilter(<span class="cs__keyword">this</span>&nbsp;Bitmap&nbsp;sourceBitmap,&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;matrixSize)&nbsp;&nbsp;
+{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;pixelBuffer&nbsp;=&nbsp;sourceBitmap.GetByteArray();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;resultBuffer&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<span class="cs__keyword">byte</span>[pixelBuffer.Length];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">byte</span>[]&nbsp;middlePixel;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;imageStride&nbsp;=&nbsp;sourceBitmap.Width&nbsp;*&nbsp;<span class="cs__number">4</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;filterOffset&nbsp;=&nbsp;(matrixSize&nbsp;-&nbsp;<span class="cs__number">1</span>)&nbsp;/&nbsp;<span class="cs__number">2</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">int</span>&nbsp;calcOffset&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;filterY&nbsp;=&nbsp;<span class="cs__number">0</span>,&nbsp;filterX&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;List&lt;<span class="cs__keyword">int</span>&gt;&nbsp;neighbourPixels&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;List&lt;<span class="cs__keyword">int</span>&gt;();&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;k&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;k&nbsp;&#43;&nbsp;<span class="cs__number">4</span>&nbsp;&lt;&nbsp;pixelBuffer.Length;&nbsp;k&nbsp;&#43;=&nbsp;<span class="cs__number">4</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterY&nbsp;=&nbsp;-filterOffset;&nbsp;filterX&nbsp;=&nbsp;-filterOffset;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;neighbourPixels.Clear();&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">while</span>&nbsp;(filterY&nbsp;&lt;=&nbsp;filterOffset)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calcOffset&nbsp;=&nbsp;k&nbsp;&#43;&nbsp;(filterX&nbsp;*&nbsp;<span class="cs__number">4</span>)&nbsp;&#43;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(filterY&nbsp;*&nbsp;imageStride);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(calcOffset&nbsp;&gt;&nbsp;<span class="cs__number">0</span>&nbsp;&amp;&amp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calcOffset&nbsp;&#43;&nbsp;<span class="cs__number">4</span>&nbsp;&lt;&nbsp;pixelBuffer.Length)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;neighbourPixels.Add(BitConverter.ToInt32(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixelBuffer,&nbsp;calcOffset));&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterX&#43;&#43;;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(filterX&nbsp;&gt;&nbsp;filterOffset)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;filterX&nbsp;=&nbsp;-filterOffset;&nbsp;filterY&#43;&#43;;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;neighbourPixels.Sort();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;middlePixel&nbsp;=&nbsp;BitConverter.GetBytes(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;neighbourPixels[filterOffset]);&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[k]&nbsp;=&nbsp;middlePixel[<span class="cs__number">0</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">1</span>]&nbsp;=&nbsp;middlePixel[<span class="cs__number">1</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">2</span>]&nbsp;=&nbsp;middlePixel[<span class="cs__number">2</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBuffer[k&nbsp;&#43;&nbsp;<span class="cs__number">3</span>]&nbsp;=&nbsp;middlePixel[<span class="cs__number">3</span>];&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;resultBuffer.GetImage(sourceBitmap.Width,&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sourceBitmap.Height);&nbsp;&nbsp;
+}</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode">&nbsp;</div>
+<p>&nbsp;</p>
+<p style="text-align:center"><strong><em>Flower: Distortion Factor 25</em></strong></p>
+<p><img id="94311" src="description/Flower2_DistortionFactor_25.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<h1>Sample Images</h1>
+<p style="text-align:justify">This article features a number of sample images. All featured images have been licensed allowing for reproduction. The following images feature as sample images:</p>
+<p><img id="94312" src="description/674px-Lil_chalcedonicum_01EB_Griechenland_Hrisomiglia_17_07_01.jpg" alt="" width="300" height="456" style="margin-right:auto; margin-left:auto; display:block"></p>
+<ul>
+<li><em>Lilium chalcedonicum</em> in habitat at Hrisomiglia, Greece. </li><li><strong><em>Attribution: </em></strong>Ernst G&uuml;gel. This file is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en" >
+Attribution-Share Alike 3.0 Unported</a> license. </li><li><a title="Download from Wikipedia" href="http://en.wikipedia.org/wiki/File:Lil_chalcedonicum_01EB_Griechenland_Hrisomiglia_17_07_01.jpg" >Download from Wikipedia</a>
+</li></ul>
+<p><img id="94313" src="description/683px-Lil_carniolicum_subsp_ponticum_01EB_Tuerkei_Ikizdere_02_07_93.jpg" alt="" width="300" height="450" style="margin-right:auto; margin-left:auto; display:block"></p>
+<ul>
+<li><em>Lilium ponticum</em> in habitat near Ikizdere, Turkey. </li><li><strong><em>Attribution: </em></strong>Ernst G&uuml;gel. This file is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en" >
+Attribution-Share Alike 3.0 Unported</a> license. </li><li><a title="Download from Wikipedia" href="http://en.wikipedia.org/wiki/File:Lil_carniolicum_subsp_ponticum_01EB_Tuerkei_Ikizdere_02_07_93.jpg" >Download from Wikipedia</a>
+</li></ul>
+<p><img id="94314" src="description/1022px-LiliumSargentiae.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<ul>
+<li><em>Lilium sargentiae</em> flora. </li><li><strong><em>Attribution: </em></strong><a title="Denis Barthel" href="http://commons.wikimedia.org/wiki/User:Denisoliver" >Denis Barthel</a>. This file is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en" >
+Attribution-Share Alike 3.0 Unported</a> license. </li><li><a title="Download from Wikipedia" href="http://en.wikipedia.org/wiki/File:LiliumSargentiae.jpg" >Download from Wikipedia</a>
+</li></ul>
+<p><img id="94315" src="description/1024px-Lilium_longiflorum_.html(Easter_Lily).jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<ul>
+<li>A <a title="lilium longiflorum" href="http://en.wikipedia.org/wiki/lilium_longiflorum" >
+lilium longiflorum</a>, commonly known as an Easter Lily. </li><li><strong><em>Attribution: </em></strong><a title="Matt H. Wade" href="http://commons.wikimedia.org/wiki/User:UpstateNYer" >Matt H. Wade</a><strong>.</strong> This file is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en" >
+Attribution-Share Alike 3.0 Unported</a> license. </li><li><a title="Download from Wikipedia" href="http://en.wikipedia.org/wiki/File:Lilium_longiflorum_(Easter_Lily).JPG" >Download from Wikipedia</a>
+</li></ul>
+<p><img id="94316" src="description/1280px-LiliumBulbiferumCroceumBologna.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<ul>
+<li>Flora <em>Lilium bulbiferum</em> ssp. <em>croceum</em>, ex coll. Monte Adone, Bologna, Italia.
+</li><li><strong><em>Attribution: </em></strong><a title="Denis Barthel" href="http://commons.wikimedia.org/wiki/User:Denisoliver" >Denis Barthel</a>. This file is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en" >
+Attribution-Share Alike 3.0 Unported</a> license. </li><li><a title="Download from Wikipedia" href="http://en.wikipedia.org/wiki/File:LiliumBulbiferumCroceumBologna.jpg" >Download from Wikipedia</a>
+</li></ul>
+<p><img id="94317" src="description/LiliumSuperbum1.jpg" alt="" width="500" height="447" style="margin-right:auto; margin-left:auto; display:block"></p>
+<ul>
+<li>Turks Cap Lily the <a title="Great Smoky Mountains National Park" href="http://en.wikipedia.org/wiki/Great_Smoky_Mountains_National_Park" >
+Great Smoky Mountains National Park</a> in western North Carolina. </li><li><strong><em>Attribution: </em></strong><a title="Arx Fortis" href="http://en.wikipedia.org/wiki/User:Arx_Fortis" >Arx Fortis</a>. This file is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en" >
+Attribution-Share Alike 3.0 Unported</a> license. </li><li><a title="Download from Wikipedia" href="http://en.wikipedia.org/wiki/File:LiliumSuperbum1.jpg" >Download from Wikipedia</a>
+</li></ul>
+<p><img id="94318" src="description/Orange_Lilium_-_Relic38_-_Ontario_Canada.jpg" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<ul>
+<li>Orange Lily in full bloom showing pollen covered stamens, Ontario, Canada. June 2002.
+</li><li><strong><em>Attribution: </em></strong><a title="Relic38" href="http://en.wikipedia.org/wiki/User:Relic38" >Relic38</a>. This file is licensed under the
+<a title="Creative Commons" href="http://en.wikipedia.org/wiki/en:Creative_Commons" >
+Creative Commons</a> <a title="Creative Commons" href="http://creativecommons.org/licenses/by/3.0/deed.en" >
+Attribution 3.0 Unported</a> license. </li><li><a title="Download from Wikipedia" href="http://en.wikipedia.org/wiki/File:Orange_Lilium_-_Relic38_-_Ontario_Canada.JPG" >Download from Wikipedia</a>
+</li></ul>
+<p><img id="94319" src="description/White_and_yellow_flower.JPG" alt="" style="margin-right:auto; margin-left:auto; display:block"></p>
+<ul>
+<li><em><strong>Zantedeschia aethiopica</strong></em> (common names <strong>calla lily</strong>,
+<strong>arum lily</strong>). </li><li><strong><em>Attribution: </em></strong><a title="Two&#43;two=4" href="http://commons.wikimedia.org/wiki/User:Two%2Btwo%3D4" >Two&#43;two=4</a>. This file has been released into the
+<strong><a title="public domain" href="http://en.wikipedia.org/wiki/en:public_domain" >public domain</a></strong>. This applies worldwide.
+</li><li><a title="Download from Wikipedia" href="http://en.wikipedia.org/wiki/File:White_and_yellow_flower.JPG" >Download from Wikipedia</a>
+</li></ul>
+<h1><span>Source Code Files</span></h1>
+<ul>
+<li><em>ExtBitmap.cs - Contains the definition of the DistortionBlurFilter and MedianFilter extension methods.</em>
+</li><li><em><em>MainForm.cs - Windows Forms based sample application.</em></em> </li></ul>
+<h1>More Information</h1>
+<div>
+<p style="text-align:justify">This article is based on an article originally posted on my
+<a href="http://softwarebydefault.com/" >blog</a>:&nbsp;<a href="http://softwarebydefault.com/2013/08/09/image-distortion-blur/">http://softwarebydefault.com/2013/08/09/image-distortion-blur/</a> If you have any questions/comments please feel
+ free to make use of the Q&amp;A section on this page, also please remember to rate this article.</p>
+<p><strong><em><a title="About Dewald Esterhuizen" rel="tag" href="http://softwarebydefault.com/about/" >Dewald Esterhuizen</a></em></strong></p>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
