@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace ImageLib
 {
-    public class FX
+    public class FxPixelate
     {
         public static Bitmap Pixelate(Bitmap image, Rectangle rectangle, Int32 pixelateSize)
         {
@@ -49,5 +49,6 @@ namespace ImageLib
         }
 
 
-    } // END OF CLASS FX
-} // END OF NAMESPACE
+    } // end of class FxPixelate
+
+} // end of namespace

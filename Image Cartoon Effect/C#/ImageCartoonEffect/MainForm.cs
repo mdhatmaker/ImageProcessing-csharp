@@ -41,6 +41,8 @@ namespace ImageCartoonEffect
             cmbSmoothingFilter.Items.Add(ExtBitmap.SmoothingFilterType.Sharpen3x3);
 
             cmbSmoothingFilter.SelectedIndex = 0;
+
+            trcThreshold.Value = 100;
         }
 
         private void btnOpenOriginal_Click(object sender, EventArgs e)

@@ -23,44 +23,73 @@ namespace Images
             InitializeComponent();
 
             _imageSaveFormat = ImageFormat.Png;
+
+            var imageFolder = @"D:\Users\mhatm\OneDrive\Pictures\babes\";
+            LoadImage(imageFolder + "3F317C3.jpg");
         }
 
         private void updateTitleBar()
         {
-            this.Text = string.Format("[{0}, {1}]", _image.Width, _image.Height);
+            this.Text = string.Format("[{0}, {1}]  {2}", _image.Width, _image.Height, _imageFilename);
         }
 
-        private void btnLoadImage_Click(object sender, EventArgs e)
+        private void LoadImage(string filename)
         {
-            var dlgResult = dlgOpenImageFile.ShowDialog();
-
-            if (dlgResult == DialogResult.OK)
+            try
             {
-                var filename = dlgOpenImageFile.FileName;
                 picImage.Load(filename);
                 _image = picImage.Image;
                 _imageFilename = filename;
                 updateTitleBar();
             }
+            catch (Exception ex)
+            {
+                updateStatus(string.Format("ERROR Loading '{0}': {1}", filename, ex.Message));
+            }
+        }
+
+        private void btnLoadImage_Click(object sender, EventArgs e)
+        {
+            dlgOpenImageFile.Title = "Select an Image File";
+            /*dlgOpenImageFile.Filter = "Png Images(*.png)|*.png";
+            dlgOpenImageFile.Filter += "|Jpeg Images(*.jpg)|*.jpg";
+            dlgOpenImageFile.Filter += "|Bitmap Images(*.bmp)|*.bmp";*/
+            var dlgResult = dlgOpenImageFile.ShowDialog();
+
+            if (dlgResult != DialogResult.OK) return;
+
+            LoadImage(dlgOpenImageFile.FileName);
+        }
+
+        private void updateStatus(string msg = null)
+        {
+            if (msg == null)
+                updateTitleBar();
+            else
+                this.Text = msg;
         }
 
         private void btnApplyEffect_Click(object sender, EventArgs e)
         {
-            pixelateImage();
+            updateStatus("Applying effect...");
+            ApplyEffect();
+            updateStatus();
         }
 
         private void slider_ValueChanged(object sender, EventArgs e)
         {
-            pixelateImage();
+            //pixelateImage();
         }
 
-        private void pixelateImage()
+        private void ApplyEffect()
         {
             if (_image == null) return;
 
             var bmp = _image as Bitmap;
 
-            var fxBitmap = ImageLib.FX.Pixelate(bmp, slider.Value);
+            var fxBitmap = ImageLib.FxPixelate.Pixelate(bmp, slider.Value);
+            //var fxBitmap = ImageLib.FxImageCartoonEffect.CartoonEffectFilter(bmp, 0, ImageLib.FxImageCartoonEffect.SmoothingFilterType.Mean5x5);
+            //var fxBitmap = ImageLib.FxImageBlurFilter.ImageBlurFilter(bmp, ImageLib.FxImageBlurFilter.BlurType.GaussianBlur5x5);
 
             picImage.Image = fxBitmap;
         }
@@ -79,6 +108,11 @@ namespace Images
         private void displayInfo(string msg)
         {
             Console.WriteLine(msg);
+        }
+
+        private void btnRevertImage_Click(object sender, EventArgs e)
+        {
+            picImage.Image = _image;
         }
 
     } // END OF CLASS

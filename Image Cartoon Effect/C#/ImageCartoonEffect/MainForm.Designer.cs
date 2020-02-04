@@ -86,7 +86,7 @@
             this.cmbSmoothingFilter.FormattingEnabled = true;
             this.cmbSmoothingFilter.Location = new System.Drawing.Point(7, 36);
             this.cmbSmoothingFilter.Name = "cmbSmoothingFilter";
-            this.cmbSmoothingFilter.Size = new System.Drawing.Size(213, 32);
+            this.cmbSmoothingFilter.Size = new System.Drawing.Size(213, 41);
             this.cmbSmoothingFilter.TabIndex = 20;
             this.cmbSmoothingFilter.SelectedIndexChanged += new System.EventHandler(this.FilterValueChangedEventHandler);
             // 
