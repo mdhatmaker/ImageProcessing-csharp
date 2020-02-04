@@ -87,9 +87,16 @@ namespace Images
 
             var bmp = _image as Bitmap;
 
-            var fxBitmap = ImageLib.FxPixelate.Pixelate(bmp, slider.Value);
+            //var fxBitmap = ImageLib.FxPixelate.Pixelate(bmp, slider.Value);
             //var fxBitmap = ImageLib.FxImageCartoonEffect.CartoonEffectFilter(bmp, 0, ImageLib.FxImageCartoonEffect.SmoothingFilterType.Mean5x5);
             //var fxBitmap = ImageLib.FxImageBlurFilter.ImageBlurFilter(bmp, ImageLib.FxImageBlurFilter.BlurType.GaussianBlur5x5);
+            float value = 2.0f * slider.Value / slider.Maximum;
+            //float blueShade = value, greenShade = value, redShade = value;
+            //var fxBitmap = ImageLib.FxBitmapShading.ColorShade(bmp, blueShade, greenShade, redShade);
+            //float blueTint = value, greenTint = value, redTint = value;
+            //var fxBitmap = ImageLib.FxBitmapTint.ColorTint(bmp, blueTint, greenTint, redTint);
+            //var fxBitmap = ImageLib.FxOilPaintingCartoonFilter.OilPaintFilter(bmp, (int)50, Int32.Parse("7"));
+            var fxBitmap = ImageLib.FxOilPaintingCartoonFilter.CartoonFilter(bmp, (int)75, Int32.Parse("9"), (byte)60);
 
             picImage.Image = fxBitmap;
         }

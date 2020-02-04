@@ -40,7 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FxBitmapShading.cs" />
+    <Compile Include="FxBitmapTint.cs" />
     <Compile Include="FxImageASCIIArt.cs" />
+    <Compile Include="FxImageSolarise.cs" />
+    <Compile Include="FxOilPaintingCartoonFilter.cs" />
     <Compile Include="FxPixelate.cs" />
     <Compile Include="FxImageBlurFilter.cs" />
     <Compile Include="FxImageCartoonEffect.cs" />
